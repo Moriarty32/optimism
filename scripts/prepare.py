@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build the refined homepage, preserving the original header and footer."""
 import re
+import hashlib
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 raw=(ROOT/'source.html').read_text()
@@ -35,5 +36,10 @@ raw=re.sub(r'<main\b[^>]*>.*?</main>',lambda _: main,raw,count=1,flags=re.S|re.I
 raw=re.sub(r'<meta\b[^>]*name=["\']robots["\'][^>]*>','',raw,flags=re.I)
 raw=raw.replace('</head>', '<meta name="robots" content="noindex, nofollow"><link rel="stylesheet" href="/assets/homepage.css"></head>')
 raw=raw.replace('</body>', '<script defer src="/assets/homepage.js"></script><script defer src="/assets/hero.js"></script></body>')
+# A new page must never reuse an older cached UI stylesheet or script.
+# Content-derived URLs change automatically whenever one of these files changes.
+for asset in ('assets/homepage.css','assets/homepage.js','assets/hero.js'):
+    revision=hashlib.sha256((ROOT/asset).read_bytes()).hexdigest()[:12]
+    raw=raw.replace('/'+asset+'"','/'+asset+'?v='+revision+'"')
 (ROOT/'index.html').write_text(raw)
 print('Prepared index.html:',len(raw),'characters')
