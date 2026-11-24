@@ -239,14 +239,13 @@
   const hero = document.querySelector('.hero-typographic');
   if (!hero) return;
   const buttons = [...hero.querySelectorAll('[data-slide]')];
-  const playback = hero.querySelector('.hero-playback');
   const copy = hero.querySelector('.hero-service-copy');
   const canvas = hero.querySelector('canvas');
   const context = canvas.getContext('2d', {alpha: true});
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   const field = hero.querySelector('.hero-atmosphere');
   let active = 0, elapsed = 0, previous = 0, frame = 0, lastPaint = 0;
-  let paused = motion.matches, visible = true, focused = false, running = false;
+  let visible = true, focused = false, running = false;
   let width = 0, height = 0, density = 1, burst = 0;
   let words = [], sprites = [], resetTimer;
 
@@ -309,7 +308,6 @@
   }
   function select(index, manual = false) {
     elapsed = 0;
-    hero.style.setProperty('--hero-progress', '0');
     if (index === active) return;
     active = index;
     const service = services[active];
@@ -320,7 +318,6 @@
     copy.setAttribute('aria-live', manual ? 'polite' : 'off');
     hero.querySelector('#hero-service-title').textContent = service.title;
     hero.querySelector('#hero-service-description').textContent = service.description;
-    hero.querySelector('#hero-current').textContent = String(active + 1).padStart(2, '0');
     hero.dataset.activeService = String(active);
     hero.style.setProperty('--flow-x', service.light[0] + '%');
     hero.style.setProperty('--flow-y', service.light[1] + '%');
@@ -338,11 +335,8 @@
     }));
   }
   function sync() {
-    const shouldRun = !paused && visible && !focused && !document.hidden;
+    const shouldRun = !motion.matches && visible && !focused && !document.hidden;
     hero.classList.toggle('is-paused', !shouldRun);
-    playback.setAttribute('aria-pressed', String(paused));
-    playback.setAttribute('aria-label', paused ? 'Включить автоматическую смену услуг' : 'Остановить автоматическую смену услуг');
-    playback.querySelector('span').textContent = paused ? 'Воспроизвести' : 'Пауза';
     if (shouldRun && !running) {running = true;previous = performance.now();frame = requestAnimationFrame(tick);}
     if (!shouldRun && running) {running = false;cancelAnimationFrame(frame);}
   }
@@ -350,7 +344,6 @@
     if (!running) return;
     const delta = Math.min(now - previous, 80);previous = now;
     elapsed += delta;
-    hero.style.setProperty('--hero-progress', String(Math.min(1, elapsed / 5000)));
     if (now - lastPaint >= 32) {
       render(motion.matches ? 0 : now - lastPaint > 100 ? 32 : now - lastPaint);
       lastPaint = now;
@@ -370,9 +363,6 @@
       event.preventDefault();buttons[next].focus();select(next, true);
     });
   });
-  hero.querySelector('.hero-prev').addEventListener('click', () => {focused=false;select((active+8)%9,true);sync();});
-  hero.querySelector('.hero-next').addEventListener('click', () => {focused=false;select((active+1)%9,true);sync();});
-  playback.addEventListener('click', () => {paused=!paused;focused=false;sync();});
   hero.querySelector('.hero-services').addEventListener('focusin', () => {focused=true;sync();});
   hero.querySelector('.hero-services').addEventListener('focusout', event => {
     if (!event.relatedTarget || !hero.querySelector('.hero-services').contains(event.relatedTarget)) {focused=false;sync();}
@@ -382,7 +372,7 @@
     visible=entries[0].isIntersecting;
     document.body.classList.toggle('hero-in-view',visible);sync();
   },{threshold:.15}).observe(hero);
-  motion.addEventListener('change', () => {paused=motion.matches;sync();render(0);});
+  motion.addEventListener('change', () => {sync();render(0);});
   if (context) {
     hero.classList.add('hero-has-canvas');
     new ResizeObserver(resize).observe(field);

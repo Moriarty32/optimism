@@ -4,11 +4,11 @@
 #homepage .studio-flow {
   --studio-ink:#092d40;--studio-muted:#516c7c;--studio-blue:#006d98;--studio-cyan:#37c6f4;
   --studio-line:#cfdee6;--studio-gutter:clamp(24px,4.6vw,100px);
-  position:relative;background:#fff;border-radius:56px 56px 0 0;color:var(--studio-ink);
+  position:relative;background:#fff;border-radius:40px 56px 0 0;color:var(--studio-ink);
   overflow:clip;
 }
 #homepage .studio-flow .home-container,#homepage .studio-flow .solutions-shell {width:calc(100% - 2*var(--studio-gutter));max-width:1540px;margin-inline:auto}
-#homepage .studio-flow .home-section {padding:clamp(88px,8.5vw,160px) 0;background:#fff}
+#homepage .studio-flow .home-section {padding:clamp(72px,6vw,112px) 0;background:#fff}
 #homepage .studio-flow h2 {font-family:'JoannaSansNova',sans-serif;font-size:clamp(52px,5.4vw,102px);font-weight:400;line-height:1.02;letter-spacing:-.035em;text-transform:none;text-wrap:balance;max-width:16ch}
 #homepage .studio-flow h3 {font-family:'JoannaSansNova',sans-serif;font-size:clamp(26px,2.1vw,38px);font-weight:400;line-height:1.15;letter-spacing:-.02em;text-transform:none}
 #homepage .studio-flow p {font-size:clamp(18px,1.2vw,22px);line-height:1.5}
@@ -16,9 +16,9 @@
 #homepage .studio-flow a:not(.studio-case-media):hover {text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
 #homepage .studio-flow :is(a,button,summary,input,textarea):focus-visible {outline:3px solid #008bbf;outline-offset:5px}
 #homepage .studio-flow ::selection {background:#37c6f4;color:#05263a}
-#homepage .studio-flow .home-section-head {grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(40px,6vw,110px);margin-bottom:64px;align-items:end}
+#homepage .studio-flow .home-section-head {grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:64px;margin-bottom:48px;align-items:start}
 #homepage .studio-flow .home-section-head>p {max-width:520px;margin:0;color:var(--studio-muted)}
-#homepage .studio-flow .home-two-column {grid-template-columns:1fr 1.05fr;gap:clamp(48px,6vw,110px);align-items:start}
+#homepage .studio-flow .home-two-column {grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}
 #homepage .studio-flow .home-two-column>div>h2 {margin-bottom:32px}
 #homepage .studio-flow .home-two-column>div>p {max-width:560px;color:var(--studio-muted)}
 #homepage .studio-flow .home-text-link {gap:18px;font-size:18px;font-weight:400;min-height:48px}
@@ -27,7 +27,7 @@
 #homepage .studio-arrow,#homepage .studio-link-arrow {display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;vertical-align:middle}
 #homepage .studio-link-arrow {margin-left:12px;transition:transform .35s cubic-bezier(.16,1,.3,1)}
 #homepage a:hover>.studio-link-arrow {transform:translate(3px,-3px)}
-#homepage .studio-flow .home-section-bottom {gap:40px;margin:70px 0 0;align-items:center}
+#homepage .studio-flow .home-section-bottom {gap:40px;margin:48px 0 0;align-items:center}
 #homepage .studio-flow .home-section-bottom p {font-size:16px;max-width:700px;color:var(--studio-muted);margin:0}
 #homepage .studio-flow summary {padding:28px 64px 28px 0;min-height:84px;font-size:23px;font-weight:400;line-height:1.35}
 #homepage .studio-flow summary::after {display:none}
@@ -39,10 +39,10 @@
 #homepage .studio-flow .home-disclosure>p {max-width:950px;font-size:17px;color:var(--studio-muted);padding:0 0 20px;margin:0}
 #homepage .studio-flow .home-disclosure>summary {font-size:19px}
 /* The first body section eases out of the immersive hero into a tactile task selector. */
-#homepage .studio-flow .solutions-workspace {display:block;min-height:0;background:#fff;padding-top:110px}
-#homepage .studio-flow .solutions-shell {grid-template-columns:1fr 1fr;gap:clamp(48px,6vw,110px);align-items:center}
-#homepage .studio-flow .solutions-choice h2 {font-size:clamp(56px,5.5vw,104px);margin:0 0 30px;max-width:12ch}
-#homepage .studio-flow .solutions-intro {font-size:21px;max-width:540px;color:var(--studio-muted);margin:0 0 40px}
+#homepage .studio-flow .solutions-workspace {display:block;min-height:0;background:#fff;padding-top:80px}
+#homepage .studio-flow .solutions-shell {grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px;align-items:start}
+#homepage .studio-flow .solutions-heading h2 {font-size:clamp(48px,4.8vw,88px);margin:0;max-width:none}
+#homepage .studio-flow .solutions-intro {font-size:21px;max-width:540px;color:var(--studio-muted);margin:0}
 #homepage .studio-flow .solutions-tabs {gap:0}
 #homepage .studio-flow .solution-option {border:0;border-top:1px solid var(--studio-line);border-radius:0;padding:23px 0;gap:22px;min-height:96px;background:transparent;color:#456171}
 #homepage .studio-flow .solution-option:last-child {border-bottom:1px solid var(--studio-line)}
@@ -53,7 +53,7 @@
 #homepage .studio-flow .solution-option>svg:last-child {width:44px;height:44px;flex-basis:44px;padding:11px;border:1px solid #bdcfd9;border-radius:50%;opacity:1;transform:none}
 #homepage .studio-flow .solution-option[aria-selected=true]>svg:last-child {background:#37c6f4;border-color:#37c6f4;color:#052d43;transform:none}
 #homepage .studio-flow .solution-option:hover>svg:last-child {background:#cceefa;border-color:#8ed5ed}
-#homepage .studio-flow .solution-panel {min-height:580px;border:0;border-radius:32px;box-shadow:none;background:#f0f7fb;padding:clamp(30px,3vw,56px)}
+#homepage .studio-flow .solution-panel {min-height:540px;border:0;border-radius:28px;box-shadow:none;background:#f0f7fb;padding:clamp(30px,3vw,56px)}
 #homepage .studio-flow .solution-panel h3 {font-size:clamp(32px,2.7vw,48px);line-height:1.1;margin:0 0 24px;color:#123d55}
 #homepage .studio-flow .solution-description {font-size:19px;color:#516c7c}
 #homepage .studio-flow .solution-steps {margin:32px 0}
@@ -66,9 +66,9 @@
 #homepage .studio-flow .solution-primary:hover {background:#0b5378;border-color:#0b5378}
 #homepage .studio-flow .solution-contact {font-size:16px;font-weight:400;min-height:48px}
 /* Wide service rows, with content-rich expansion and a real photographic scene. */
-#homepage .studio-flow #directions {padding-top:24px}
+#homepage .studio-flow #directions {background:#edf6fb;border-radius:40px;padding-top:clamp(72px,6vw,112px)}
 #homepage .studio-flow .home-services {display:flex;flex-direction:column;gap:10px}
-#homepage .studio-service {border:0;border-radius:24px;background:#eff5f8;overflow:hidden;transition:background .4s,color .4s}
+#homepage .studio-service {border:0;border-radius:24px;background:#fff;overflow:hidden;transition:background .4s,color .4s}
 #homepage .studio-service>summary {display:flex;align-items:center;justify-content:space-between;gap:28px;padding:32px 42px;min-height:108px;color:#092d40}
 #homepage .studio-service>summary h3 {font-size:clamp(28px,2.5vw,46px);margin:0;max-width:80%}
 #homepage .studio-disclosure-icon {display:flex;align-items:center;justify-content:center;flex:0 0 48px;width:48px;height:48px;border:1px solid #a9c2d0;border-radius:50%;transition:transform .45s,background .3s}
@@ -83,17 +83,17 @@
 #homepage .studio-service .studio-pill:hover {color:#052d43;background:#37c6f4;border-color:#37c6f4}
 #homepage .studio-service-visual {position:relative;margin:0;overflow:hidden;border-radius:18px;aspect-ratio:1.6;background:#0d344e}
 #homepage .studio-service-visual img {width:100%;height:100%;display:block;object-fit:cover;transition:transform .8s cubic-bezier(.16,1,.3,1)}
-#homepage .studio-service[open] .studio-service-visual img {animation:studio-photo-focus .85s cubic-bezier(.16,1,.3,1)}
+#homepage .studio-service[open]:not(.is-scroll-service) .studio-service-visual img {animation:studio-photo-focus .85s cubic-bezier(.16,1,.3,1)}
 #homepage .studio-service-visual figcaption {position:absolute;bottom:12px;right:14px;left:14px;text-align:right;font-size:12px;color:#fff;text-shadow:0 1px 5px #061d31;background:#061d3170;border-radius:10px;padding:5px 9px;width:fit-content;margin-left:auto}
 /* Selected work: staggered covers, actual Optimism artwork and editorial captions. */
-#homepage .studio-flow .studio-dark {background:#061d31;color:#fff;border-radius:56px}
+#homepage .studio-flow .studio-dark {background:#061d31;color:#fff;border-radius:40px}
 #homepage .studio-flow .studio-dark a {color:#8ddff9}
 #homepage .studio-flow .studio-dark .home-section-head>p,#homepage .studio-flow .studio-dark .home-section-bottom p {color:#b6d7e7}
 #homepage .studio-flow .studio-dark .home-disclosure {border-color:#ffffff30}
 #homepage .studio-flow .studio-dark .home-disclosure>p {color:#b6d7e7}
-#homepage .studio-flow .home-cases {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:92px 7vw;padding:12px 0 0}
+#homepage .studio-flow .home-cases {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:72px 64px;padding:12px 0 0}
 #homepage .studio-flow .home-case {border:0;padding:0;display:block;min-width:0}
-#homepage .studio-flow .home-case:nth-child(2) {transform:translateY(130px)}
+#homepage .studio-flow .home-case:nth-child(2) {transform:translateY(96px)}
 #homepage .studio-case-media {position:relative;display:block;aspect-ratio:960/1014;border-radius:30px;overflow:hidden;background:#0d344e;isolation:isolate;margin-bottom:26px}
 #homepage .studio-case-media img {position:absolute;left:0;top:0;width:auto;height:100%;max-width:none;display:block;transform:scale(1.045) translateY(var(--media-y,0px));transform-origin:left center;transition:filter .3s}
 #homepage .studio-case-media:hover img {filter:saturate(1.08)}
@@ -113,11 +113,9 @@
 #homepage .studio-flow .home-legacy-projects article {background:#0c2c43;padding:24px;border:0;border-radius:20px}
 #homepage .studio-flow .home-legacy-projects p {font-size:16px;white-space:pre-line;color:#b9d8e7}
 /* Honest tariff data, with open columns and clear conditions. */
-#homepage .studio-flow .home-prices {gap:0;border-top:1px solid var(--studio-line)}
-#homepage .studio-flow .home-prices article {padding:36px 34px;background:transparent;border:0;border-bottom:1px solid var(--studio-line);border-radius:0;min-width:0}
-#homepage .studio-flow .home-prices article+article {border-left:1px solid var(--studio-line)}
-#homepage .studio-flow .home-prices article:first-child {padding-left:0}
-#homepage .studio-flow .home-prices article:last-child {padding-right:0}
+#homepage .studio-flow .home-prices {gap:18px;border:0}
+#homepage .studio-flow .home-prices article {padding:32px;background:#fff;border:0;border-radius:24px;min-width:0}
+#homepage .studio-flow .home-prices article+article {border-left:0}
 #homepage .studio-flow .home-prices h3 {margin-bottom:20px;font-size:32px}
 #homepage .studio-flow .home-prices article>p:not(.home-price) {font-size:18px;min-height:82px;color:var(--studio-muted)}
 #homepage .studio-flow .home-price {font-family:'JoannaSansNova',sans-serif;font-size:clamp(42px,4vw,72px);line-height:1.1;letter-spacing:-.045em;margin:32px 0 24px;white-space:nowrap;color:#092d40}
@@ -128,7 +126,7 @@
 #homepage .studio-flow .home-budget-note p {font-size:18px;max-width:880px;color:var(--studio-muted);margin:0}
 #homepage .studio-flow .home-budget-note>a {flex:0 0 auto;font-size:16px}
 /* Process: a stable editorial introduction beside the unfolding work sequence. */
-#homepage .studio-flow #approach {padding-top:30px}
+#homepage .studio-flow #approach {padding-top:clamp(72px,6vw,112px)}
 #homepage .studio-flow #approach .home-two-column>div:first-child {position:sticky;top:124px}
 #homepage .studio-flow .home-steps {margin:0;counter-reset:studio-step;list-style:none}
 #homepage .studio-flow .home-steps li {padding:0 0 42px 72px;margin:0 0 42px;border:0;border-bottom:1px solid var(--studio-line);counter-increment:studio-step;position:relative;min-width:0}
@@ -137,7 +135,7 @@
 #homepage .studio-flow .home-steps h3 {font-size:32px;line-height:1.15;margin-bottom:18px}
 #homepage .studio-flow .home-steps p {font-size:19px;line-height:1.5;color:var(--studio-muted);margin:0}
 /* Published people and references, without adding unverified claims. */
-#homepage .studio-client-archive {margin:0 0 84px;padding:32px 0;border-top:1px solid var(--studio-line);border-bottom:1px solid var(--studio-line)}
+#homepage .studio-client-archive {margin:0 0 56px;padding:32px 0;border-top:1px solid var(--studio-line);border-bottom:1px solid var(--studio-line)}
 #homepage .studio-client-archive>p {display:flex;justify-content:space-between;gap:24px;font-size:16px;margin:0 0 28px}
 #homepage .studio-client-archive>p>span {font-size:14px;color:var(--studio-muted);max-width:460px}
 #homepage .studio-client-logos {display:flex;align-items:center;justify-content:space-between;gap:32px}
@@ -150,7 +148,7 @@
 #homepage .studio-flow .home-roles p {font-size:19px;color:var(--studio-muted);margin-bottom:20px}
 #homepage .studio-flow .home-roles strong {color:#092d40;font-weight:700}
 #homepage .studio-flow .home-roles .home-disclosure {margin-top:26px}
-#homepage .studio-flow .home-reviews {gap:24px;margin-top:90px}
+#homepage .studio-flow .home-reviews {gap:24px;margin-top:64px}
 #homepage .studio-flow .home-reviews article {padding:32px;background:#f0f7fb;border:0;border-radius:24px;min-width:0}
 #homepage .studio-flow .home-reviews article>img {display:block;max-width:180px;height:60px;object-fit:contain;object-position:left center;margin-bottom:30px}
 #homepage .studio-flow .home-reviews h3 {font-size:28px;margin-bottom:20px}
@@ -162,7 +160,7 @@
 #homepage .studio-flow .home-credentials img {height:130px;object-fit:contain}
 #homepage .studio-flow .home-credentials figcaption {font-size:14px;color:var(--studio-muted);margin-top:14px}
 /* Documents and FAQ are direct, generous lists. */
-#homepage .studio-flow #documents {background:#f0f7fb;border-radius:56px}
+#homepage .studio-flow #documents {background:#fff;border-radius:0}
 #homepage .studio-flow .home-document-links {gap:0;display:flex;flex-direction:column}
 #homepage .studio-flow .home-document-links>a {border:0;border-bottom:1px solid #c7dce7;border-radius:0;padding:27px 0;min-height:96px;display:flex;align-items:center;justify-content:space-between;gap:28px;background:transparent;color:#092d40;font-size:clamp(22px,1.9vw,32px);line-height:1.25}
 #homepage .studio-flow .home-document-links>a:first-child {border-top:1px solid #c7dce7}
@@ -172,9 +170,9 @@
 #homepage .studio-flow .home-faq summary {font-size:24px;padding-top:27px;padding-bottom:27px}
 #homepage .studio-flow .home-faq details>p {font-size:18px;color:var(--studio-muted);padding:0 44px 28px 0;margin:0;max-width:780px}
 /* The close carries the same navy as the first screen and a broad typographic invitation. */
-#homepage .studio-flow #project {border-radius:56px 56px 0 0;padding-bottom:120px}
-#homepage .studio-flow #project .home-two-column {grid-template-columns:1fr 1fr;gap:64px 100px}
-#homepage .studio-flow #project-title {grid-column:1/-1;max-width:1250px;font-size:clamp(60px,7.8vw,148px);line-height:.98;margin:0 0 16px;letter-spacing:-.04em}
+#homepage .studio-flow #project {border-radius:40px 56px 0 0;padding-bottom:120px}
+#homepage .studio-flow #project .home-two-column {grid-template-columns:1fr 1fr;gap:48px 64px}
+#homepage .studio-flow #project-title {grid-column:1/-1;max-width:1250px;font-size:clamp(60px,6.3vw,116px);line-height:.98;margin:0 0 16px;letter-spacing:-.04em}
 #homepage .studio-flow #project .home-two-column>div>p {color:#b9d8e7;max-width:570px}
 #homepage .studio-flow #project .home-lead {font-size:25px;line-height:1.4;margin-bottom:40px}
 #homepage .studio-flow .home-phone {font:400 clamp(28px,2.5vw,46px)/1.2 'JoannaSansNova',sans-serif;color:#fff!important;letter-spacing:-.03em;display:inline-flex;align-items:center;min-height:60px;margin-bottom:24px}
@@ -215,7 +213,7 @@
  #homepage .studio-flow{border-radius:36px 36px 0 0}
  #homepage .studio-flow .home-section{padding:84px 0}#homepage .studio-flow h2{font-size:clamp(46px,6.5vw,66px)}
  #homepage .studio-flow .home-section-head{grid-template-columns:1fr;gap:28px;margin-bottom:44px}#homepage .studio-flow .home-section-head>p{max-width:700px;font-size:20px}
- #homepage .studio-flow .solutions-shell{grid-template-columns:1fr;gap:40px;max-width:760px}#homepage .studio-flow .solutions-choice h2{font-size:64px;max-width:15ch}
+ #homepage .studio-flow .solutions-shell{grid-template-columns:1fr;gap:40px;max-width:760px}#homepage .studio-flow .solutions-heading h2{font-size:64px;max-width:15ch}
  #homepage .studio-flow .solutions-intro{max-width:650px}#homepage .studio-flow .solution-panel{min-height:0;padding:40px}#homepage .studio-flow .solution-panel h3{font-size:40px}
  #homepage .studio-flow .solution-actions{flex-direction:row;align-items:center}#homepage .studio-flow .solution-primary{width:auto}
  #homepage .studio-service>summary{padding:26px 30px;min-height:96px}#homepage .studio-service-body{padding:0 30px 30px;grid-template-columns:1.1fr .9fr;gap:30px}
@@ -237,14 +235,14 @@
  #homepage .studio-flow .home-text-link{font-size:16px;gap:10px}#homepage .studio-flow .home-button,#homepage .studio-pill{font-size:16px;min-height:54px;padding:14px 20px;gap:18px}
  #homepage .studio-flow .home-section-bottom{margin-top:44px;gap:24px;align-items:start}#homepage .studio-flow .home-section-bottom p{font-size:14px}
  #homepage .studio-flow .home-two-column{gap:32px}#homepage .studio-flow .home-two-column>div>h2{margin-bottom:24px}
- #homepage .studio-flow .solutions-workspace{padding-top:66px}#homepage .studio-flow .solutions-shell{gap:32px}#homepage .studio-flow .solutions-choice h2{font-size:clamp(44px,11vw,64px);margin-bottom:26px}
+ #homepage .studio-flow .solutions-workspace{padding-top:66px}#homepage .studio-flow .solutions-shell{gap:32px}#homepage .studio-flow .solutions-heading h2{font-size:clamp(44px,11vw,64px);margin-bottom:26px}
  #homepage .studio-flow .solutions-intro{font-size:18px;margin-bottom:30px}#homepage .studio-flow .solution-option{padding:19px 0;gap:15px;min-height:94px}
  #homepage .studio-flow .solution-option strong{font-size:22px}#homepage .studio-flow .solution-option-hint{font-size:14px;margin-top:7px}
  #homepage .studio-flow .solution-panel{padding:28px;border-radius:24px}#homepage .studio-flow .solution-panel h3{font-size:34px;margin-bottom:22px}
  #homepage .studio-flow .solution-description{font-size:17px}#homepage .studio-flow .solution-steps{margin:26px 0}#homepage .studio-flow .solution-steps li{padding:17px 0;gap:14px}
  #homepage .studio-flow .solution-steps h4{font-size:18px}#homepage .studio-flow .solution-steps p{font-size:16px}#homepage .studio-flow .solution-actions{flex-direction:column;align-items:stretch;gap:12px}
  #homepage .studio-flow .solution-primary{font-size:15px;width:100%;padding-inline:18px}#homepage .studio-flow .solution-contact{justify-content:center;font-size:15px}
- #homepage .studio-flow #directions{padding-top:12px}#homepage .studio-service{border-radius:20px}#homepage .studio-service>summary{padding:23px;gap:16px;min-height:94px}
+ #homepage .studio-flow #directions{padding-top:68px}#homepage .studio-service{border-radius:20px}#homepage .studio-service>summary{padding:23px;gap:16px;min-height:94px}
  #homepage .studio-service>summary h3{font-size:26px;max-width:none;flex:1;line-height:1.15}#homepage .studio-disclosure-icon{width:42px;height:42px;flex-basis:42px}
  #homepage .studio-service-body{grid-template-columns:1fr;gap:28px;padding:0 23px 23px}#homepage .studio-service-copy>p{font-size:20px;line-height:1.4}
  #homepage .studio-service-copy>p.home-detail{font-size:16px;line-height:1.5;margin-bottom:24px}#homepage .studio-service .studio-pill{font-size:15px;min-height:52px;padding-inline:18px}
@@ -258,11 +256,11 @@
  #homepage .studio-flow .home-case>a:not(.studio-case-media){font-size:15px;line-height:1.4}#homepage .studio-case-more{min-height:220px}
  #homepage .studio-circle-link{width:220px;font-size:25px;gap:22px}#homepage .studio-flow .home-disclosure{margin-top:32px}
  #homepage .studio-flow .home-disclosure>summary{font-size:17px}#homepage .studio-flow .home-disclosure>p{font-size:15px}
- #homepage .studio-flow .home-prices{display:block}#homepage .studio-flow .home-prices article,#homepage .studio-flow .home-prices article:first-child,#homepage .studio-flow .home-prices article:last-child{padding:28px 0;border:0;border-bottom:1px solid var(--studio-line)}
+ #homepage .studio-flow .home-prices{display:grid;grid-template-columns:1fr;gap:16px}#homepage .studio-flow .home-prices article,#homepage .studio-flow .home-prices article:first-child,#homepage .studio-flow .home-prices article:last-child{padding:26px;border:0;border-radius:22px}
  #homepage .studio-flow .home-prices h3{font-size:30px;margin-bottom:16px}#homepage .studio-flow .home-prices article>p:not(.home-price){font-size:17px;min-height:0;max-width:420px}
  #homepage .studio-flow .home-price{font-size:58px;margin:26px 0 20px}#homepage .studio-flow .home-price span{font-size:15px}#homepage .studio-flow .home-prices article>a{font-size:15px}
  #homepage .studio-flow .home-budget-note{flex-direction:column;align-items:start;gap:26px;margin-top:32px}#homepage .studio-flow .home-budget-note h3{font-size:27px}#homepage .studio-flow .home-budget-note p{font-size:17px}
- #homepage .studio-flow #approach{padding-top:16px}#homepage .studio-flow .home-steps li{padding:0 0 28px 48px;margin-bottom:28px}
+ #homepage .studio-flow #approach{padding-top:68px}#homepage .studio-flow .home-steps li{padding:0 0 28px 48px;margin-bottom:28px}
  #homepage .studio-flow .home-steps li::before{font-size:20px}#homepage .studio-flow .home-steps h3{font-size:26px;margin-bottom:16px}#homepage .studio-flow .home-steps p{font-size:17px}
  #homepage .studio-client-archive{margin-bottom:48px;padding:24px 0}#homepage .studio-client-archive>p{flex-direction:column;gap:10px;font-size:16px;margin-bottom:24px}
  #homepage .studio-client-archive>p>span{font-size:13px}#homepage .studio-client-logos{flex-wrap:wrap;justify-content:space-around;gap:20px 24px}#homepage .studio-client-logos img{width:calc((100% - 48px)/3);height:52px}
@@ -280,7 +278,7 @@
  #homepage .studio-flow #project button[type=submit]{width:100%;min-height:60px;font-size:18px}#homepage .studio-flow .home-consent{font-size:13px;gap:12px}
  #homepage .studio-cursor{display:none}
 }
-@media(max-width:370px){#homepage .studio-flow{--studio-gutter:18px}#homepage .studio-flow .solutions-choice h2{font-size:42px}#homepage .studio-flow .solution-option strong{font-size:20px}#homepage .studio-flow .solution-panel{padding:23px}#homepage .studio-flow .solution-panel h3{font-size:31px}#homepage .studio-service>summary{padding:21px}#homepage .studio-service>summary h3{font-size:24px}#homepage .studio-service-body{padding:0 21px 21px}#homepage .studio-flow .home-phone{font-size:27px}}
+@media(max-width:370px){#homepage .studio-flow{--studio-gutter:18px}#homepage .studio-flow .solutions-heading h2{font-size:42px}#homepage .studio-flow .solution-option strong{font-size:20px}#homepage .studio-flow .solution-panel{padding:23px}#homepage .studio-flow .solution-panel h3{font-size:31px}#homepage .studio-service>summary{padding:21px}#homepage .studio-service>summary h3{font-size:24px}#homepage .studio-service-body{padding:0 21px 21px}#homepage .studio-flow .home-phone{font-size:27px}}
 @media(prefers-reduced-motion:reduce){
  #homepage .studio-flow *,#homepage .studio-flow *::before,#homepage .studio-flow *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
  #homepage .studio-case-media img{transform:none!important;will-change:auto!important}
@@ -292,3 +290,43 @@
 #homepage .studio-flow .home-document-links>a{font-weight:400}
 #homepage .studio-flow .solution-option[aria-selected=true]>svg:last-child path{transform:rotate(-35deg);transform-origin:center;transform-box:fill-box}
 @media(max-width:700px){body.studio-body-in-view .b24-widget-button-wrapper{visibility:hidden;pointer-events:none}}
+
+/* A consistent sequence of surfaces gives each decision its own space. */
+#homepage .studio-flow h2{font-size:clamp(46px,4.8vw,88px);line-height:1.05}
+#homepage .studio-flow .solutions-heading{align-items:center;margin-bottom:40px}
+#homepage .studio-flow .solutions-heading h2{max-width:none}
+#homepage .studio-flow #budget{background:#d8f3fc;border-radius:40px}
+#homepage .studio-flow #budget .home-budget-note>.home-button{background:#061d31;color:#fff;border-color:#061d31}
+#homepage .studio-flow #budget .home-budget-note>.home-button:hover{background:#0c4c6e;border-color:#0c4c6e}
+#homepage .studio-flow #people{background:#edf6fb;border-radius:40px}
+#homepage .studio-flow #people .home-reviews article{background:#fff}
+#homepage .studio-flow #questions{background:#edf6fb;border-radius:40px}
+#homepage .studio-flow #documents .home-document-links>a>span{color:#006d98}
+#homepage .studio-flow .studio-service>summary{transition:color .5s}
+#homepage .studio-flow .studio-service.is-scroll-service{transition:none}
+#homepage .studio-flow .studio-service.is-scroll-service>summary{color:inherit;transition:none}
+#homepage .studio-service.is-scroll-service .studio-service-body{overflow:hidden;min-height:0;box-sizing:border-box}
+#homepage .studio-service.is-scroll-service .studio-service-visual{opacity:var(--service-progress,0)}
+#homepage .studio-service.is-scroll-service .studio-service-copy{opacity:var(--service-content-progress,0)}
+#homepage .studio-service.is-scroll-service .studio-service-visual img{transform:scale(calc(1.06 - var(--service-progress,0)*.06));animation:none}
+#homepage .studio-service.is-scroll-service .studio-disclosure-icon{transition:none}
+@media(min-width:701px) and (max-width:1000px){
+ #homepage .studio-flow #budget .home-prices{grid-template-columns:1fr}
+ #homepage .studio-flow #budget .home-prices article{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:32px;padding:30px}
+ #homepage .studio-flow #budget .home-prices h3{grid-column:1;grid-row:1}
+ #homepage .studio-flow #budget .home-prices article>p:not(.home-price){grid-column:1;grid-row:2;min-height:0;margin:0;max-width:400px}
+ #homepage .studio-flow #budget .home-price{grid-column:2;grid-row:1/3;margin:0;font-size:54px}
+ #homepage .studio-flow #budget .home-prices article>a{grid-column:1/-1;grid-row:3;margin-top:18px}
+}
+@media(max-width:1000px){#homepage .studio-flow .solutions-heading h2{font-size:clamp(46px,6.5vw,66px)}#homepage .studio-flow #budget,#homepage .studio-flow #people,#homepage .studio-flow #questions,#homepage .studio-flow #directions{border-radius:32px}}
+@media(max-width:700px){
+ #homepage .studio-flow h2{font-size:clamp(40px,10vw,60px);line-height:1.06}
+ #homepage .studio-flow .solutions-heading h2{font-size:clamp(40px,10.5vw,60px);margin:0}
+ #homepage .studio-flow .solutions-heading{margin-bottom:28px}
+ #homepage .studio-flow .solutions-intro{margin:0}
+ #homepage .studio-flow #budget,#homepage .studio-flow #people,#homepage .studio-flow #questions,#homepage .studio-flow #directions{border-radius:28px}
+ #homepage .studio-flow #budget .home-prices article{padding:26px}
+ #homepage .studio-flow #budget .home-price{font-size:clamp(44px,13vw,58px)}
+}
+
+#homepage .studio-flow .home-services{overflow-anchor:none}

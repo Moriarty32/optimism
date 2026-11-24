@@ -9,8 +9,7 @@
     document.body.classList.toggle('studio-body-in-view',entries[0].isIntersecting);
   }).observe(flow);
 
-  function expand(details, open) {
-    const start = details.getBoundingClientRect().height;
+  function expand(details, open, start = details.getBoundingClientRect().height) {
     const previous = animations.get(details);
     if (previous) {previous.animation.cancel();animations.delete(details);}
     if (reduced.matches || !details.animate) {details.open = open;return;}
@@ -34,12 +33,84 @@
     details.querySelector('summary').addEventListener('click',event=>{
       event.preventDefault();
       const open=!(animations.get(details)?.open ?? details.open);
-      if (open && details.matches('.studio-service')) {
-        flow.querySelectorAll('.studio-service[open]').forEach(other=>{if(other!==details)expand(other,false);});
-      }
-      expand(details,open);
+      const start=details.getBoundingClientRect().height;
+      if(details.matches('.studio-service')){manualServices.set(details,open);clearServiceStyle(details);}
+      expand(details,open,start);
     });
   });
+
+  // Match the reference's desktop scroll progression; touch and reduced motion keep native clicks.
+  const serviceMedia=matchMedia('(min-width: 768px)');
+  const serviceList=flow.querySelector('.home-services');
+  const serviceCards=[...flow.querySelectorAll('.studio-service')];
+  const manualServices=new Map();
+  const serviceSizes=new Map();
+  let serviceFrame=0,lastServiceWidth=0;
+  const autoServices=()=>serviceMedia.matches&&!reduced.matches;
+  const clearServiceStyle=card=>{
+    card.classList.remove('is-scroll-service');card.style.removeProperty('background-color');card.style.removeProperty('color');
+    card.style.removeProperty('--service-progress');card.style.removeProperty('--service-content-progress');delete card.dataset.serviceProgress;
+    const body=card.querySelector('.studio-service-body');body.style.removeProperty('height');body.style.removeProperty('padding-bottom');body.inert=false;
+  };
+  function measureServices(){
+    if(!autoServices())return;
+    serviceCards.forEach(card=>{
+      const body=card.querySelector('.studio-service-body');
+      const state={open:card.open,classes:card.className,style:card.getAttribute('style'),bodyStyle:body.getAttribute('style')};
+      card.classList.remove('is-scroll-service');card.open=true;body.style.height='auto';body.style.removeProperty('padding-bottom');
+      serviceSizes.set(card,{height:body.getBoundingClientRect().height,padding:parseFloat(getComputedStyle(body).paddingBottom)});
+      card.open=state.open;card.className=state.classes;
+      if(state.style===null)card.removeAttribute('style');else card.setAttribute('style',state.style);
+      if(state.bodyStyle===null)body.removeAttribute('style');else body.setAttribute('style',state.bodyStyle);
+    });
+    requestServices();
+  }
+  function renderServices(){
+    serviceFrame=0;
+    if(!autoServices()||document.hidden)return;
+    const listRect=serviceList.getBoundingClientRect();
+    if(listRect.top>innerHeight||listRect.bottom<0)return;
+    const anchor=serviceCards.find(card=>{const r=card.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight;});
+    const anchorTop=anchor?.getBoundingClientRect().top;
+    // Read each next header after its predecessor settles, avoiding competing height calculations.
+    serviceCards.forEach((card,i)=>{
+      if(manualServices.has(card))return;
+      const size=serviceSizes.get(card);if(!size)return;
+      const top=card.getBoundingClientRect().top;
+      let progress=i===0?1:Math.max(0,Math.min(1,(innerHeight*.86-top)/Math.min(240,innerHeight*.3)));
+      if(progress<.015)progress=0;if(progress>.985)progress=1;
+      if(Math.abs(Number(card.dataset.serviceProgress??-1)-progress)<.003)return;
+      card.classList.add('is-scroll-service');card.dataset.serviceProgress=progress.toFixed(4);card.open=progress>0;
+      const from=[255,255,255],to=[6,29,49];
+      card.style.backgroundColor=`rgb(${from.map((v,k)=>Math.round(v+(to[k]-v)*progress)).join(',')})`;
+      card.style.color=progress>.58?'#fff':'#092d40';
+      card.style.setProperty('--service-progress',progress);
+      card.style.setProperty('--service-content-progress',Math.max(0,Math.min(1,(progress-.65)/.3)));
+      const body=card.querySelector('.studio-service-body');body.style.height=(size.height*progress)+'px';body.style.paddingBottom=(size.padding*progress)+'px';body.inert=progress<.985;
+    });
+    // Preserve the visible card when a fast scroll reveals earlier content above it.
+    // Wheel/touch input remains native; this replaces the browser's excluded subtree anchoring.
+    if(anchor){
+      const delta=anchor.getBoundingClientRect().top-anchorTop;
+      if(Math.abs(delta)>1){scrollBy({top:delta,behavior:'instant'});requestServices();}
+    }
+  }
+  function requestServices(){if(!serviceFrame&&autoServices())serviceFrame=requestAnimationFrame(renderServices);}
+  serviceCards.forEach(card=>card.addEventListener('focusin',event=>{
+    if(event.target.closest('summary'))return;
+    manualServices.set(card,true);clearServiceStyle(card);card.open=true;
+  }));
+  new ResizeObserver(entries=>{
+    const width=entries[0].contentRect.width;
+    if(Math.abs(width-lastServiceWidth)>1){lastServiceWidth=width;measureServices();}
+  }).observe(serviceList);
+  const resetServiceMode=()=>{
+    serviceCards.forEach(clearServiceStyle);
+    if(autoServices())measureServices();
+  };
+  serviceMedia.addEventListener('change',resetServiceMode);reduced.addEventListener('change',resetServiceMode);
+  addEventListener('scroll',requestServices,{passive:true});addEventListener('resize',requestServices,{passive:true});
+  document.fonts.ready.then(measureServices);
 
   // Keep the click target fixed; only the small arrow follows the pointer inside it.
   flow.querySelectorAll('[data-magnetic],.studio-circle-link').forEach(link=>{
