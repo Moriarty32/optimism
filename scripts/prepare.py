@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+"""Build the refined homepage, preserving the original header and footer."""
+import re
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+raw=(ROOT/'source.html').read_text()
+# Tracking and remote CRM widgets are not part of the local static frontend.
+remote=('googletagmanager.com','go.optimism.ru','vk.com/js/api/openapi')
+def script(m):
+    return '' if any(host in m[0] for host in remote) else m[0]
+raw=re.sub(r'<script\b[^>]*>.*?</script>',script,raw,flags=re.S|re.I)
+raw=re.sub(r'<noscript\b[^>]*>.*?</noscript>','',raw,flags=re.S|re.I)
+raw=re.sub(r'<link\b[^>]*rel="(?:preconnect|dns-prefetch)"[^>]*>','',raw)
+# Links to other pages still lead to the original site. Local assets retain paths.
+def link(m):
+    tag=m[0]
+    def href(h):
+        value=h[2]
+        if value=='/':value='./index.html'
+        elif value.startswith('/') and not value.startswith('//'):value='https://optimism.ru'+value
+        return h[1]+value+h[3]
+    return re.sub(r'(\bhref=[\"\'])([^\"\']*)([\"\'])',href,tag)
+raw=re.sub(r'<a\b[^>]*>',link,raw,flags=re.I)
+raw=raw.replace('https://optimism.ru/local/','/local/')
+cookie=(ROOT/'local/templates/optimism/js/cookie-stroka.js').read_text()
+cookie=cookie.replace("; domain=' + domen + '; path=/; SameSite=Lax; Secure; max-age=", "; path=/; SameSite=Lax; max-age=")
+(ROOT/'local-cookie.js').write_text(cookie)
+raw=re.sub(r'/local/templates/optimism/js/cookie-stroka\.js(?:\?[^\"]*)?', '/local-cookie.js', raw)
+widget=(ROOT/'widget/original.html').read_text().replace('https://go.optimism.ru/upload/resize_cache/crm/d42/100_100_1/d4291bee86804ebec0d87b36cf2b1774.png', '/widget/avatar.png')
+raw=raw.replace('</body>', '<template id="local-widget-template">'+widget+'</template><script defer src="/widget/local-widget.js"></script></body>')
+raw=raw.replace('</body>', '<script defer src="/local-preview.js"></script></body>')
+main=(ROOT/'partials/homepage.html').read_text()
+raw=re.sub(r'<main\b[^>]*>.*?</main>',lambda _: main,raw,count=1,flags=re.S|re.I)
+# This published preview must not compete with the original domain in search.
+raw=re.sub(r'<meta\b[^>]*name=["\']robots["\'][^>]*>','',raw,flags=re.I)
+raw=raw.replace('</head>', '<meta name="robots" content="noindex, nofollow"><link rel="preload" as="image" href="/assets/hero-desktop.webp" media="(min-width:768px)" fetchpriority="high"><link rel="preload" as="image" href="/assets/hero-mobile.webp" media="(max-width:767px)" fetchpriority="high"><link rel="stylesheet" href="/assets/homepage.css"></head>')
+raw=raw.replace('</body>', '<script defer src="/assets/homepage.js"></script></body>')
+(ROOT/'index.html').write_text(raw)
+print('Prepared index.html:',len(raw),'characters')

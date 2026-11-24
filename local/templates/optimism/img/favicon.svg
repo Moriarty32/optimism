@@ -1,0 +1,16 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+        fill: url(#Безымянный_градиент_6);
+      }
+    </style>
+    <linearGradient id="Безымянный_градиент_6" data-name="Безымянный градиент 6" x1="60" x2="60" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6bbdfc"/>
+      <stop offset="1" stop-color="#3c59a5"/>
+    </linearGradient>
+  </defs>
+  <title>favicon_2</title>
+  <rect class="cls-1" width="120" height="120"/>
+</svg>

@@ -1,0 +1,8 @@
+dist/
+output/
+.playwright*/
+__pycache__/
+*.pyc
+.DS_Store
+# Original videos are unused by the revised homepage.
+local/templates/optimism/video/

@@ -1,0 +1,2096 @@
+{
+  "source": "https://optimism.ru/",
+  "captured": "2026-11-24",
+  "assets": [
+    {
+      "url": "https://optimism.ru/bitrix/cache/css/s1/optimism/page_324295ee1fc4c8cec9770f7b6197fffe/page_324295ee1fc4c8cec9770f7b6197fffe_v1.css?179218359848394",
+      "file": "bitrix/cache/css/s1/optimism/page_324295ee1fc4c8cec9770f7b6197fffe/page_324295ee1fc4c8cec9770f7b6197fffe_v1.css",
+      "bytes": 48394,
+      "sha256": "cf7b7e064b2198823166980b05dbca69ae8df7516792a425bf8e9da288e2b0b7"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/cache/css/s1/optimism/template_67ccbbe7479e746b7ee7e70295ec445f/template_67ccbbe7479e746b7ee7e70295ec445f_v1.css?1792183598851820",
+      "file": "bitrix/cache/css/s1/optimism/template_67ccbbe7479e746b7ee7e70295ec445f/template_67ccbbe7479e746b7ee7e70295ec445f_v1.css",
+      "bytes": 851820,
+      "sha256": "41e69b5eebe01c515d8ebac0a49b332616c61496f62730eed827fc2a489616d9"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/cache/js/s1/optimism/page_15a32ee8e87fc141c4eca0155df13b26/page_15a32ee8e87fc141c4eca0155df13b26_v1.js?179218359810479",
+      "file": "bitrix/cache/js/s1/optimism/page_15a32ee8e87fc141c4eca0155df13b26/page_15a32ee8e87fc141c4eca0155df13b26_v1.js",
+      "bytes": 10479,
+      "sha256": "8e78884d675f57b526843759096f0bede6c39c1c333801b41e38779546a9569d"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/cache/js/s1/optimism/template_d1dfcdbcfad8522957cb34e555777d16/template_d1dfcdbcfad8522957cb34e555777d16_v1.js?1792183598168212",
+      "file": "bitrix/cache/js/s1/optimism/template_d1dfcdbcfad8522957cb34e555777d16/template_d1dfcdbcfad8522957cb34e555777d16_v1.js",
+      "bytes": 168212,
+      "sha256": "1b70e807eb0bded3763bcb285216422d5cab95d6b4dc9c61f52650d02f0ee0a0"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/main/core/core.js",
+      "file": "bitrix/js/main/core/core.js",
+      "bytes": 543783,
+      "sha256": "6d3f001505a870cb624ba60d70fa9e536580b28c6e1f2d04024d7d7b82f45b62"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/main/core/core.min.js?1792183596245644",
+      "file": "bitrix/js/main/core/core.min.js",
+      "bytes": 245644,
+      "sha256": "7add03bbcfd67dbe2052f7f5221fd91ee757a71484ba134e4c4a3511ec3ea7a6"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/main/core/core_ajax.js",
+      "file": "bitrix/js/main/core/core_ajax.js",
+      "bytes": 49843,
+      "sha256": "d8eb62671773b169e0034274565607b7a133df730491e9a2914d059159046c60"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/main/core/core_frame_cache.min.js?179218359610246",
+      "file": "bitrix/js/main/core/core_frame_cache.min.js",
+      "bytes": 10246,
+      "sha256": "5fcb59cd2022fd5b33b94231aff0d56701d6075a42f4908a9be53b673c259204"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/main/core/core_promise.js",
+      "file": "bitrix/js/main/core/core_promise.js",
+      "bytes": 5221,
+      "sha256": "e98f1ce6b5a4b9f1dff0ffc858e193ec0a079baff298b6525df85610c674de74"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/main/lazyload/dist/lazyload.bundle.js",
+      "file": "bitrix/js/main/lazyload/dist/lazyload.bundle.js",
+      "bytes": 5908,
+      "sha256": "08859c2232d694c8380c72e14538ad09bf59da3b01f7e4a35b721254d3b44eb9"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/main/loadext/extension.js",
+      "file": "bitrix/js/main/loadext/extension.js",
+      "bytes": 2895,
+      "sha256": "00190ea16920ed6e37bfadcc9c2fde7eee590edc58a073a4efa148f8522521b5"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/main/loadext/loadext.js",
+      "file": "bitrix/js/main/loadext/loadext.js",
+      "bytes": 2917,
+      "sha256": "95530df4c1f47ae8ee0e00cdb141a38341e26fed9c98a8e3fef04089b39b0711"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/main/parambag/dist/parambag.bundle.js",
+      "file": "bitrix/js/main/parambag/dist/parambag.bundle.js",
+      "bytes": 1292,
+      "sha256": "75237055914604d7ab09360eae90bb5a1d017a62e3fd71c0ccfa20fcee3ff50a"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js",
+      "file": "bitrix/js/main/polyfill/core/dist/polyfill.bundle.js",
+      "bytes": 189157,
+      "sha256": "13a1fd54707a07c4ad44dfcf75f02ce6c7314d71ccd0635423011c6d28683797"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/main/polyfill/fill/main.polyfill.fill.js",
+      "file": "bitrix/js/main/polyfill/fill/main.polyfill.fill.js",
+      "bytes": 980,
+      "sha256": "8380b05f87db3dbe31e4b921fb0b7eab118a79fa3cb59852dbb20bac065e8d8d"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/main/polyfill/find/js/find.js",
+      "file": "bitrix/js/main/polyfill/find/js/find.js",
+      "bytes": 658,
+      "sha256": "cdfe1548e0b85a31626ff5d22f8a8f794d451c044b8cd2af5f8350c406474870"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/main/polyfill/includes/js/includes.js",
+      "file": "bitrix/js/main/polyfill/includes/js/includes.js",
+      "bytes": 395,
+      "sha256": "151ded58cafcbc9effb19984aa3704a7b381e289970ec3167bd1480293a1cd88"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js",
+      "file": "bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js",
+      "bytes": 22411,
+      "sha256": "3f3258832bbd5df4907afe0bfe03f0393d4ad0208847b3559a78aaac47bc0bfa"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/main/polyfill/matches/js/matches.js",
+      "file": "bitrix/js/main/polyfill/matches/js/matches.js",
+      "bytes": 448,
+      "sha256": "30ca5dcb1ff8aa6a0e3c7df8bc844444df0d8fff4a6876fee4de48e9161d2816"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/main/polyfill/promise/js/promise.js",
+      "file": "bitrix/js/main/polyfill/promise/js/promise.js",
+      "bytes": 8241,
+      "sha256": "138c90dadb564228ccf8faa8c8ceaba85780d6f8f8bb3b1a794ca7429eac71e5"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/ui/dexie/dist/dexie.bundle.min.js?1792183491102530",
+      "file": "bitrix/js/ui/dexie/dist/dexie.bundle.min.js",
+      "bytes": 102530,
+      "sha256": "5ea6c2942dacfe18f24dec0742b2c8307d48c4e690bde400e5c2cccb333af574"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/ui/polyfill/closest/js/closest.js",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://optimism.ru/fonts/DINPro-Cond/DINPro-Cond.woff",
+      "file": "fonts/DINPro-Cond/DINPro-Cond.woff",
+      "bytes": 46288,
+      "sha256": "202837267b5c9b5d6d50a3902977589e8947760a2bdc432f033014bc3b10d032"
+    },
+    {
+      "url": "https://optimism.ru/fonts/DINPro-CondBlack/DINPro-CondBlack.woff",
+      "file": "fonts/DINPro-CondBlack/DINPro-CondBlack.woff",
+      "bytes": 84592,
+      "sha256": "3c8fc94457ce4ff583e19c2e7b676c1e2c0391e316d9d387618d1ac6e7a0b2b3"
+    },
+    {
+      "url": "https://optimism.ru/fonts/DINPro-CondBold/DINPro-CondBold.woff",
+      "file": "fonts/DINPro-CondBold/DINPro-CondBold.woff",
+      "bytes": 91680,
+      "sha256": "d31216a9d77422fb2e37c3c537cf1112760a796a88f8d8dc53dedd3ff2da8f28"
+    },
+    {
+      "url": "https://optimism.ru/fonts/DINPro-CondMedium/DINPro-CondMedium.woff",
+      "file": "fonts/DINPro-CondMedium/DINPro-CondMedium.woff",
+      "bytes": 47060,
+      "sha256": "30e29330e3b204bf6d377b151b3cbd76998debd034e34128c8d992792db31a3a"
+    },
+    {
+      "url": "https://optimism.ru/fonts/JoannaSansNova/JoannaSansNova.woff",
+      "file": "fonts/JoannaSansNova/JoannaSansNova.woff",
+      "bytes": 70004,
+      "sha256": "7d783b2a9d659a224f99ac83cbc24eada04acb970f900f478d7838c292348ee8"
+    },
+    {
+      "url": "https://optimism.ru/fonts/JoannaSansNovaBold/JoannaSansNovaBold.woff",
+      "file": "fonts/JoannaSansNovaBold/JoannaSansNovaBold.woff",
+      "bytes": 71236,
+      "sha256": "3b86d0987417f0fd3c44f88933048934c732cfa1c6778ff720be06bcec1773db"
+    },
+    {
+      "url": "https://optimism.ru/fonts/JoannaSansNovaItalic/JoannaSansNovaItalic.woff",
+      "file": "fonts/JoannaSansNovaItalic/JoannaSansNovaItalic.woff",
+      "bytes": 74220,
+      "sha256": "81d38f3ff2865eeac3aa17df715ea32b0bca95a5c4adcc85e100e5dbdd499ddb"
+    },
+    {
+      "url": "https://optimism.ru/fonts/JoannaSansNovaMedium/JoannaSansNovaMedium.woff",
+      "file": "fonts/JoannaSansNovaMedium/JoannaSansNovaMedium.woff",
+      "bytes": 71452,
+      "sha256": "7e8cd582094a7be4ddb6309ac62f62e53d70a2ebfa25f264ee9c08b52358eb67"
+    },
+    {
+      "url": "https://optimism.ru/fonts/OptimismLogoFont.woff",
+      "file": "fonts/OptimismLogoFont.woff",
+      "bytes": 2500,
+      "sha256": "3841ca3cb36a54e0f0cd41c5c452038608c4144633b6f5f85231455e978f251b"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/css/crm-forms.css",
+      "file": "local/templates/optimism/css/crm-forms.css",
+      "bytes": 8887,
+      "sha256": "8d6ea9710efb803401a667ac93d98663fb6700c5dad74791449fca675ac8f8de"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/actions/actions-bg.jpg",
+      "file": "local/templates/optimism/img/actions/actions-bg.jpg",
+      "bytes": 43409,
+      "sha256": "a92621bc5e1b738b2cdca4706fe870322e4b6174b4faf70d1befcc4af24bd50b"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/bg/INTOUCH.jpg",
+      "file": "local/templates/optimism/img/cases/bg/INTOUCH.jpg",
+      "bytes": 133159,
+      "sha256": "2e2fe520a46af7d309949d20ee50d0ad812ccf8b2d3d8ddc4730aff424932a8d"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/bg/Komus_background.jpg",
+      "file": "local/templates/optimism/img/cases/bg/Komus_background.jpg",
+      "bytes": 205202,
+      "sha256": "17b21176a15b671b62f04280a39db7e148e339ae27417eed693942fd4c747024"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/bg/PaOoZlH_min.jpg",
+      "file": "local/templates/optimism/img/cases/bg/PaOoZlH_min.jpg",
+      "bytes": 29790,
+      "sha256": "5aeb9e3ef15a491b9b976de229c061a52d0df19e155146f2ab75db9989b3546d"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/bg/VTB_bg.jpg",
+      "file": "local/templates/optimism/img/cases/bg/VTB_bg.jpg",
+      "bytes": 159973,
+      "sha256": "3774619d51ce79d4a1113455360e0e931bfc7b1d9b5bec54fa490900ca3dcf43"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/bg/angliyskiy_kvartal.jpg",
+      "file": "local/templates/optimism/img/cases/bg/angliyskiy_kvartal.jpg",
+      "bytes": 127480,
+      "sha256": "ecc3fb5e08f11bdb7f851ddfadc8dc497258e5e6b35f60892079df7c5404ccd8"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/bg/compday_bg.jpg",
+      "file": "local/templates/optimism/img/cases/bg/compday_bg.jpg",
+      "bytes": 241600,
+      "sha256": "e03a588193ccf6669c99fc28d82eb0799cd9f793e27805a1da182d5b0bc9a20d"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/bg/dama.jpg",
+      "file": "local/templates/optimism/img/cases/bg/dama.jpg",
+      "bytes": 143661,
+      "sha256": "ed705614676817f2cf297ea1813fab7bd512a9b40ce8e84ec75001185d9c5b6d"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/bg/detishop_bg.jpg",
+      "file": "local/templates/optimism/img/cases/bg/detishop_bg.jpg",
+      "bytes": 253008,
+      "sha256": "86d8380dd8cf0d4a6a44a49cf5a8fcedb84df1ad55fafba390aa24253763856b"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/bg/euroset_vs_925x544.jpg",
+      "file": "local/templates/optimism/img/cases/bg/euroset_vs_925x544.jpg",
+      "bytes": 95704,
+      "sha256": "b0fb145bee98fd840e560d0ae5ec603f0f2e0971ebcd4441044c91450ebadc1f"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/bg/exist_bg.jpg",
+      "file": "local/templates/optimism/img/cases/bg/exist_bg.jpg",
+      "bytes": 221445,
+      "sha256": "be457e7f532230743177041639e14b960bc390dbf611366a3fa149cc837cdb21"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/bg/kfc.jpg",
+      "file": "local/templates/optimism/img/cases/bg/kfc.jpg",
+      "bytes": 121356,
+      "sha256": "0684f9adfcedff71936c0ac9b46a50fbf4f4ef1f34766031436eaa1a30ef63dd"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/bg/krokus.jpg",
+      "file": "local/templates/optimism/img/cases/bg/krokus.jpg",
+      "bytes": 119777,
+      "sha256": "0da8526f937caf8e7614d07ded123089aa23a1b5450d92dae7d55b2bda1117db"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/bg/meucchi_bg.jpg",
+      "file": "local/templates/optimism/img/cases/bg/meucchi_bg.jpg",
+      "bytes": 212023,
+      "sha256": "c357899fbb1f6f933c6df86685b0ab402e78d3ef7cb09e69d85bbeebd55593ed"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/bg/minoleksin_bg.jpg",
+      "file": "local/templates/optimism/img/cases/bg/minoleksin_bg.jpg",
+      "bytes": 228537,
+      "sha256": "c8387eef294421935c34bbb138f8e2758c4339ca2dfbce119109937bdfcc5148"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/bg/novikov.jpg",
+      "file": "local/templates/optimism/img/cases/bg/novikov.jpg",
+      "bytes": 72670,
+      "sha256": "3d29951f6130e3aa8215c16e6c636c290ba2016cd9fa04db94af2b4fea737664"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/bg/ortik_bg.jpg",
+      "file": "local/templates/optimism/img/cases/bg/ortik_bg.jpg",
+      "bytes": 174454,
+      "sha256": "e4175be295237d542bd0c67657dab65e60dd251ebb213ef91a986beeded05c8a"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/bg/vuychs.jpg",
+      "file": "local/templates/optimism/img/cases/bg/vuychs.jpg",
+      "bytes": 67638,
+      "sha256": "55d7c158f4f5052a2870f74610a30b907214e1c613b2afb15426afa2f82281c5"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/logo/Bez_imeni_2.png",
+      "file": "local/templates/optimism/img/cases/logo/Bez_imeni_2.png",
+      "bytes": 19864,
+      "sha256": "9865a2466d8836b7c2f14faa27130709be9dc75c282df28cb2a403d1012467ae"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/logo/INTOUCH.png",
+      "file": "local/templates/optimism/img/cases/logo/INTOUCH.png",
+      "bytes": 17245,
+      "sha256": "21da27e951bb3facb49621ed08d7ec9ba443406c8f685c660a52b6980f6b5bfd"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/logo/Komus_logo.png",
+      "file": "local/templates/optimism/img/cases/logo/Komus_logo.png",
+      "bytes": 34765,
+      "sha256": "20bcf09f8b971084f3b498fc923889d9d50387395937f32eba0e9b8c20a6ca7f"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/logo/compday.png",
+      "file": "local/templates/optimism/img/cases/logo/compday.png",
+      "bytes": 9049,
+      "sha256": "5e6910aa2154e68f088ed8c567754d22282228b5a73701fdf11c238789b7c481"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/logo/crocus_1_.png",
+      "file": "local/templates/optimism/img/cases/logo/crocus_1_.png",
+      "bytes": 18319,
+      "sha256": "c647d6a30c238ec430bf61d96fbe94708625c5cbfefdbff9028c83b0e547eaf7"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/logo/detishop.png",
+      "file": "local/templates/optimism/img/cases/logo/detishop.png",
+      "bytes": 9482,
+      "sha256": "5a6963efc30aecd071a92f06d991ccde59a9483327cd28dd9528c2445f117704"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/logo/evroset-logo.png",
+      "file": "local/templates/optimism/img/cases/logo/evroset-logo.png",
+      "bytes": 10032,
+      "sha256": "5e4b228437eff5ffe89b4a657419a0b3ffc01f1aad1483ce3eec87ae501a9d7d"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/logo/exist_logo_1_.png",
+      "file": "local/templates/optimism/img/cases/logo/exist_logo_1_.png",
+      "bytes": 9174,
+      "sha256": "49a2364e9e38b5fbcba84a33a3a29a08e9084235e5d6bb2bb37247504021f2a8"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/logo/fyfs.png",
+      "file": "local/templates/optimism/img/cases/logo/fyfs.png",
+      "bytes": 37123,
+      "sha256": "e3a4549e40968dd86c6d0d07b3e5e55248bb57b14516a03d47d6906a3a8b6f78"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/logo/icon_olimp2014.png",
+      "file": "local/templates/optimism/img/cases/logo/icon_olimp2014.png",
+      "bytes": 8223,
+      "sha256": "282d9a91367ca51e4b298d735f7ef9cfbf4347cc993d33653ee3d52687ae1988"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/logo/icon_vtbrussia.png",
+      "file": "local/templates/optimism/img/cases/logo/icon_vtbrussia.png",
+      "bytes": 5463,
+      "sha256": "ecd37f78f6a046e6d92b9c50a8a2559fdf2f0a2aa22a23247ba8cc3e72055a8c"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/logo/kfc_1_.png",
+      "file": "local/templates/optimism/img/cases/logo/kfc_1_.png",
+      "bytes": 27354,
+      "sha256": "07f89f7fa201fb9d01623e75785fabdc69e113864180ed834cd1ee4815ec7528"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/logo/kvartal_1_.png",
+      "file": "local/templates/optimism/img/cases/logo/kvartal_1_.png",
+      "bytes": 15531,
+      "sha256": "13fc6bea149fa9b387c84882fc92696d53c5763148d98fd7546ad2647457a055"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/logo/meucchi_logo_1_.png",
+      "file": "local/templates/optimism/img/cases/logo/meucchi_logo_1_.png",
+      "bytes": 7222,
+      "sha256": "6d60626ba926df51df65e3aa4e95ea1780fce392469e92faf8ffa7a6831e9635"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/logo/minoleksin.png",
+      "file": "local/templates/optimism/img/cases/logo/minoleksin.png",
+      "bytes": 18440,
+      "sha256": "456449f22b19580cbbb6e02b4b0954a4d8f7ea8c59720295bab100cd504f3229"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/logo/novikov_1_.png",
+      "file": "local/templates/optimism/img/cases/logo/novikov_1_.png",
+      "bytes": 5923,
+      "sha256": "afda144655da216c4842864582b8962907b0901dc2d5812e8aa084777cd1c718"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/cases/logo/ortik.png",
+      "file": "local/templates/optimism/img/cases/logo/ortik.png",
+      "bytes": 11534,
+      "sha256": "126e35522c2e050957a0ce1297802225bc640666bd6ee614cbcf0194dccd0f59"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/certificates/certificates-bg.jpg",
+      "file": "local/templates/optimism/img/certificates/certificates-bg.jpg",
+      "bytes": 45776,
+      "sha256": "fbb3ebeee8ee60f0376cf53efbb4d41525504d4e6d51ff8c1876acf2fe8187bc"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/certificates/certificates-image0.jpg",
+      "file": "local/templates/optimism/img/certificates/certificates-image0.jpg",
+      "bytes": 26426,
+      "sha256": "6a977cb1cb60ec67e3bde1b4e592afc1da243bc6a5fab0ced58ed4c4cdabfae0"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/certificates/certificates-image1.jpg",
+      "file": "local/templates/optimism/img/certificates/certificates-image1.jpg",
+      "bytes": 28044,
+      "sha256": "34de37015a62da5ca06ac4777972210eecc27a18f26951913fe4facc92c40c96"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/certificates/certificates-image2.jpg",
+      "file": "local/templates/optimism/img/certificates/certificates-image2.jpg",
+      "bytes": 13114,
+      "sha256": "49c4b244fa3511bb17ebb6ddbec7d4189ab60af33ecbe83c8c42f5e5565587d8"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/certificates/certificates-image3.jpg",
+      "file": "local/templates/optimism/img/certificates/certificates-image3.jpg",
+      "bytes": 14386,
+      "sha256": "2cc600f964984556e56b34e62595f0e21c13efef93d2deb84f1fa23c46bfda67"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/certificates/certificates-image4.jpg",
+      "file": "local/templates/optimism/img/certificates/certificates-image4.jpg",
+      "bytes": 33339,
+      "sha256": "c13765c3aa1575ae38ff43089d86c7f38a25b44f3de904f07b7242fa3870b706"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/certificates/certificates-marker.png",
+      "file": "local/templates/optimism/img/certificates/certificates-marker.png",
+      "bytes": 645,
+      "sha256": "1a7aeb241424e74517b22868b6b37f98cc0710fe2ff5df0f997ebc69b7a3b83a"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/EF.png",
+      "file": "local/templates/optimism/img/clients-logo/EF.png",
+      "bytes": 10172,
+      "sha256": "30a60a8483aa4a5d7e54b704ce4a3cb50ea4ec47efc39fc8e83cf1a2a9148598"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/avia.png",
+      "file": "local/templates/optimism/img/clients-logo/avia.png",
+      "bytes": 9513,
+      "sha256": "544da8dd9528350e361c462eaff6a8e2045fe3ea69883084de8cc6713474d7e7"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/baltika.png",
+      "file": "local/templates/optimism/img/clients-logo/baltika.png",
+      "bytes": 39446,
+      "sha256": "4c0efbfc1ffb251c13d06f29c9537e3daf46d5effc8f7ce837dc98fab6d6f55f"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/bank_sankt.png",
+      "file": "local/templates/optimism/img/clients-logo/bank_sankt.png",
+      "bytes": 7905,
+      "sha256": "31cf44570b6dd5058bb6fca8c4acb744a21e0e576e6cc5fd6c439c98e83e7f9a"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/benq.png",
+      "file": "local/templates/optimism/img/clients-logo/benq.png",
+      "bytes": 20588,
+      "sha256": "589912519495ec424c78907e4df310fb0e67af7d22fc98a2bbc850cd5a30c32f"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/biglion.png",
+      "file": "local/templates/optimism/img/clients-logo/biglion.png",
+      "bytes": 7331,
+      "sha256": "a7879366271906dcaaaac9318812d406d498bd27d92626d691d73fc1c79ab477"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/billayn.png",
+      "file": "local/templates/optimism/img/clients-logo/billayn.png",
+      "bytes": 9749,
+      "sha256": "7e8f940e5cd873535ce66b5999e57a1f9c8a390316531fb1411cd59b3404df52"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/body.png",
+      "file": "local/templates/optimism/img/clients-logo/body.png",
+      "bytes": 46835,
+      "sha256": "084d261205e0de0a951b7848b4d8ce240b0395ad537a2ca472b30f9b9b821566"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/city.png",
+      "file": "local/templates/optimism/img/clients-logo/city.png",
+      "bytes": 6989,
+      "sha256": "53571c75638fab346f6ccf0a9016457422ed174ceb2d26f3b177ced3b45bd034"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/comdi.png",
+      "file": "local/templates/optimism/img/clients-logo/comdi.png",
+      "bytes": 2915,
+      "sha256": "493eabb22e2cfaddc0422d00d8b3ff92ab780c174ee63e6761cd2d8763e92dac"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/crocus.png",
+      "file": "local/templates/optimism/img/clients-logo/crocus.png",
+      "bytes": 36087,
+      "sha256": "4b4f0b0b4cb86bbd247518a86c5a21117213a88ac26ea88075666caf85b937a1"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/dom.png",
+      "file": "local/templates/optimism/img/clients-logo/dom.png",
+      "bytes": 5137,
+      "sha256": "94bb2aaf794c5adfda532325bb895e2962a84f20dd5da7868d0c8f99f216673e"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/eshko.png",
+      "file": "local/templates/optimism/img/clients-logo/eshko.png",
+      "bytes": 14993,
+      "sha256": "9fca5ce00923f7e3f8252f7c7059cdbf0c26573f5db5e0978b842e9fdff667c9"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/evrosetj.png",
+      "file": "local/templates/optimism/img/clients-logo/evrosetj.png",
+      "bytes": 30093,
+      "sha256": "d448fe509f705a7f26f5e86ad252797ef507a2f9daf6577629c82d431a5e4c35"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/gettaxi.png",
+      "file": "local/templates/optimism/img/clients-logo/gettaxi.png",
+      "bytes": 18576,
+      "sha256": "6978df8e446392d44bcd348ab5da0b858fa184f140a9757af1896b85d433017c"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/glen.png",
+      "file": "local/templates/optimism/img/clients-logo/glen.png",
+      "bytes": 24473,
+      "sha256": "b6543350dd5fc1b9a705f55f96800f8283eff9f9b452f4d69acf040bf2369db2"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/herba.png",
+      "file": "local/templates/optimism/img/clients-logo/herba.png",
+      "bytes": 12935,
+      "sha256": "32011d581613065018e941ea459251768c8531fcfaaed5afc40c439ce6df260f"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/hh.png",
+      "file": "local/templates/optimism/img/clients-logo/hh.png",
+      "bytes": 6122,
+      "sha256": "412dfa708941fea8352ec0928bca60b2b14b728ff978fcf5c0fe01b8608a4cfd"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/intouch.png",
+      "file": "local/templates/optimism/img/clients-logo/intouch.png",
+      "bytes": 2233,
+      "sha256": "1091e96292b305da37753393183abf4bef2fa5892ccade6706aa05e4a6e136f6"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/just.png",
+      "file": "local/templates/optimism/img/clients-logo/just.png",
+      "bytes": 31317,
+      "sha256": "10a7ca8cd5b28913a5afa0226f76932ae3fc9bb080c9873e37003ee6c224f0ad"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/kfc.png",
+      "file": "local/templates/optimism/img/clients-logo/kfc.png",
+      "bytes": 16244,
+      "sha256": "b025c56f89843682024c68833298f42b86927cbb62048f2443f627f9df8c96ae"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/koroleva.png",
+      "file": "local/templates/optimism/img/clients-logo/koroleva.png",
+      "bytes": 22238,
+      "sha256": "01d090e568436c90c8715ca67f28bd6b2a1112b96bcc99e372cdc7a0e1eefa4e"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/kuncevo.png",
+      "file": "local/templates/optimism/img/clients-logo/kuncevo.png",
+      "bytes": 22147,
+      "sha256": "74474d52be7986d37b245178a3d0e81e1bc53c065e2b1bac5ded43f379021019"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/lego.png",
+      "file": "local/templates/optimism/img/clients-logo/lego.png",
+      "bytes": 3218,
+      "sha256": "9f0eab1a6fed8b51ef7c9a3d2e924d65196aac14ca51b314ffe0b38caca76d7b"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/longines.png",
+      "file": "local/templates/optimism/img/clients-logo/longines.png",
+      "bytes": 9478,
+      "sha256": "3743c7df5cba0bb1dc27554446e8810a496a4a92d0e32ee1bca638bb1d956ef5"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/makdak.png",
+      "file": "local/templates/optimism/img/clients-logo/makdak.png",
+      "bytes": 6061,
+      "sha256": "ef5282a80001e3faa006ceb0521dbaa540daaa9caa25e226d5cbc224559efa9a"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/master.png",
+      "file": "local/templates/optimism/img/clients-logo/master.png",
+      "bytes": 8123,
+      "sha256": "b5cdcb0547f2c8577491bb4c42edb600a686f1fb09d74a5d81bdfcb395d8a838"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/megafon.png",
+      "file": "local/templates/optimism/img/clients-logo/megafon.png",
+      "bytes": 18126,
+      "sha256": "e67a43734359a32eb7ea5e0c8806c0cbb3c6b57936832b14aa289ab3b7cd5831"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/meucci.png",
+      "file": "local/templates/optimism/img/clients-logo/meucci.png",
+      "bytes": 6649,
+      "sha256": "f4abd6b1d05997c8ef6ed517a6eb4d5d755b23aa18114578d25a68b521f0f419"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/mtdiamarkt.png",
+      "file": "local/templates/optimism/img/clients-logo/mtdiamarkt.png",
+      "bytes": 9932,
+      "sha256": "ccc76741ca56ee1f042c07d7d40687661b478a058c3a7071aea66a5d5dc9ab8c"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/mts.png",
+      "file": "local/templates/optimism/img/clients-logo/mts.png",
+      "bytes": 4628,
+      "sha256": "c5154c35a3825d097ab0f2661ea56f8f7d00565e23feb49922a4fc01e86b9c63"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/mvideo.png",
+      "file": "local/templates/optimism/img/clients-logo/mvideo.png",
+      "bytes": 14166,
+      "sha256": "bb589b8e77b1a4aa095092ab8faec2e945b90408a2a9e94b465eb17e1d22eeb9"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/nespresso.png",
+      "file": "local/templates/optimism/img/clients-logo/nespresso.png",
+      "bytes": 3705,
+      "sha256": "33b232aaac8df4eebeb52903742a4eb0f9ff03616c0c861bf3f9760040e6a9bd"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/novikov.png",
+      "file": "local/templates/optimism/img/clients-logo/novikov.png",
+      "bytes": 5167,
+      "sha256": "89d4ecda778d94440553065abda69bf1efb65c8756e9aea0a0f16fa710415e20"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/ostin.png",
+      "file": "local/templates/optimism/img/clients-logo/ostin.png",
+      "bytes": 4675,
+      "sha256": "f088a549f7dfffb9daa58725e29da807daf94e727c9450f86620339b687e7b0c"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/ozon.png",
+      "file": "local/templates/optimism/img/clients-logo/ozon.png",
+      "bytes": 27669,
+      "sha256": "047329e0e1de55f9b9882aed65cae6ced3fa2cc7dfba94744e8f0a5677c7efee"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/pepsi.png",
+      "file": "local/templates/optimism/img/clients-logo/pepsi.png",
+      "bytes": 7989,
+      "sha256": "656dd5c38e64d2aab0a7af9a7dc4388a21b8485327065beb0ffc090dce685645"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/promsvyazj.png",
+      "file": "local/templates/optimism/img/clients-logo/promsvyazj.png",
+      "bytes": 7347,
+      "sha256": "5364e12e103179e151ddafaf53cc027281a65fce76d1c43963e33169505b557b"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/qwetry.png",
+      "file": "local/templates/optimism/img/clients-logo/qwetry.png",
+      "bytes": 13189,
+      "sha256": "81a2b27bc8bb363e84c3510be3469def56fb685e247d62e326426b4f2201eba4"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/reno.png",
+      "file": "local/templates/optimism/img/clients-logo/reno.png",
+      "bytes": 16400,
+      "sha256": "accd2047f06a0b179291150eb1c378a2ae3a8d0c52c841dbb1be75088b780e76"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/restore.png",
+      "file": "local/templates/optimism/img/clients-logo/restore.png",
+      "bytes": 6753,
+      "sha256": "090d7a68c642602aebe24274db7d9060ed96a9d6062e68363216ccb28cc836fa"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/rossiya.png",
+      "file": "local/templates/optimism/img/clients-logo/rossiya.png",
+      "bytes": 17464,
+      "sha256": "ca698f1f746988c5a79c8628ba32a989642ac6480f73571d0de93f6110888258"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/samsung.png",
+      "file": "local/templates/optimism/img/clients-logo/samsung.png",
+      "bytes": 7749,
+      "sha256": "b88b1699af668e2444e35b1ab225336fdbd816f929319bcfb3d5c1ea28cc79d6"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/sber.png",
+      "file": "local/templates/optimism/img/clients-logo/sber.png",
+      "bytes": 16836,
+      "sha256": "134a833035cc5387b956add89fbad294a3c02e6cbb161163ad47f169137a381e"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/sochi.png",
+      "file": "local/templates/optimism/img/clients-logo/sochi.png",
+      "bytes": 8072,
+      "sha256": "b24e7f291d4635228ca99f0994b14578b43e9e430f24d0e2f24ccf74e3fd55d3"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/sony.png",
+      "file": "local/templates/optimism/img/clients-logo/sony.png",
+      "bytes": 29415,
+      "sha256": "db9c091d82a0fec86b6bf6792f3c37113f67140b0e6cc00992cd127f9e028e3f"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/sovkom.png",
+      "file": "local/templates/optimism/img/clients-logo/sovkom.png",
+      "bytes": 16331,
+      "sha256": "b81fcd86298ad2061665896a5ebcaeb0e0c8352bcd2cbd5d61fa062fb1ddeddc"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/starbucks.png",
+      "file": "local/templates/optimism/img/clients-logo/starbucks.png",
+      "bytes": 10134,
+      "sha256": "0d540f1d83f9c86183108f36a67486c6cbc70eafa61848141fff8e99b1213795"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/stolpit.png",
+      "file": "local/templates/optimism/img/clients-logo/stolpit.png",
+      "bytes": 26851,
+      "sha256": "ae4af53b725a1524e776b79b0c08a510b0c6e9729e0d3b39c603ba2cf481702b"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/subaru.png",
+      "file": "local/templates/optimism/img/clients-logo/subaru.png",
+      "bytes": 24714,
+      "sha256": "b192cc28e4c958bfeb79e3d18c6b9b09161d15b09fe7671daeeac80971357bb3"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/svyaznoy.png",
+      "file": "local/templates/optimism/img/clients-logo/svyaznoy.png",
+      "bytes": 5045,
+      "sha256": "ae1b703aaae3c492b03d21d59aa9cba86385ba3e4dcd00771c49ca53ad11c15b"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/tehno.png",
+      "file": "local/templates/optimism/img/clients-logo/tehno.png",
+      "bytes": 27750,
+      "sha256": "676a9dfc275d1d5654e62dd7710c74cc0fb64a6d2e24a4c70b603dcd15ed67ff"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/uni.png",
+      "file": "local/templates/optimism/img/clients-logo/uni.png",
+      "bytes": 28613,
+      "sha256": "812ae5be3a38433ab829c699ea7b822ff96db38115bfc98009d78cbe77d144a3"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/universal.png",
+      "file": "local/templates/optimism/img/clients-logo/universal.png",
+      "bytes": 9007,
+      "sha256": "24bc5d3881498c857b10b54c97288041ebac21d234270d48507bafc2ebd42064"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/valio.png",
+      "file": "local/templates/optimism/img/clients-logo/valio.png",
+      "bytes": 28685,
+      "sha256": "aac5f17ff0ef919c6ef0e4cea61fbfbbf2169090d2688ec21c7a7312e3ef2311"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/vichy.png",
+      "file": "local/templates/optimism/img/clients-logo/vichy.png",
+      "bytes": 6604,
+      "sha256": "96548e9e557b29485c9f8a11726f0a70b3ffb30dfa61c4ac245e8e7d6f07cf05"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/wiikilogo.png",
+      "file": "local/templates/optimism/img/clients-logo/wiikilogo.png",
+      "bytes": 13627,
+      "sha256": "6eb8669d76330059badaa68c11a0574e2978a5037ce724e8c05e309e6d5e01cf"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/yulmart.png",
+      "file": "local/templates/optimism/img/clients-logo/yulmart.png",
+      "bytes": 10314,
+      "sha256": "8dcfab13a59b52f2698858d9033ff9eee0fbeac3e54ba85c35419df2ab55ff5e"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/yuniastrum.png",
+      "file": "local/templates/optimism/img/clients-logo/yuniastrum.png",
+      "bytes": 10173,
+      "sha256": "5cffde2ece2917a6f483c4e8240cd0261ac35b46951c7e1f0201dba164e9cfe1"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/clients-logo/yves.png",
+      "file": "local/templates/optimism/img/clients-logo/yves.png",
+      "bytes": 5002,
+      "sha256": "8ba9fe521076b0d728a1a7bf64369331befa60802d8302f9c7cf0fec433817a4"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/faq/faq-bg.png",
+      "file": "local/templates/optimism/img/faq/faq-bg.png",
+      "bytes": 49132,
+      "sha256": "ce6ee7b108003d867f32159fd6bf96fcb6bfb4922385fcd2526a5de9f110b36c"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/favicon.svg",
+      "file": "local/templates/optimism/img/favicon.svg",
+      "bytes": 691,
+      "sha256": "9ed8333ec1d6dc144aed81602eff854f0255bc71949bad06304ef3ec0722b124"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/icon-play.svg",
+      "file": "local/templates/optimism/img/icons/icon-play.svg",
+      "bytes": 1361,
+      "sha256": "120cca6bbb1fb393738ac39c295cb7fc7472661a1e4f126e99a87aaf7088bfba"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/img4.png",
+      "file": "local/templates/optimism/img/img4.png",
+      "bytes": 1149,
+      "sha256": "65fef5b894b3c05df04b9701d502c9bc5a19e8dee270e79abc9c3a287015c2dc"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/logo_new.svg",
+      "file": "local/templates/optimism/img/logo_new.svg",
+      "bytes": 9487,
+      "sha256": "547d927e7851c4ff4dc3cbcd5a506d62c7fc70951888736909247e9f8397b9f8"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/logo_retina.png",
+      "file": "local/templates/optimism/img/logo_retina.png",
+      "bytes": 31944,
+      "sha256": "d6a3b4c30d20343f53cd2888ff0f1525b48880032cf8fa29e358057a5414ff6c"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/main-slider-bg/bg-1-1-new.jpg",
+      "file": "local/templates/optimism/img/main-slider-bg/bg-1-1-new.jpg",
+      "bytes": 176573,
+      "sha256": "7528eb19526f1aa04120c37262096d5b4190eb6031459add23234131ba899ca0"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/plug.png",
+      "file": "local/templates/optimism/img/plug.png",
+      "bytes": 68,
+      "sha256": "8a8a6d6325c5391079a56dc9a9185ef79618a784232a529db8b9809d3260e4cb"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/project-team/project-team-icon1.svg",
+      "file": "local/templates/optimism/img/project-team/project-team-icon1.svg",
+      "bytes": 10903,
+      "sha256": "16348f97fb4adf69a848d827f1812050c8ed794529eb7dfeb9147ff215d65f0d"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/project-team/project-team-icon10.svg",
+      "file": "local/templates/optimism/img/project-team/project-team-icon10.svg",
+      "bytes": 32433,
+      "sha256": "542f31292f1c12721d247b4835051010ba14ab0ee1148031f3d4bb9a08ba4878"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/project-team/project-team-icon2.svg",
+      "file": "local/templates/optimism/img/project-team/project-team-icon2.svg",
+      "bytes": 9576,
+      "sha256": "f3a787eb04da3a9963bb682c8abc906f8649fae7aa1136989ccb18510fcf63f7"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/project-team/project-team-icon3.svg",
+      "file": "local/templates/optimism/img/project-team/project-team-icon3.svg",
+      "bytes": 18341,
+      "sha256": "e043a7a92627fc98ca54592e9cc14d32fbf69dd3135d3194296e8090649c8b3f"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/project-team/project-team-icon4.svg",
+      "file": "local/templates/optimism/img/project-team/project-team-icon4.svg",
+      "bytes": 14584,
+      "sha256": "69c3b5f2f57bd5e6b3b2729512f404c429d151751c739f614cb80d5a1ffc1b9c"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/project-team/project-team-icon5.svg",
+      "file": "local/templates/optimism/img/project-team/project-team-icon5.svg",
+      "bytes": 17016,
+      "sha256": "62e30073937f69885b60617929c7f62061296866a567afbb7842c50cc496f8e9"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/project-team/project-team-icon6.svg",
+      "file": "local/templates/optimism/img/project-team/project-team-icon6.svg",
+      "bytes": 22115,
+      "sha256": "bd1b3de1c39fd8af257cf8760e41b1696dd1503a8f3430339a88c4c2ddbe8637"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/project-team/project-team-icon7.svg",
+      "file": "local/templates/optimism/img/project-team/project-team-icon7.svg",
+      "bytes": 23498,
+      "sha256": "5537ec490769e489afd001219932c34c2ef39196f79e02cf80f588c40de9c9b9"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/project-team/project-team-icon8.svg",
+      "file": "local/templates/optimism/img/project-team/project-team-icon8.svg",
+      "bytes": 17670,
+      "sha256": "98c93cd55be1a54a93a05fa296f8983b5f16e544b61cdf5328d782df823bfed4"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/project-team/project-team-icon9.svg",
+      "file": "local/templates/optimism/img/project-team/project-team-icon9.svg",
+      "bytes": 23437,
+      "sha256": "58ec86ddd091a7e5a2e36c44723c32ab044e3185d7cf72ec9209324b9236c1b3"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/tarifs/director.jpg",
+      "file": "local/templates/optimism/img/tarifs/director.jpg",
+      "bytes": 11861,
+      "sha256": "fafff04a4ee5243ebb9c37f3909d159e3f915881062ea82611bb832ba6a5369b"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/tarifs/tarifs-icon1.svg",
+      "file": "local/templates/optimism/img/tarifs/tarifs-icon1.svg",
+      "bytes": 3641,
+      "sha256": "8b9e079f07c3f4402021cc181bef420da2a6187a44d641a8af31646fab5f8150"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/tarifs/tarifs-icon2.svg",
+      "file": "local/templates/optimism/img/tarifs/tarifs-icon2.svg",
+      "bytes": 6207,
+      "sha256": "06e84c1bc8f877427ee07c24e0f5569ae4dfe34dd0cd426856fbc52b99baf46e"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/tarifs/tarifs-icon3.svg",
+      "file": "local/templates/optimism/img/tarifs/tarifs-icon3.svg",
+      "bytes": 8524,
+      "sha256": "5853713cacd0990cb80f1519354c89b9d9ae9324580f0d2079d77f4cfdf33666"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/team_bg_v2.jpg",
+      "file": "local/templates/optimism/img/team_bg_v2.jpg",
+      "bytes": 372949,
+      "sha256": "bf3c74e4f94c2b909a0dc7ddeab8660500712e07c4d09e16a0a6d0f7be877461"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/video-clouds.jpg",
+      "file": "local/templates/optimism/img/video-clouds.jpg",
+      "bytes": 243416,
+      "sha256": "4b885d5223b80b99ab1537a623a1e63dc832714680cba9facf843425fd2cb0f0"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/why-we/reviews-logo1.svg",
+      "file": "local/templates/optimism/img/why-we/reviews-logo1.svg",
+      "bytes": 40735,
+      "sha256": "f741448a1ba31b111a3fa29dae5cb1d4341c2a84cf10ff08d8de8be362516eb2"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/why-we/why-we-bg1.png",
+      "file": "local/templates/optimism/img/why-we/why-we-bg1.png",
+      "bytes": 114364,
+      "sha256": "5de83aafdebe3d1337117b1fb6afc14474d7a083d6fbb5a4f7ad514bf9c98dc4"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/why-we/why-we-bg2.jpg",
+      "file": "local/templates/optimism/img/why-we/why-we-bg2.jpg",
+      "bytes": 63893,
+      "sha256": "6ac808cb8b20b422587e8f3d2d01e73a40a8a4b0387691a9615f14eee9b651f7"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/js/app.js",
+      "file": "local/templates/optimism/js/app.js",
+      "bytes": 1999,
+      "sha256": "d1c0e6efed54135dd3a255026fa9870606db947af6cfcc324932f001cf7cd9b1"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/js/b24-extra-calc-button.js",
+      "file": "local/templates/optimism/js/b24-extra-calc-button.js",
+      "bytes": 3009,
+      "sha256": "32d773b3d93f2dc1ad9a6097ea2a8295870eacef1752a489c31ca4b93177f673"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/js/bootstrap.min.js",
+      "file": "local/templates/optimism/js/bootstrap.min.js",
+      "bytes": 49171,
+      "sha256": "bef45db378851648d37405491bfcc014ef8bc0bb5b5a7d7a47420e2e647bd3d7"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/js/common-scripts.js",
+      "file": "local/templates/optimism/js/common-scripts.js",
+      "bytes": 35358,
+      "sha256": "a3261b0df8b5ad7506952ae7886ec5d052e0eb02325fecf7bb6c67c5e7a64475"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/js/cookie-stroka.js?v=d7a34a7082",
+      "file": "local/templates/optimism/js/cookie-stroka.js",
+      "bytes": 4701,
+      "sha256": "d7a34a7082a9521a03c21c2ee2b786c676738098b6e0c8665d9acd8d731e9e4e"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/js/crm-forms_rec.js?v=1795234082",
+      "file": "local/templates/optimism/js/crm-forms_rec.js",
+      "bytes": 39100,
+      "sha256": "81ab7ab8be264c8776529c918a39283db4fdcf6e9ad8a838f077acea4800b6ff"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/js/fixhead.js",
+      "file": "local/templates/optimism/js/fixhead.js",
+      "bytes": 963,
+      "sha256": "3d6b182985583258f47299d3910f427f2347e18cf17bcedb9d0a450b188d0566"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/js/jquery.maskedinput.js",
+      "file": "local/templates/optimism/js/jquery.maskedinput.js",
+      "bytes": 11273,
+      "sha256": "de92433bdaaa0d98eceb99d677f6dfd51d8b7a5467f9d293f128dfe729cd3df1"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/js/jquery.min.js",
+      "file": "local/templates/optimism/js/jquery.min.js",
+      "bytes": 87380,
+      "sha256": "349ad073d6ad1db629887e7063ee06bf605d2dc3925612e8ccd22cb714b92411"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/js/jquery.touchSwipe.min.js",
+      "file": "local/templates/optimism/js/jquery.touchSwipe.min.js",
+      "bytes": 20398,
+      "sha256": "012ebc2567a42951b9ecc4bf26f2706dfa4ea089eacbaf9d509ad2e3b7ff2261"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/js/main-new.js",
+      "file": "local/templates/optimism/js/main-new.js",
+      "bytes": 5951,
+      "sha256": "0f7a962de416e6ecd16170cc3981f7394f739582a9fd2250f4c54806d92e0b7d"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/js/mainpage.js",
+      "file": "local/templates/optimism/js/mainpage.js",
+      "bytes": 3994,
+      "sha256": "27b9fa2c5352c30e741f81da8a7bbc51706b510c6a13ea88656115b28a5021d5"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/js/slick.min.js",
+      "file": "local/templates/optimism/js/slick.min.js",
+      "bytes": 52788,
+      "sha256": "040b35b7d732337ae7958239271a2d80bafec0a7059c73a67f97869aaa447900"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/video/mainvideo/24/ver3.mp4",
+      "file": "local/templates/optimism/video/mainvideo/24/ver3.mp4",
+      "bytes": 53770492,
+      "sha256": "90f6ccfb16e99edc333bf741d45b067ca893eecc0b20c9069dfffaad2176cafb"
+    },
+    {
+      "url": "https://optimism.ru/upload/iblock/10a/longines1.svg",
+      "file": "upload/iblock/10a/longines1.svg",
+      "bytes": 4368,
+      "sha256": "378c551a4a641be8b391b374ce8daa126a65ce5bf12ba352127e15ad030f4987"
+    },
+    {
+      "url": "https://optimism.ru/upload/iblock/67e/logosber.svg",
+      "file": "upload/iblock/67e/logosber.svg",
+      "bytes": 10017,
+      "sha256": "cb510dc6d7d5fd52106bb216ba533ae78ac26e2a91a880c4f70871564e166c7b"
+    },
+    {
+      "url": "https://optimism.ru/upload/iblock/732/gazprombank.svg",
+      "file": "upload/iblock/732/gazprombank.svg",
+      "bytes": 10446,
+      "sha256": "27ee884903be36e9e3c1791bf65a98fe1c0ed0050ef3cd85971364fb4c35ff57"
+    },
+    {
+      "url": "https://optimism.ru/upload/iblock/873/samsung1.svg",
+      "file": "upload/iblock/873/samsung1.svg",
+      "bytes": 2469,
+      "sha256": "3fdb36c5e4c071b01d6163112fa911f9e09588fa95f5f71cca3f5347bfad4ea1"
+    },
+    {
+      "url": "https://optimism.ru/upload/iblock/96e/komus.svg",
+      "file": "upload/iblock/96e/komus.svg",
+      "bytes": 3938,
+      "sha256": "696ff92415bbf17891b54ce810fcf0f7a9c36bcfea3d254b9dda9ff15e0c78bc"
+    },
+    {
+      "url": "https://optimism.ru/upload/iblock/9c1/velesstroy.svg",
+      "file": "upload/iblock/9c1/velesstroy.svg",
+      "bytes": 3786,
+      "sha256": "7ae2f7af2a7e7f6925a3f45fae934b7c1c79270707039f1e267141b4eebaae93"
+    },
+    {
+      "url": "https://optimism.ru/upload/iblock/c9f/esab.svg",
+      "file": "upload/iblock/c9f/esab.svg",
+      "bytes": 6762,
+      "sha256": "36d57d76afeee74e2453c8adcf7a689fc576fd3275f059b05405ae92e2972226"
+    },
+    {
+      "url": "https://optimism.ru/upload/iblock/df3/masterovit.svg",
+      "file": "upload/iblock/df3/masterovit.svg",
+      "bytes": 35224,
+      "sha256": "3c9949acc3b4ca65522db392ae6c06da98c50e686998807ee5fce1706b28cc1e"
+    },
+    {
+      "url": "https://optimism.ru/upload/iblock/e9f/nestle.svg",
+      "file": "upload/iblock/e9f/nestle.svg",
+      "bytes": 3086,
+      "sha256": "dba90fb08aee7568d1a32de6458cfbda13deceb10c62fc6b4c2e11820831e7d1"
+    },
+    {
+      "url": "https://optimism.ru/upload/opengraphmain.png",
+      "file": "upload/opengraphmain.png",
+      "bytes": 402088,
+      "sha256": "8e5faa887f8c6c448c9de34bfd44171bf95da65934193a84ac1c84683797dd25"
+    },
+    {
+      "url": "https://optimism.ru/upload/webp/reviews/Masterovit.webp",
+      "file": "upload/webp/reviews/Masterovit.webp",
+      "bytes": 44530,
+      "sha256": "137d7e13e511b8b228f4b229f420772284e918f47c030c1685f8442f791ea102"
+    },
+    {
+      "url": "https://optimism.ru/upload/webp/reviews/blagodarnost-Velesstroy.webp",
+      "file": "upload/webp/reviews/blagodarnost-Velesstroy.webp",
+      "bytes": 16600,
+      "sha256": "935db65ae96646dddbe719c095e8a42aed76071ed6f8a00ac45effc619db6499"
+    },
+    {
+      "url": "https://optimism.ru/upload/webp/reviews/esab.webp",
+      "file": "upload/webp/reviews/esab.webp",
+      "bytes": 12886,
+      "sha256": "1f9240b0c44f64935f85418c28411a05c3e2bc4ead828198a8994814478bebad"
+    },
+    {
+      "url": "https://optimism.ru/upload/webp/reviews/gazprombank.webp",
+      "file": "upload/webp/reviews/gazprombank.webp",
+      "bytes": 13404,
+      "sha256": "d3b7df3afc2be734b8530afc3fc786393144c2672f6f3cd3d2f184e5e518f40f"
+    },
+    {
+      "url": "https://optimism.ru/upload/webp/reviews/groupon.webp",
+      "file": "upload/webp/reviews/groupon.webp",
+      "bytes": 12582,
+      "sha256": "b32727ed6f5ea4b1d3c522d06ffc2b1730e2ea6a2282ded6286bbc9d6828f4b0"
+    },
+    {
+      "url": "https://optimism.ru/upload/webp/reviews/komus_kotakt.webp",
+      "file": "upload/webp/reviews/komus_kotakt.webp",
+      "bytes": 17260,
+      "sha256": "7297c840ec1688247c12071482adafed110611da7abdf8a7c51f8f25e7b882e5"
+    },
+    {
+      "url": "https://optimism.ru/upload/webp/reviews/longines.webp",
+      "file": "upload/webp/reviews/longines.webp",
+      "bytes": 9888,
+      "sha256": "16d3aab53fb3f29811ff30d57ad38417c8355a3074294fcb3be9ce839eb14f06"
+    },
+    {
+      "url": "https://optimism.ru/upload/webp/reviews/nespressocom.webp",
+      "file": "upload/webp/reviews/nespressocom.webp",
+      "bytes": 13070,
+      "sha256": "13c3d28b2e021237db8fda229fcfbfef2ce9ea3cec6f94e6073126a4959224d7"
+    },
+    {
+      "url": "https://optimism.ru/upload/webp/reviews/samsung_1.webp",
+      "file": "upload/webp/reviews/samsung_1.webp",
+      "bytes": 18784,
+      "sha256": "bbf39da59d298b28d4b5a888ce06cbef577c8c3ec8617df056db19dea8aa5229"
+    },
+    {
+      "url": "https://optimism.ru/upload/webp/reviews/sber.webp",
+      "file": "upload/webp/reviews/sber.webp",
+      "bytes": 47780,
+      "sha256": "b17c7a0edfb5b3d5730eb5d0a98214412229c26580024f824f5c41dc82ff6051"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/main/core/css/core_hint.css",
+      "file": "bitrix/js/main/core/css/core_hint.css",
+      "bytes": 3702,
+      "sha256": "52b02eda741172490fc570bcdbee0861930477a47e8d6681f8705c0f53336f85"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/main/core/images/hint.gif",
+      "file": "bitrix/js/main/core/images/hint.gif",
+      "bytes": 914,
+      "sha256": "080448f8195f590c665548c5e80815da4316cdc7c750af91b27ca2df24e6ab6f"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/main/core/images/wait.gif",
+      "file": "bitrix/js/main/core/images/wait.gif",
+      "bytes": 726,
+      "sha256": "b9754db3a1993f3c06359b30ee9a991754cad7e6736d45766c7e6c0dfa833c7c"
+    },
+    {
+      "url": "https://optimism.ru/fonts/DINPro-Cond/DINPro-Cond.eot",
+      "file": "fonts/DINPro-Cond/DINPro-Cond.eot",
+      "bytes": 124906,
+      "sha256": "0e8c5b9226a2f4e785716e1c572db8e7bfb511bddfd83a9f046b820927b353d6"
+    },
+    {
+      "url": "https://optimism.ru/fonts/DINPro-Cond/DINPro-Cond.ttf",
+      "file": "fonts/DINPro-Cond/DINPro-Cond.ttf",
+      "bytes": 124636,
+      "sha256": "d36e805cb6b15043f7107b61529d77f293eb902358a6d3a0ed20eb566d0fac0e"
+    },
+    {
+      "url": "https://optimism.ru/fonts/DINPro-CondBlack/DINPro-CondBlack.eot",
+      "file": "fonts/DINPro-CondBlack/DINPro-CondBlack.eot",
+      "bytes": 240452,
+      "sha256": "f581231206094b429265f2058d13b487cc20d5fe8dcd4ffc3e601e6ef418363b"
+    },
+    {
+      "url": "https://optimism.ru/fonts/DINPro-CondBlack/DINPro-CondBlack.ttf",
+      "file": "fonts/DINPro-CondBlack/DINPro-CondBlack.ttf",
+      "bytes": 240212,
+      "sha256": "7ee73d1441fc9a120e3c468bbcd50a0ca793b1566646d1b438d26918123d399f"
+    },
+    {
+      "url": "https://optimism.ru/fonts/DINPro-CondBold/DINPro-CondBold.eot",
+      "file": "fonts/DINPro-CondBold/DINPro-CondBold.eot",
+      "bytes": 246560,
+      "sha256": "7fcd7de4827456360952c708b0c8bf069ecc4b308a9e4d3c77f1466f5f4e730d"
+    },
+    {
+      "url": "https://optimism.ru/fonts/DINPro-CondBold/DINPro-CondBold.ttf",
+      "file": "fonts/DINPro-CondBold/DINPro-CondBold.ttf",
+      "bytes": 246324,
+      "sha256": "e677dd1fdcc3b99383d480c0122b852b94b92b925ae3f9b6b553b37e8749561b"
+    },
+    {
+      "url": "https://optimism.ru/fonts/DINPro-CondMedium/DINPro-CondMedium.eot",
+      "file": "fonts/DINPro-CondMedium/DINPro-CondMedium.eot",
+      "bytes": 126028,
+      "sha256": "8b50e7aa2171ef0ca4abd4d70c3e21d852f1c9b67217421c85e2415fbdfdd953"
+    },
+    {
+      "url": "https://optimism.ru/fonts/DINPro-CondMedium/DINPro-CondMedium.ttf",
+      "file": "fonts/DINPro-CondMedium/DINPro-CondMedium.ttf",
+      "bytes": 125748,
+      "sha256": "d42fc5e9fbc26b91b150588041ad0be927d002f878bf0ca5b96e1cb5b5ca4ecd"
+    },
+    {
+      "url": "https://optimism.ru/fonts/JoannaSansNova/JoannaSansNova.eot",
+      "file": "fonts/JoannaSansNova/JoannaSansNova.eot",
+      "bytes": 169910,
+      "sha256": "7604132178ea6c85186a100c06db1e97158fadf5b2587b5d2852d846394283a9"
+    },
+    {
+      "url": "https://optimism.ru/fonts/JoannaSansNova/JoannaSansNova.ttf",
+      "file": "fonts/JoannaSansNova/JoannaSansNova.ttf",
+      "bytes": 156552,
+      "sha256": "e9308d79b2d0d4795689ef504bf0ab80ddafe63ab139cb2dc6dfdbdb7fa2df1f"
+    },
+    {
+      "url": "https://optimism.ru/fonts/JoannaSansNovaBold/JoannaSansNovaBold.eot",
+      "file": "fonts/JoannaSansNovaBold/JoannaSansNovaBold.eot",
+      "bytes": 171134,
+      "sha256": "7f060e26520464bee0b6561f2062ed8c79d358c6a1b03275c415dcf93e2e1f98"
+    },
+    {
+      "url": "https://optimism.ru/fonts/JoannaSansNovaBold/JoannaSansNovaBold.ttf",
+      "file": "fonts/JoannaSansNovaBold/JoannaSansNovaBold.ttf",
+      "bytes": 157844,
+      "sha256": "9cf53cdbb23ee2391f6b881a6bc1e2de80867b8af2d7447ebe49217e9d51716f"
+    },
+    {
+      "url": "https://optimism.ru/fonts/JoannaSansNovaItalic/JoannaSansNovaItalic.eot",
+      "file": "fonts/JoannaSansNovaItalic/JoannaSansNovaItalic.eot",
+      "bytes": 179438,
+      "sha256": "47ed5b94c8abd88b0fc8abc2531ad90b6358c2c9a5dd2962cd5673bc970bc4ac"
+    },
+    {
+      "url": "https://optimism.ru/fonts/JoannaSansNovaItalic/JoannaSansNovaItalic.ttf",
+      "file": "fonts/JoannaSansNovaItalic/JoannaSansNovaItalic.ttf",
+      "bytes": 165808,
+      "sha256": "402e0717e9b42507916a4511684f77b827583bc19d13eb9e9986d9fa897e2838"
+    },
+    {
+      "url": "https://optimism.ru/fonts/JoannaSansNovaMedium/JoannaSansNovaMedium.eot",
+      "file": "fonts/JoannaSansNovaMedium/JoannaSansNovaMedium.eot",
+      "bytes": 171510,
+      "sha256": "02dbdd12f6f99b6ffef9b43d6e371a55dcf377354890b090ad5ce0fe61002058"
+    },
+    {
+      "url": "https://optimism.ru/fonts/JoannaSansNovaMedium/JoannaSansNovaMedium.ttf",
+      "file": "fonts/JoannaSansNovaMedium/JoannaSansNovaMedium.ttf",
+      "bytes": 158276,
+      "sha256": "c8245713d8e11dccec1b329253467d294291bb90f986eb79b92050f02a19634a"
+    },
+    {
+      "url": "https://optimism.ru/fonts/OptimismLogoFont.ttf",
+      "file": "fonts/OptimismLogoFont.ttf",
+      "bytes": 3828,
+      "sha256": "1fa56ed293caa911ae4ee06aa41306e0aa36879e20172a0f7e07755ee80ba1ae"
+    },
+    {
+      "url": "https://optimism.ru/fonts/SorrenBlack/Sorren_Black.eot",
+      "file": "fonts/SorrenBlack/Sorren_Black.eot",
+      "bytes": 92028,
+      "sha256": "33d5e84dc8651e9815ce7ea1dfa2cff0635248a069f3a9b64822725b9b347800"
+    },
+    {
+      "url": "https://optimism.ru/fonts/SorrenBlack/Sorren_Black.woff",
+      "file": "fonts/SorrenBlack/Sorren_Black.woff",
+      "bytes": 38264,
+      "sha256": "e90876540f42c03e707bc2c7a7ea113f657eefbe1b35f8dbdb2474ce3e3742fa"
+    },
+    {
+      "url": "https://optimism.ru/fonts/bebasneue-regular/bebasneue-regular.eot",
+      "file": "fonts/bebasneue-regular/bebasneue-regular.eot",
+      "bytes": 94436,
+      "sha256": "cb10c5c60dd04c75e46b78ff327b5e5718c729e3888a2c0b0283df7fcdc48e73"
+    },
+    {
+      "url": "https://optimism.ru/fonts/bebasneue-regular/bebasneue-regular.ttf",
+      "file": "fonts/bebasneue-regular/bebasneue-regular.ttf",
+      "bytes": 94220,
+      "sha256": "b8c8e9b2c0145e8b52be9bf05f2e8cb839a1b92cebd59c09ed3cfa2ae012ae40"
+    },
+    {
+      "url": "https://optimism.ru/fonts/bebasneue-regular/bebasneue-regular.woff",
+      "file": "fonts/bebasneue-regular/bebasneue-regular.woff",
+      "bytes": 33408,
+      "sha256": "7ca381de7df9603447582154ea73254c6fa1c4a656628b2d075a2f595ea3a377"
+    },
+    {
+      "url": "https://optimism.ru/fonts/optimizm/optimizm.eot",
+      "file": "fonts/optimizm/optimizm.eot",
+      "bytes": 4308,
+      "sha256": "cc52eaf27c5ab6920c1b2e76c695949fd7274d2a15f15af470338139469fb320"
+    },
+    {
+      "url": "https://optimism.ru/fonts/optimizm/optimizm.svg",
+      "file": "fonts/optimizm/optimizm.svg",
+      "bytes": 7383,
+      "sha256": "45f09a2efc58dd0cbc170c3272c89c4ce57a1f048a45e6974b01428d45626d4f"
+    },
+    {
+      "url": "https://optimism.ru/fonts/optimizm/optimizm.ttf",
+      "file": "fonts/optimizm/optimizm.ttf",
+      "bytes": 4144,
+      "sha256": "0f2bc018b9f53a4d1752efdb1bdb560bb440505b1ff613094f79c07f8b38d525"
+    },
+    {
+      "url": "https://optimism.ru/fonts/optimizm/optimizm.woff",
+      "file": "fonts/optimizm/optimizm.woff",
+      "bytes": 4220,
+      "sha256": "718dff4d92e88dfe589b8884935765d74bdb7c23410bf42ed4491a5738e28d66"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/fonts/font-awesome/fonts/fontawesome-webfont.eot",
+      "file": "local/templates/optimism/fonts/font-awesome/fonts/fontawesome-webfont.eot",
+      "bytes": 165742,
+      "sha256": "7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/fonts/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0",
+      "file": "local/templates/optimism/fonts/font-awesome/fonts/fontawesome-webfont.eot",
+      "bytes": 165742,
+      "sha256": "7bfcab6db99d5cfbf1705ca0536ddc78585432cc5fa41bbd7ad0f009033b2979"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/fonts/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0",
+      "file": "local/templates/optimism/fonts/font-awesome/fonts/fontawesome-webfont.svg",
+      "bytes": 444379,
+      "sha256": "ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/fonts/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0",
+      "file": "local/templates/optimism/fonts/font-awesome/fonts/fontawesome-webfont.ttf",
+      "bytes": 165548,
+      "sha256": "aa58f33f239a0fb02f5c7a6c45c043d7a9ac9a093335806694ecd6d4edc0d6a8"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/fonts/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0",
+      "file": "local/templates/optimism/fonts/font-awesome/fonts/fontawesome-webfont.woff2",
+      "bytes": 77160,
+      "sha256": "2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/fonts/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0",
+      "file": "local/templates/optimism/fonts/font-awesome/fonts/fontawesome-webfont.woff",
+      "bytes": 98024,
+      "sha256": "ba0c59deb5450f5cb41b3f93609ee2d0d995415877ddfa223e8a8a7533474f07"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/01_01.jpg",
+      "file": "local/templates/optimism/img/01_01.jpg",
+      "bytes": 179557,
+      "sha256": "5824b2340050f3a9b1627a9322970868ddfbf50d5c911339a74b9a58cb4d3635"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/02_02.jpg",
+      "file": "local/templates/optimism/img/02_02.jpg",
+      "bytes": 173574,
+      "sha256": "47a09a487440963e647764ae74135dc874cbf1e010906091de91441dfd12a996"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/actions/gift-icon.svg",
+      "file": "local/templates/optimism/img/actions/gift-icon.svg",
+      "bytes": 2005,
+      "sha256": "d47af4ab49f0f6343c406eefc6d97baf41e09480799a499503d153e6e4dd800a"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/actions/slider-arrow-next-white.svg",
+      "file": "local/templates/optimism/img/actions/slider-arrow-next-white.svg",
+      "bytes": 217,
+      "sha256": "5c1635205186086c0e80edc515f9c62afb9ff76a82713054fe0342cd9da757bb"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/actions/slider-arrow-next.svg",
+      "file": "local/templates/optimism/img/actions/slider-arrow-next.svg",
+      "bytes": 220,
+      "sha256": "63b1110505ffc359c11bfa7560fe90501a6ff617ca450a44ef827c4ff9cd0a6a"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/angle1.png",
+      "file": "local/templates/optimism/img/angle1.png",
+      "bytes": 91,
+      "sha256": "3a0c202fa61e209a5cfd81d6836d0fb265281cea0a44c4c7dc88899b1f20b428"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/angle2.png",
+      "file": "local/templates/optimism/img/angle2.png",
+      "bytes": 89,
+      "sha256": "7b2f84b30eda1e9c2b5ffc65696a78e2436da03588b04661f04894677fc80c37"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/arrow-down.svg",
+      "file": "local/templates/optimism/img/arrow-down.svg",
+      "bytes": 778,
+      "sha256": "fc4262761e363464671e5c21d4353c6c6628216a921d32fc94d1bccc06af665f"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/arrow-main-down.svg",
+      "file": "local/templates/optimism/img/arrow-main-down.svg",
+      "bytes": 931,
+      "sha256": "b47dc6acb38802aec72eb092c5a36331a37d4571a6298f517443c68b74fb29b6"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/arrowr1.png",
+      "file": "local/templates/optimism/img/arrowr1.png",
+      "bytes": 249,
+      "sha256": "c48755bfed17686dfa62562e9606bb4f0f3d69afeeb5ca1523f8d92c502f8164"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/awards-left-w.svg",
+      "file": "local/templates/optimism/img/awards-left-w.svg",
+      "bytes": 4874,
+      "sha256": "d067d81e51cd8105efb34e14dd4040af1c49f2cc1180c772792521dcc129be42"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/awards-left.svg",
+      "file": "local/templates/optimism/img/awards-left.svg",
+      "bytes": 4874,
+      "sha256": "12998a8d716c8b2146523167913670fde2d83b594cdddae2c9090396082992f9"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/awards-right-w.svg",
+      "file": "local/templates/optimism/img/awards-right-w.svg",
+      "bytes": 4893,
+      "sha256": "f1c13ec06e857996d241dfeafdbfb9c732c9cdcf18261ff98a7ae162f8b887ca"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/awards-right.svg",
+      "file": "local/templates/optimism/img/awards-right.svg",
+      "bytes": 4893,
+      "sha256": "d2999b7c905e9e1c2315cf8d19bacd2e52bacea8a69147a0bbbb4a54ebdedaf9"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/baloon.png",
+      "file": "local/templates/optimism/img/baloon.png",
+      "bytes": 517,
+      "sha256": "b7486f2b50a2a2e3292fce0deaae8d91425888469bab2ccf02b430d51062b576"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/bg-five.png",
+      "file": "local/templates/optimism/img/bg-five.png",
+      "bytes": 4918,
+      "sha256": "53a9d276ab202a3c79e6484ef5068307ea9c26491ae72d609aa4d8bff44ac4dd"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/bg-one.png",
+      "file": "local/templates/optimism/img/bg-one.png",
+      "bytes": 89358,
+      "sha256": "fad650fa0d71115dacdf4eeb9165e937ad89744489890c236c3129055612dca5"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/bg-six.png",
+      "file": "local/templates/optimism/img/bg-six.png",
+      "bytes": 1287170,
+      "sha256": "b273b1735737e9597323c59f437dbce217df01ea25bb3a9136fea0ec8f638468"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/bg-three.png",
+      "file": "local/templates/optimism/img/bg-three.png",
+      "bytes": 45527,
+      "sha256": "e22fd1737ffba259a0e412c6b5c7777d81c5f14b7ed102972a4920167f94366b"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/bg11.png",
+      "file": "local/templates/optimism/img/bg11.png",
+      "bytes": 77271,
+      "sha256": "285fe3b9e8fdb8a3b295e8c121f8d90c8f7e2de0c69ba1317c850480522a8bc5"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/bg_crests.png",
+      "file": "local/templates/optimism/img/bg_crests.png",
+      "bytes": 1565736,
+      "sha256": "8010904fc5cdfa9877edb2d28e06300fd3cd10b70a9e4189d13432a0749da459"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/bg_dots.png",
+      "file": "local/templates/optimism/img/bg_dots.png",
+      "bytes": 103,
+      "sha256": "39317ee030953e53d75f9d09d08819dd2bd0fa70610430f977cf4f3324170080"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/bg_rates.jpg",
+      "file": "local/templates/optimism/img/bg_rates.jpg",
+      "bytes": 32154,
+      "sha256": "afe58752defee9247b281edbc5f5e8908f80184f71a512bd7f59d180631b2979"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/bg_stars_clear.png",
+      "file": "local/templates/optimism/img/bg_stars_clear.png",
+      "bytes": 78971,
+      "sha256": "a29ff60cd17c34fb956c52e8853a8b6690e9c6e9be2ef9f1e79b29e1314cca1a"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/complex_text_bg.jpg",
+      "file": "local/templates/optimism/img/complex_text_bg.jpg",
+      "bytes": 124802,
+      "sha256": "62cc64cdb2414cd9de51cd6cd82c913ed83662f977d68d59a253424ae5a61cd5"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/down_scroll.png",
+      "file": "local/templates/optimism/img/down_scroll.png",
+      "bytes": 441,
+      "sha256": "d632f0b9e8a6abd652c6de9ed01cdabe1eeebecb58be9352ee9e403cbd7fe1c4"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/error-icon.svg",
+      "file": "local/templates/optimism/img/error-icon.svg",
+      "bytes": 988,
+      "sha256": "3466dad237e71a0b239ae897f327989bb7b3246b060f2354efa79b444df377c2"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon-check.svg",
+      "file": "local/templates/optimism/img/icon-check.svg",
+      "bytes": 816,
+      "sha256": "4388756b4096e32d9b0ed32236ce4b33e3126299c422e8e9f9efd8e1a8ddcf0c"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon-quote-right.svg",
+      "file": "local/templates/optimism/img/icon-quote-right.svg",
+      "bytes": 2027,
+      "sha256": "8341835789321851325bc21b8742c38435de23ca8f29504da60aa0a3ae8dc2af"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_board.svg",
+      "file": "local/templates/optimism/img/icon_board.svg",
+      "bytes": 1803,
+      "sha256": "367e38191800e27a9ce652e20882e3687d747ba91170ac8597720658a5f8d3c0"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_cafe.svg",
+      "file": "local/templates/optimism/img/icon_cafe.svg",
+      "bytes": 2032,
+      "sha256": "79ada6e59f450e8e08b2dff8673b8a58f064265be983cad11e545a7559a0153f"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_cars.svg",
+      "file": "local/templates/optimism/img/icon_cars.svg",
+      "bytes": 2795,
+      "sha256": "c87023fcbad2ae2e97f004a5ee5c09aa7081cd2a8455001c496851f3baf3678e"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_cart.svg",
+      "file": "local/templates/optimism/img/icon_cart.svg",
+      "bytes": 2511,
+      "sha256": "6e27e5d0549bbe9964410eb7866eecb416c0e714e382eb0926ce7f80531b54ac"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_cashbag.svg",
+      "file": "local/templates/optimism/img/icon_cashbag.svg",
+      "bytes": 1786,
+      "sha256": "66919823a510ce22c7d26c38452ae773319d0690cc399941acda853a93de2b13"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_comp.svg",
+      "file": "local/templates/optimism/img/icon_comp.svg",
+      "bytes": 1059,
+      "sha256": "2fad1b73780ce9f5af70ce4be17bdb7fe6a683ab79b680d298813da47f268d05"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_gear.svg",
+      "file": "local/templates/optimism/img/icon_gear.svg",
+      "bytes": 4279,
+      "sha256": "817c4f984518a7a58d04936bab65c39a4a47da6860e7fb6363912ea1d860ad90"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_glass.svg",
+      "file": "local/templates/optimism/img/icon_glass.svg",
+      "bytes": 2976,
+      "sha256": "694c8dd568eb95f5424b033042a4d65bd2a671f774e9035aa50f6ddf1aea2556"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_goal.svg",
+      "file": "local/templates/optimism/img/icon_goal.svg",
+      "bytes": 2438,
+      "sha256": "0b7d0c3346290421983603c20259a923dca262fc55237999ce57d9ef5ad1b9ba"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_line.svg",
+      "file": "local/templates/optimism/img/icon_line.svg",
+      "bytes": 1271,
+      "sha256": "40bb7ab14e2fd41ae9120a0105289850517cf80adce6eb9c4ab1da0518636783"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_location.svg",
+      "file": "local/templates/optimism/img/icon_location.svg",
+      "bytes": 1443,
+      "sha256": "3618131711a679fa81e2642debb204541b051449e8633427d5ae4de3ade284f9"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_look.svg",
+      "file": "local/templates/optimism/img/icon_look.svg",
+      "bytes": 1620,
+      "sha256": "9b176d8b69940ae93a4cc1ee9d1b2bc878417a754a3d5a53c433ea4312bba8b1"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_loupe.svg",
+      "file": "local/templates/optimism/img/icon_loupe.svg",
+      "bytes": 1377,
+      "sha256": "18c71389ec02c3de372e0cd31ef92c3801370e241b19e82af73e74c2df2ceb8f"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_mike.svg",
+      "file": "local/templates/optimism/img/icon_mike.svg",
+      "bytes": 1665,
+      "sha256": "1a3e056e67f9e63140d360a837aeff579e5f6df95621080ac7f335097024875a"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_mouse.svg",
+      "file": "local/templates/optimism/img/icon_mouse.svg",
+      "bytes": 1119,
+      "sha256": "6a8c100dcd79e296c102c5586c413018383f91551e1e40d30dbbd8bcdca8d129"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_not.svg",
+      "file": "local/templates/optimism/img/icon_not.svg",
+      "bytes": 936,
+      "sha256": "44a3d1180d1680d900e968993aa4fc27fa3d512c09eee2ee43b45477455f04ca"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_pipe.svg",
+      "file": "local/templates/optimism/img/icon_pipe.svg",
+      "bytes": 1374,
+      "sha256": "c7ca22450243bbb372dbc68649a83248c3af7a875f1d6a422f8b7bfd00a7878c"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_purse.svg",
+      "file": "local/templates/optimism/img/icon_purse.svg",
+      "bytes": 4231,
+      "sha256": "ad477da8fc843f67d26724351319efdb19dab5fb53ee512d69ff7fc4cd0f4bb4"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_scroll-down.svg",
+      "file": "local/templates/optimism/img/icon_scroll-down.svg",
+      "bytes": 2343,
+      "sha256": "6be575c32bbe5e3ad013caf0418f7fd804b62396043090aac0d2fcaf4ab0367a"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_site.svg",
+      "file": "local/templates/optimism/img/icon_site.svg",
+      "bytes": 1990,
+      "sha256": "70e3cb5429d332046fe3f8796f78f2c1a488b83ebb7d0ab0a90d0dd51e6476cc"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_star.svg",
+      "file": "local/templates/optimism/img/icon_star.svg",
+      "bytes": 1256,
+      "sha256": "a20a23ad4838e6763cb96e7da46d6536a959105144761f350a3d553bfa6de407"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_thumb.svg",
+      "file": "local/templates/optimism/img/icon_thumb.svg",
+      "bytes": 1836,
+      "sha256": "a1914433c06f8ec9e0331897d4ccc96acc5ce60d94895608338ebfe6789c22ed"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_user.svg",
+      "file": "local/templates/optimism/img/icon_user.svg",
+      "bytes": 2943,
+      "sha256": "ec294e5e4fa36ffde54d49b6185d0fb57f6dba9911e5e47ec6ae4543636f2988"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icon_write.svg",
+      "file": "local/templates/optimism/img/icon_write.svg",
+      "bytes": 1363,
+      "sha256": "274459112077b3d2d1245f5f866d0f8f4806e489d032ddf92f966518440ca0d2"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons--pdf-n.svg",
+      "file": "local/templates/optimism/img/icons--pdf-n.svg",
+      "bytes": 2671,
+      "sha256": "b5c13f331a60bf813b25ce30bf94acbf9e2d96916d4690c69c1f93fa03b1e380"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons--pdf.svg",
+      "file": "local/templates/optimism/img/icons--pdf.svg",
+      "bytes": 7773,
+      "sha256": "00116e6ac7cda56a4a18db2069e2f20ccffc069b99c631ad914200a6a44332ab"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons.svg",
+      "file": "local/templates/optimism/img/icons.svg",
+      "bytes": 28322,
+      "sha256": "c53564211783ab0af586060511ff04de5c29ef8c2e7f058a247716436fbfd406"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/calendar-icon.svg",
+      "file": "local/templates/optimism/img/icons/calendar-icon.svg",
+      "bytes": 2328,
+      "sha256": "c63612c7cf4b6cdc31b75e353e1ffe24279bd89d9bf6fcbdffefd3888cad72eb"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/contacts/bag.svg",
+      "file": "local/templates/optimism/img/icons/contacts/bag.svg",
+      "bytes": 3046,
+      "sha256": "1c174e00e85ba6a276c8ab8c8dc7e9f1dbee132837a0840c22911e94a4b39a64"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/contacts/clock.svg",
+      "file": "local/templates/optimism/img/icons/contacts/clock.svg",
+      "bytes": 1379,
+      "sha256": "abdde309983614f8c52a91deebdd943568dff03179e48a85e2186b62e4aae971"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/contacts/location.svg",
+      "file": "local/templates/optimism/img/icons/contacts/location.svg",
+      "bytes": 2318,
+      "sha256": "88ffc1ed9de71d924144eab472cb6c5b745dd1f8e612878ab5483264f02f66ff"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/contacts/mail.svg",
+      "file": "local/templates/optimism/img/icons/contacts/mail.svg",
+      "bytes": 1880,
+      "sha256": "04fb91823a6211f4faa9b9d0cabc7e5c91fea3379d78419811b81319497a621b"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/contacts/metro.svg",
+      "file": "local/templates/optimism/img/icons/contacts/metro.svg",
+      "bytes": 2300,
+      "sha256": "53fb9596e9e45a2e23fffd024df20babc0b48e9f8f77258a14bd4923f4c744d5"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/contacts/nav.svg",
+      "file": "local/templates/optimism/img/icons/contacts/nav.svg",
+      "bytes": 1092,
+      "sha256": "763400262351b42cf844be2bc92f03532d3a4424c3e349aa4a2ebdd4ce4c60cf"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/contacts/parking.svg",
+      "file": "local/templates/optimism/img/icons/contacts/parking.svg",
+      "bytes": 2442,
+      "sha256": "7fb82bf93e8ffd0392faddd558ebf5487f5b4f6806835f2d6e3b95281a6c0445"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/contacts/phone.svg",
+      "file": "local/templates/optimism/img/icons/contacts/phone.svg",
+      "bytes": 1592,
+      "sha256": "9179a859fce9395b5cdd5cea9075c250cab5c4a08661c7abe542f1589a20688e"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/contacts/taxi.svg",
+      "file": "local/templates/optimism/img/icons/contacts/taxi.svg",
+      "bytes": 1602,
+      "sha256": "c8a898ac5d20a59544a4a04cc1a582e656a8deb96818fe923f0b8686efe46cc8"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/contacts/trade.svg",
+      "file": "local/templates/optimism/img/icons/contacts/trade.svg",
+      "bytes": 4860,
+      "sha256": "b6383a43cd09343c5bc5f7dd779b289d99cad9efbff25ca76052ff2fbca93f6a"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/diploma-icon.svg",
+      "file": "local/templates/optimism/img/icons/diploma-icon.svg",
+      "bytes": 5720,
+      "sha256": "def77e91e0c503b76aff3e5a86bb68cf996fc8045cb2e151913ca1aa9653c4c3"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/first-icon.svg",
+      "file": "local/templates/optimism/img/icons/first-icon.svg",
+      "bytes": 7783,
+      "sha256": "065776da2a13667d62b03f73abdf566c8755f2c0fca34e4c0343bfa48ca076cb"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/flag2-icon.svg",
+      "file": "local/templates/optimism/img/icons/flag2-icon.svg",
+      "bytes": 1489,
+      "sha256": "c377a68d1b5544fd43fe97a4b1efe789d948c4911c3305134d02cb5cff6b1083"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/icon_link_white.svg",
+      "file": "local/templates/optimism/img/icons/icon_link_white.svg",
+      "bytes": 1688,
+      "sha256": "17d5f39c6506b7612aa3eb7f299c4dd05088c7cb3a7552eaf90025b8559349f0"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/koloCC-left.png",
+      "file": "local/templates/optimism/img/icons/koloCC-left.png",
+      "bytes": 1062,
+      "sha256": "7eb7f203e12e11793900c043274130e4851daf4613b32eaf3ac7d6736342b1c9"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/koloCC-right.png",
+      "file": "local/templates/optimism/img/icons/koloCC-right.png",
+      "bytes": 979,
+      "sha256": "e3b8ab4d2b6c7448127bc43773984d40f3f32acf4c4f381010e73e9a097c7623"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/koloCC.png",
+      "file": "local/templates/optimism/img/icons/koloCC.png",
+      "bytes": 1704,
+      "sha256": "620faaa46b5da4c8ce088e80d97d2cb40b0153ada8c7696e243f1d437d4c4645"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/like-icon.svg",
+      "file": "local/templates/optimism/img/icons/like-icon.svg",
+      "bytes": 2749,
+      "sha256": "9436c6e4cf146c6baf568363698ab14581152b8c656635915e9442162010fd27"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/lk_icon_head_menu-wh.svg",
+      "file": "local/templates/optimism/img/icons/lk_icon_head_menu-wh.svg",
+      "bytes": 1784,
+      "sha256": "c8ba4eca638314f680f60361d6421d45a83d4c04594c5ad74aef31df8ee28e0f"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons/lk_icon_head_menu.svg",
+      "file": "local/templates/optimism/img/icons/lk_icon_head_menu.svg",
+      "bytes": 1784,
+      "sha256": "c3fd8ca8044b6a4cb3ff44fd109b847a1bcc5732f7e1d58996e0c4a3d79d3421"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/icons_yes.svg",
+      "file": "local/templates/optimism/img/icons_yes.svg",
+      "bytes": 1310,
+      "sha256": "e1852bf873699aba55338cca3af77842e7fb3d4e4e29f51389d996e03be246ae"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/img2.png",
+      "file": "local/templates/optimism/img/img2.png",
+      "bytes": 11453,
+      "sha256": "e7cdb1393fd33b75f219f60262d503684b5cd9af91b5a7dc7005c8bf681b21d4"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/logo-wht.svg",
+      "file": "local/templates/optimism/img/logo-wht.svg",
+      "bytes": 11128,
+      "sha256": "a92870ed440fcd77db1b7f707da27b2e57508d8f2f9e48b1025e26e7a703f752"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/logo_mini.svg",
+      "file": "local/templates/optimism/img/logo_mini.svg",
+      "bytes": 1558,
+      "sha256": "3cb3c3b75b94b24913f51d1662a0e11f283ff62cce44442277760c12d0a964ac"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/main-slider-bg/bg-rockt3.jpg",
+      "file": "local/templates/optimism/img/main-slider-bg/bg-rockt3.jpg",
+      "bytes": 490081,
+      "sha256": "1f6496cb4b44a590c826cf51736b80a08408ea7e74e208709a5a7e06d2b46fe9"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/mainpage/intro-bg-clear_new.jpg",
+      "file": "local/templates/optimism/img/mainpage/intro-bg-clear_new.jpg",
+      "bytes": 195201,
+      "sha256": "bde5f525274cae6dbdd8017d78cfba02229c25554d0f26e709e9778c55907f43"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/mainpage/new_main_bg_v2.jpg",
+      "file": "local/templates/optimism/img/mainpage/new_main_bg_v2.jpg",
+      "bytes": 568572,
+      "sha256": "267667b09535663ad37ce81faa4280fdb28943f0aad8c5be96477f6de5f1828f"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/mob_left_arrow_icon-hover.svg",
+      "file": "local/templates/optimism/img/mob_left_arrow_icon-hover.svg",
+      "bytes": 834,
+      "sha256": "5a5ef7494c26b85e9cb293ce0b328c2ef6be4d464ea38023424e2cb1a5574ddc"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/mob_left_arrow_icon.svg",
+      "file": "local/templates/optimism/img/mob_left_arrow_icon.svg",
+      "bytes": 834,
+      "sha256": "3ca1b93817e6e8a23ae8346f1508e10bd5b6917403485ccd1b41a5fcf58e5ec1"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/more-opinions-icon.svg",
+      "file": "local/templates/optimism/img/more-opinions-icon.svg",
+      "bytes": 703,
+      "sha256": "d3736fe4da9331912e9fa57a1f82410ec0f99ee5495b5cf87dfc0b05387fc12e"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/next-button-hor-hover.svg",
+      "file": "local/templates/optimism/img/next-button-hor-hover.svg",
+      "bytes": 891,
+      "sha256": "cde6dc64a5aaaa2995e1d40955153936c626495887b526c350fdc302af152e00"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/next-button-hor.svg",
+      "file": "local/templates/optimism/img/next-button-hor.svg",
+      "bytes": 876,
+      "sha256": "088d4922c3c150328d62d47511aa5e792a91ed4639bf9314aa9f93dbf548ad13"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/next-button-hover.svg",
+      "file": "local/templates/optimism/img/next-button-hover.svg",
+      "bytes": 882,
+      "sha256": "5e0883df678af98a9677d6fded5ddc17c2e10488237b0c47e5fb0eec51665dac"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/next-button.svg",
+      "file": "local/templates/optimism/img/next-button.svg",
+      "bytes": 882,
+      "sha256": "882df3b54fef948409694834a2b41c85e261203535dff57a01d48a580352759b"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/next-slide-hover.svg",
+      "file": "local/templates/optimism/img/next-slide-hover.svg",
+      "bytes": 837,
+      "sha256": "02eb77498b0cb2f0cf273e4285c604539bca9afc2150ef0d21454e19c9cdc852"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/next-slide.svg",
+      "file": "local/templates/optimism/img/next-slide.svg",
+      "bytes": 837,
+      "sha256": "33c9bcefce76c037634d9f725fedf571e1a5c13442f48b8338730967cf5f62e7"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/next-slideW.svg",
+      "file": "local/templates/optimism/img/next-slideW.svg",
+      "bytes": 837,
+      "sha256": "fb71d5fa1c654c448dac890a77300df3e2e75108e6a671388e44271d8fc7da77"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/page-404/1polet.jpg",
+      "file": "local/templates/optimism/img/page-404/1polet.jpg",
+      "bytes": 10901,
+      "sha256": "ff445ed25e40e10c18846e7f8f7f49005b8f454dc4b79b9785afc0f34cb44a9a"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/preloader.gif",
+      "file": "local/templates/optimism/img/preloader.gif",
+      "bytes": 7713,
+      "sha256": "01cac092a2cf4989715f87ecaaf278ff4fa1e19d626b84ed65c5f8722ab938b0"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/prev-button-hor-hover.svg",
+      "file": "local/templates/optimism/img/prev-button-hor-hover.svg",
+      "bytes": 884,
+      "sha256": "59910fb86a203a99d591ff56d4e94e1b89d904c968151affd51e0d4a49b3f0c3"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/prev-button-hor.svg",
+      "file": "local/templates/optimism/img/prev-button-hor.svg",
+      "bytes": 869,
+      "sha256": "62af4703997adbeec46b93045130487ee531dd00a2cac86ad7996eb5f368cb96"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/prev-button-hover.svg",
+      "file": "local/templates/optimism/img/prev-button-hover.svg",
+      "bytes": 892,
+      "sha256": "877997dc1a9fd82766059695a7bf35e895e449b2b96d3f8fa4c8616e61e86166"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/prev-button.svg",
+      "file": "local/templates/optimism/img/prev-button.svg",
+      "bytes": 892,
+      "sha256": "ce7aa316befdcca207ab9399bc684258a04326511293a180a84559bc2c99cf52"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/prev-slide-hover.svg",
+      "file": "local/templates/optimism/img/prev-slide-hover.svg",
+      "bytes": 837,
+      "sha256": "cee1a9e1ca1979ec8c9b6a5d8c157f1fc9b421445b1726a2adb924b6c8ae7db7"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/prev-slide.svg",
+      "file": "local/templates/optimism/img/prev-slide.svg",
+      "bytes": 837,
+      "sha256": "ff2a9f66a60920eba546393273da9447fa6ceb84e6a9ef544df107354ad68e16"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/prev-slideW.svg",
+      "file": "local/templates/optimism/img/prev-slideW.svg",
+      "bytes": 837,
+      "sha256": "c7864401466148453d73036d4d1b2d9c7714153c4ca0cc3ea2c804a5d417e0fa"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/replay-icon.svg",
+      "file": "local/templates/optimism/img/replay-icon.svg",
+      "bytes": 1561,
+      "sha256": "2722600a504fbbbb9f62b2f2ca9b5677c4312ea9cfba4969094e393b7d5ca1d5"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/round-arrow.png",
+      "file": "local/templates/optimism/img/round-arrow.png",
+      "bytes": 285,
+      "sha256": "2b4f25f39b86654224007a353dea10f679c30ff329a705abb0b907032e23392a"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/slider_loading.gif",
+      "file": "local/templates/optimism/img/slider_loading.gif",
+      "bytes": 5712,
+      "sha256": "2e29ec9e4f9ac2f9d127aec7617debec5489fe6310e5598617abbde27788dd75"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/team_bg_mobile.jpg",
+      "file": "local/templates/optimism/img/team_bg_mobile.jpg",
+      "bytes": 706485,
+      "sha256": "a4e616762fdd45b6b5a61e8704050c8789acc99a4ee7b3576174c76e3599cf64"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/img/turn-sound-icon-new.svg",
+      "file": "local/templates/optimism/img/turn-sound-icon-new.svg",
+      "bytes": 3324,
+      "sha256": "83adf0b7deb1b8428c216151b06074ba30a359b5701a3d5fa6df6e336536bc1c"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/js/app.js?16780844951999",
+      "file": "local/templates/optimism/js/app.js",
+      "bytes": 1999,
+      "sha256": "d1c0e6efed54135dd3a255026fa9870606db947af6cfcc324932f001cf7cd9b1"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/js/b24-extra-calc-button.js?17817076313009",
+      "file": "local/templates/optimism/js/b24-extra-calc-button.js",
+      "bytes": 3009,
+      "sha256": "32d773b3d93f2dc1ad9a6097ea2a8295870eacef1752a489c31ca4b93177f673"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/js/fixhead.js?1626363401963",
+      "file": "local/templates/optimism/js/fixhead.js",
+      "bytes": 963,
+      "sha256": "3d6b182985583258f47299d3910f427f2347e18cf17bcedb9d0a450b188d0566"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/js/jquery.min.js?168491039787380",
+      "file": "local/templates/optimism/js/jquery.min.js",
+      "bytes": 87380,
+      "sha256": "349ad073d6ad1db629887e7063ee06bf605d2dc3925612e8ccd22cb714b92411"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/js/jquery.touchSwipe.min.js?162636340120398",
+      "file": "local/templates/optimism/js/jquery.touchSwipe.min.js",
+      "bytes": 20398,
+      "sha256": "012ebc2567a42951b9ecc4bf26f2706dfa4ea089eacbaf9d509ad2e3b7ff2261"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/js/main-new.js?17237135855951",
+      "file": "local/templates/optimism/js/main-new.js",
+      "bytes": 5951,
+      "sha256": "0f7a962de416e6ecd16170cc3981f7394f739582a9fd2250f4c54806d92e0b7d"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/js/mainpage.js?17745392533994",
+      "file": "local/templates/optimism/js/mainpage.js",
+      "bytes": 3994,
+      "sha256": "27b9fa2c5352c30e741f81da8a7bbc51706b510c6a13ea88656115b28a5021d5"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/js/slick.min.js?162636340152788",
+      "file": "local/templates/optimism/js/slick.min.js",
+      "bytes": 52788,
+      "sha256": "040b35b7d732337ae7958239271a2d80bafec0a7059c73a67f97869aaa447900"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism/video/optimism_youtube_1920x1080_bezpolos_beznadpisey.mp4",
+      "file": "local/templates/optimism/video/optimism_youtube_1920x1080_bezpolos_beznadpisey.mp4",
+      "bytes": 85367320,
+      "sha256": "9bddb15afed277962bdd9202be435d9005c38f2bee8ecf4f449bad02ce93d61a"
+    },
+    {
+      "url": "https://optimism.ru/local/templates/optimism_copy/img/icons_yes.svg",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://optimism.ru/bitrix/js/main/core/images/panel/top-panel-sprite-2.png",
+      "file": "bitrix/js/main/core/images/panel/top-panel-sprite-2.png",
+      "bytes": 118184,
+      "sha256": "3bdcf98f0ae6f3a5cad66af242bdd787e9e9842a41fdce92a2449de0b50f93f6"
+    }
+  ]
+}

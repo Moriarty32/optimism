@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="24px" height="48px" viewBox="0 0 24 48" enable-background="new 0 0 24 48" xml:space="preserve">
+<circle fill-rule="evenodd" clip-rule="evenodd" fill="#88cb5a" cx="12" cy="12" r="12"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M18.672,7.336c-0.434-0.448-1.137-0.448-1.57,0l-6.673,6.894
+	l-3.533-3.65c-0.434-0.448-1.137-0.448-1.57,0c-0.434,0.448-0.434,1.174,0,1.623l4.318,4.461c0.434,0.448,1.137,0.448,1.57,0
+	l7.458-7.705C19.105,8.51,19.105,7.784,18.672,7.336z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M18.672,31.336c-0.434-0.448-1.137-0.448-1.57,0l-6.673,6.894
+	l-3.533-3.65c-0.434-0.448-1.137-0.448-1.57,0c-0.434,0.448-0.434,1.174,0,1.623l4.318,4.461c0.434,0.448,1.137,0.448,1.57,0
+	l7.458-7.705C19.105,32.51,19.105,31.784,18.672,31.336z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M12,24C5.373,24,0,29.373,0,36s5.373,12,12,12s12-5.373,12-12
+	S18.627,24,12,24z M12,46C6.477,46,2,41.523,2,36s4.477-10,10-10s10,4.477,10,10S17.523,46,12,46z"/>
+</svg>

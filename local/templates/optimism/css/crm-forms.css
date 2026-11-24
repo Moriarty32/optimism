@@ -1,0 +1,419 @@
+.popup-box {
+    display: none;
+    position: fixed;
+    z-index: 112;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(-207deg, #0ca0f4 0%, #0064ca 97%, #0064ca 100%);
+    color: #fff;
+    overflow-y: auto;
+    -webkit-overflow-scrolling:touch;
+}
+
+.popup-box#form-popup-14 {        
+    max-width: 604px;
+    max-height: 657px;
+    top: calc(50vh - 657px / 2);
+}
+
+.popup-box#form-popup-3 {        
+    max-width: 810px;
+    max-height: 738px;
+    top: calc(50vh - 738px / 2);
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 111;
+}
+
+.popup-close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.popup-close:hover {
+    opacity: 0.8
+}
+
+.popup-close .cross {
+    z-index: 999999999;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    transform: none;
+    padding: 0 6px;
+}
+
+.popup-close .cross span {
+    transform: translateY(50%) rotate(45deg);
+    width: 38px;
+    top: 50%;
+    position: relative;
+    background-color: #ffffff;
+    height: 4px;
+}
+
+.popup-close .cross span:last-child {
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.popup-head {
+    font-size: 60px;
+    line-height: 1;
+    padding-top: 50px;
+    padding-left: 109px;
+}
+
+.popup-body {
+    padding: 1.5rem 109px 60px;
+}
+
+.popup-body .popup-body-text {
+    margin-bottom: 1.5rem;
+}
+
+.popup-body .crm-form .btn {
+    margin-left: 0;
+}
+
+.popup-body .crm-form > input {
+    margin-bottom: 1.5rem;
+}
+
+#form-popup-3 input.col-half {
+    width: calc(50% - 0.5rem);
+}
+
+#form-popup-3 textarea {
+    height: 136px;
+    resize: none;
+    line-height: 1.21;
+    padding: 0.2em 0.6em;
+    -webkit-appearance: none;
+}
+
+#form-popup-3 button {
+    width: 100%;
+    max-width: 386px
+}
+
+.crm-form .agreement_note {
+    font-size: 11px;
+    padding-left: 20px;
+    line-height: 1.4em;
+    width: calc(100% - 35px);    
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer
+}
+
+.crm-form .checkbox-box {
+    width: 35px;
+    height: 35px;
+}
+
+.crm-form .checkbox-box .checkbox {
+    display: none
+}
+
+.crm-form .checkbox-box .checkbox + label {
+    width: 35px;
+    height: 35px;
+    color: #ffffff;
+    border: 2px solid;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    margin-bottom: 0;
+}
+
+.crm-form .checkbox-box .checkbox.error-input + label {
+    color: red;
+}
+
+.crm-form .checkbox-area:hover label {
+    color: #ffffff;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.crm-form .checkbox-box .checkbox + label:hover {
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.crm-form .checkbox-box .checkbox:checked + label {
+    color: #ffffff;
+    background-color: #ffffff;
+    background-image: url(/local/templates/optimism/img/icon-check.svg);
+    background-position: center center;
+    -webkit-background-size: 25px 25px;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+}
+
+.popup-box .crm-form .crm-form-input {
+    padding: 0 0.6em
+}
+
+.crm-form.main-form {
+    width: 641px;
+}
+
+.crm-form.main-form .crm-form-input {
+    width: 345px;
+    font-size: 24px;
+    height: 58px;        
+    line-height: 58px;
+}
+
+.crm-form.main-form .btn {
+    font-size: 24px;
+    height: 58px;
+    line-height: 58px;
+    width: 280px;
+}
+
+.crm-form.main-form .button-block span {
+    font-size: 12px;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+.crm-form.main-form.opacity-0 .success-block {
+    color: #000000;
+}
+
+.sec-intro__form {
+    text-align: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sec-intro__input_wrapper {
+    margin: 0 15px 0 0;
+    flex: 1 1 auto;
+    position: relative;
+}
+
+.sec-intro_wrapp {
+    width: 100%;
+    max-width: 450px
+}
+
+.sec-intro__input {
+    display: block!important;
+    width: 100%!important;
+    height: 100%!important;
+    padding: 0em .5em!important;
+    font-size: 1.5em!important;
+    background-color: #fff!important;
+    border: 1px solid #ced4da!important;
+    border-radius: 0!important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.sec-intro__input::-webkit-input-placeholder {color: #b7b0b0!important}
+.sec-intro__input:-ms-input-placeholder {color: #b7b0b0!important}
+.sec-intro__input::-ms-input-placeholder {color: #b7b0b0!important}
+.sec-intro__input::placeholder {color: #b7b0b0!important}
+
+.sec-intro__input:focus {
+    background-color: #fff!important;
+    border-color: #00CCFF!important;
+    outline: 0!important;
+}
+
+.sec-intro__input.input_state_error {
+    color: red!important;
+    text-transform: uppercase!important;
+    border-color: #FF0000!important;
+    outline: 0!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+.sec-intro__form .btn {
+    min-width: 130px
+}
+
+
+@media all and (max-width:991px) {
+    .header-drop-body-form {
+        display: none!important;
+    }
+
+    .crm-form.main-form .btn, 
+    .crm-form.main-form .crm-form-input {
+        line-height: 53px;
+        height: 53px;
+    }
+    .crm-form.main-form .btn {
+        padding: 0 0.2em !important
+    }
+    #form-popup-3 input.col-half {
+        width: calc(100%);
+    }
+
+
+    .popup-box#form-popup-14,
+    .popup-box#form-popup-3 {        
+        max-width: unset;
+        max-height: 100%;
+        top: calc(50% + 70px);
+        transform: translateY(calc(-50% - 70px));
+    }
+
+}
+
+@media all and (max-width: 767px) {
+    .crm-form.main-form {
+        width: auto;
+    }
+
+    .crm-form.main-form .btn, 
+    .crm-form.main-form .crm-form-input {
+        width: 100%;
+        line-height: 53px;
+        height: 53px;
+        margin: 0;
+    }
+
+    .crm-form.main-form .crm-form-input {
+        font-size: 1.6em!important;
+        margin-bottom: 1rem;
+    }
+
+    .crm-form.main-form .btn {
+        padding: 0em .75em!important;
+        font-size: 1.5em!important;
+    }
+
+    .crm-form.main-form .button-block span {
+        margin-left: 0;
+    }
+    .popup-close {
+        z-index: 103
+    }
+    .popup-head {
+        font-size: 40px;
+        line-height: 1;
+        padding-top: 30px;
+        padding-left: 0;
+        max-width: 490px;
+        margin-right: auto; 
+        margin-left: auto;
+    }
+
+    .popup-body {
+        padding: 1.5rem 30px 30px;
+    }
+
+    .popup-body .popup-body-text {
+        margin-bottom: 1rem;
+        max-width: 490px;
+        margin-right: auto; 
+        margin-left: auto;  
+    }
+
+    .popup-body .crm-form > input {
+        margin-bottom: 1rem;
+    }
+}
+
+@media all and (max-width: 575px) {
+    .popup-head {
+        padding: 60px 30px 0;
+        margin-left: unset;
+        margin-right: unset;
+        font-size: 34px;
+    }
+
+    .popup-box#form-popup-14,
+    .popup-box#form-popup-3 {        
+        height: 100%;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .popup-box#form-popup-14.showed,
+    .popup-box#form-popup-3.showed {
+        display: -webkit-flex !important;
+        display: -moz-flex !important;
+        display: -ms-flex !important;
+        display: -o-flex !important;
+        display: flex !important;
+    }
+
+    .popup-close {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        font-size: 50px;
+
+    }
+    .crm-form.main-form .btn {
+        line-height: 49px;
+        height: 51px;
+        padding: 0em .75em 2px!important;
+        font-size: 1.5em!important;
+    }
+
+    .sec-intro__input_wrapper {
+        margin-right: 0;
+        height: 54px
+    }
+
+    .sec-intro_wrapp {
+        max-width: 100%;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .sec-intro__form .btn {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
