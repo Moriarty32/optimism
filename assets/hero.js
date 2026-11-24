@@ -141,7 +141,9 @@
   });
   document.addEventListener('visibilitychange', () => { previous = performance.now();sync(); });
   new IntersectionObserver(entries => {
-    visible = entries[0].isIntersecting;previous = performance.now();sync();
+    visible = entries[0].isIntersecting;
+    document.body.classList.toggle('hero-in-view', visible);
+    previous = performance.now();sync();
   }, { threshold: .15 }).observe(hero);
   motion.addEventListener('change', () => { paused = motion.matches;sync(); });
   sync();
