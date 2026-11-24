@@ -1,0 +1,60 @@
+{
+  "purpose": "Фотографии иллюстрируют услуги. Они не являются кейсами, сотрудниками или результатами Оптимизм.ру.",
+  "license": "https://unsplash.com/license",
+  "photos": [
+    {
+      "id": "seo",
+      "author": "SumUp",
+      "source": "https://unsplash.com/photos/a-person-sitting-in-front-of-a-laptop-computer-KqiykWgHBtQ",
+      "file": "assets/hero-photos/seo.webp"
+    },
+    {
+      "id": "ads",
+      "author": "Zulfugar Karimov",
+      "source": "https://unsplash.com/photos/linkedin-ads-campaign-manager-interface-on-laptop-screen-ssGiPWpJpdE",
+      "file": "assets/hero-photos/ads-online.webp"
+    },
+    {
+      "id": "analytics",
+      "author": "Carlos Muza",
+      "source": "https://unsplash.com/photos/laptop-computer-on-glass-top-table-hpjSkU2UYSU",
+      "file": "assets/hero-photos/analytics.webp"
+    },
+    {
+      "id": "development",
+      "author": "Karl Pawlowicz",
+      "source": "https://unsplash.com/photos/a-computer-monitor-sitting-on-top-of-a-wooden-desk-QUHuwyNgSA0",
+      "file": "assets/hero-photos/development.webp"
+    },
+    {
+      "id": "content",
+      "author": "Michael Moloney",
+      "source": "https://unsplash.com/photos/a-man-taking-a-picture-of-a-woman-with-a-camera-eqH7xVlQIhQ",
+      "file": "assets/hero-photos/content.webp"
+    },
+    {
+      "id": "social",
+      "author": "aranprime",
+      "source": "https://unsplash.com/photos/person-holding-black-android-smartphone-DL-lUF5i_sY",
+      "file": "assets/hero-photos/social.webp"
+    },
+    {
+      "id": "brand",
+      "author": "Xiao daCunha",
+      "source": "https://unsplash.com/photos/a-store-with-shelves-and-toys-YXdjYyRa9tI",
+      "file": "assets/hero-photos/brand.webp"
+    },
+    {
+      "id": "ai",
+      "author": "Zulfugar Karimov",
+      "source": "https://unsplash.com/photos/the-image-shows-the-chatgpt-app-on-a-phone-wl67wKt8hNI",
+      "file": "assets/hero-photos/ai.webp"
+    },
+    {
+      "id": "geo",
+      "author": "Aerps.com",
+      "source": "https://unsplash.com/photos/a-laptop-displays-what-can-i-help-with-5e4Zlblkvks",
+      "file": "assets/hero-photos/geo.webp"
+    }
+  ]
+}

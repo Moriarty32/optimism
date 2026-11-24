@@ -3,16 +3,70 @@
   const hero = document.querySelector('.hero-dynamic');
   if (!hero) return;
   const services = [
-    ['SEO-продвижение', 'Помогаем вашему сайту стать заметнее в поиске — от технической оптимизации до контента и структуры.', 'SEARCH / ORGANIC GROWTH'],
-    ['Интернет-реклама', 'Соединяем ваше предложение с нужной аудиторией. Настраиваем кампании, проверяем гипотезы и анализируем обращения.', 'AUDIENCE / PRECISE CONNECTION'],
-    ['Аналитика и UX', 'Находим, где теряются клиенты. Исследуем путь пользователя и превращаем данные в решения для сайта.', 'DATA / HUMAN EXPERIENCE'],
-    ['Разработка сайтов', 'Создаём пространство для вашего бизнеса: от структуры и интерфейса до разработки и развития сайта.', 'INTERFACE / DIGITAL ARCHITECTURE'],
-    ['Контент-маркетинг', 'Помогаем объяснить ценность вашего продукта. Создаём контент, который отвечает на вопросы аудитории.', 'CONTENT / MEANINGFUL STORIES'],
-    ['Социальные сети', 'Выстраиваем связь бренда с людьми через стратегию, контент и продвижение в социальных сетях.', 'COMMUNITY / CONNECTED PEOPLE'],
-    ['Продвижение бренда', 'Помогаем бренду стать узнаваемым. Соединяем позиционирование, коммуникации и продвижение в единую стратегию.', 'BRAND / RECOGNITION'],
-    ['Разработка AI-агента', 'Превращаем повторяющиеся задачи в управляемые сценарии автоматизации — с вашими данными и нужными интеграциями.', 'INTELLIGENCE / CONNECTED WORKFLOWS'],
-    ['GEO-продвижение', 'Работаем над тем, как компания представлена в генеративном поиске: контент, источники фактов и упоминания бренда.', 'GENERATIVE SEARCH / KNOWLEDGE']
-  ];
+    [
+        "SEO-продвижение",
+        "Помогаем клиентам найти ваш сайт в нужный момент. Работаем с технической основой, структурой и содержанием.",
+        "Поиск на экране ноутбука",
+        "Поиск, который приводит к вам",
+        "#0057d9"
+    ],
+    [
+        "Интернет-реклама",
+        "Соединяем рекламную стратегию, объявления и посадочные страницы. Анализируем путь от первого клика до обращения.",
+        "Управление интернет-рекламой на ноутбуке",
+        "Ваше предложение. Нужная аудитория.",
+        "#bf361e"
+    ],
+    [
+        "Аналитика и UX",
+        "Выясняем, как люди пользуются сайтом и где теряются обращения. Находим точки роста в аналитике и интерфейсе.",
+        "Аналитические графики на экране ноутбука",
+        "От данных — к понятным решениям",
+        "#006258"
+    ],
+    [
+        "Разработка сайтов",
+        "Проектируем структуру и интерфейс, разрабатываем и развиваем сайты. Соединяем задачи бизнеса и удобство клиента.",
+        "Разработка: код на экране монитора",
+        "Сайт как продолжение вашего бизнеса",
+        "#5431b5"
+    ],
+    [
+        "Контент-маркетинг",
+        "Помогаем рассказать о продукте так, чтобы его поняли. От стратегии и экспертных материалов до контента для продвижения.",
+        "Подготовка съёмки: оператор и камера",
+        "Содержание, за которым видна ценность",
+        "#ab245b"
+    ],
+    [
+        "Социальные сети",
+        "Соединяем стратегию, контент и продвижение. Помогаем бренду находить свою аудиторию и выстраивать с ней связь.",
+        "Социальная сеть на экране смартфона",
+        "В центре разговора — ваш бренд",
+        "#1351b2"
+    ],
+    [
+        "Продвижение бренда",
+        "Выстраиваем позиционирование и коммуникации. Объединяем каналы продвижения вокруг узнаваемого образа бренда.",
+        "Узнаваемое оформление торгового пространства",
+        "Чтобы узнавали. И выбирали.",
+        "#843c07"
+    ],
+    [
+        "Разработка AI-агента",
+        "Разрабатываем AI-агентов под рабочие задачи: с нужными данными, интеграциями и понятными границами самостоятельности.",
+        "AI-помощник на экране смартфона",
+        "Меньше рутины. Больше возможностей.",
+        "#372b86"
+    ],
+    [
+        "GEO-продвижение",
+        "Работаем с контентом, фактами и упоминаниями компании, чтобы она была понятнее системам поиска с генеративными ответами.",
+        "Интерфейс генеративного поиска на ноутбуке",
+        "Ваш бренд в новом поиске",
+        "#005e70"
+    ]
+];
   const buttons = [...hero.querySelectorAll('[data-slide]')];
   const scenes = [...hero.querySelectorAll('[data-scene]')];
   const playback = hero.querySelector('.hero-playback');
@@ -34,12 +88,13 @@
     return stopped;
   }
   function select(index, manual = false) {
-    if (index === active) { elapsed = 0; return; }
+    if (index === active) return;
     clearTimeout(cleanup);
     scenes.forEach(scene => scene.classList.remove('is-leaving'));
     const old = active;
     active = index;
     elapsed = 0;
+    hero.style.setProperty('--hero-progress', '0');
     buttons.forEach((button, i) => {
       button.classList.toggle('is-active', i === active);
       button.setAttribute('aria-pressed', String(i === active));
@@ -55,6 +110,10 @@
     hero.querySelector('#hero-service-title').textContent = services[active][0];
     hero.querySelector('#hero-service-description').textContent = services[active][1];
     hero.querySelector('#hero-scene-caption').textContent = services[active][2];
+    hero.querySelector('#hero-service-promise').textContent = services[active][3];
+    hero.querySelector('#hero-current').textContent = String(active + 1).padStart(2, '0');
+    hero.style.setProperty('--hero-accent', services[active][4]);
+    scenes.forEach((scene, i) => scene.setAttribute('aria-hidden', String(i !== active)));
     hero.querySelector('.hero-service-copy').setAttribute('aria-live', manual ? 'polite' : 'off');
     cleanup = setTimeout(() => {
       scenes.forEach(scene => scene.classList.remove('is-leaving'));
@@ -62,7 +121,7 @@
     }, 1000);
   }
   buttons.forEach((button, i) => {
-    button.addEventListener('click', () => select(i, true));
+    button.addEventListener('click', event => { focused = event.detail === 0; select(i, true); sync(); });
     button.addEventListener('keydown', event => {
       let next;
       if (event.key === 'ArrowRight' || event.key === 'ArrowDown') next = (i + 1) % buttons.length;
@@ -73,6 +132,8 @@
       event.preventDefault();buttons[next].focus();select(next, true);
     });
   });
+  hero.querySelector('.hero-prev').addEventListener('click', () => { focused = false; select((active + services.length - 1) % services.length, true); sync(); });
+  hero.querySelector('.hero-next').addEventListener('click', () => { focused = false; select((active + 1) % services.length, true); sync(); });
   playback.addEventListener('click', () => { paused = !paused; focused = false; sync(); });
   hero.querySelector('.hero-services').addEventListener('focusin', () => { focused = true; sync(); });
   hero.querySelector('.hero-services').addEventListener('focusout', event => {
@@ -89,6 +150,7 @@
     previous = now;
     if (!stopped) {
       elapsed += delta;
+      hero.style.setProperty('--hero-progress', String(Math.min(1, elapsed / 5000)));
       if (elapsed >= 5000) select((active + 1) % services.length);
     }
     requestAnimationFrame(tick);
