@@ -330,3 +330,11 @@
 }
 
 #homepage .studio-flow .home-services{overflow-anchor:none}
+
+/* Two quiet comparison rows keep the tariff differences useful and compact. */
+#homepage .studio-flow #budget .home-tariff-brief{display:grid;gap:10px;min-height:80px;margin:0 0 24px;padding:16px 0 0;border-top:1px solid #d9e5eb}
+#homepage .studio-flow #budget .home-tariff-brief>div{display:grid;grid-template-columns:76px minmax(0,1fr);gap:12px;align-items:baseline}
+#homepage .studio-flow #budget .home-tariff-brief dt{font-size:14px;line-height:1.4;font-weight:400;color:var(--studio-muted)}
+#homepage .studio-flow #budget .home-tariff-brief dd{font-size:16px;line-height:1.4;color:var(--studio-ink);margin:0}
+@media(min-width:701px) and (max-width:1000px){#homepage .studio-flow #budget .home-tariff-brief{grid-column:1/-1;grid-row:3;min-height:0;margin:20px 0 0}#homepage .studio-flow #budget .home-prices article>a{grid-row:4}}
+@media(max-width:1200px){#homepage .studio-flow #budget .home-tariff-brief dt{font-size:13px}#homepage .studio-flow #budget .home-tariff-brief dd{font-size:15px}}
