@@ -68,7 +68,7 @@
 /* Wide service rows, with content-rich expansion and a real photographic scene. */
 #homepage .studio-flow #directions {background:#edf6fb;border-radius:40px;padding-top:clamp(72px,6vw,112px)}
 #homepage .studio-flow .home-services {display:flex;flex-direction:column;gap:10px}
-#homepage .studio-service {border:0;border-radius:24px;background:#fff;overflow:hidden;transition:background .4s,color .4s}
+#homepage .studio-service {scroll-margin-top:110px;border:0;border-radius:24px;background:#fff;overflow:hidden;transition:background .4s,color .4s}
 #homepage .studio-service>summary {display:flex;align-items:center;justify-content:space-between;gap:28px;padding:32px 42px;min-height:108px;color:#092d40}
 #homepage .studio-service>summary h3 {font-size:clamp(28px,2.5vw,46px);margin:0;max-width:80%}
 #homepage .studio-disclosure-icon {display:flex;align-items:center;justify-content:center;flex:0 0 48px;width:48px;height:48px;border:1px solid #a9c2d0;border-radius:50%;transition:transform .45s,background .3s}
@@ -338,3 +338,5 @@
 #homepage .studio-flow #budget .home-tariff-brief dd{font-size:16px;line-height:1.4;color:var(--studio-ink);margin:0}
 @media(min-width:701px) and (max-width:1000px){#homepage .studio-flow #budget .home-tariff-brief{grid-column:1/-1;grid-row:3;min-height:0;margin:20px 0 0}#homepage .studio-flow #budget .home-prices article>a{grid-row:4}}
 @media(max-width:1200px){#homepage .studio-flow #budget .home-tariff-brief dt{font-size:13px}#homepage .studio-flow #budget .home-tariff-brief dd{font-size:15px}}
+
+@media(max-width:767px){#homepage .studio-service{scroll-margin-top:96px}}

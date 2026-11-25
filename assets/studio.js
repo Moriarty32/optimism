@@ -45,7 +45,7 @@
   const serviceCards=[...flow.querySelectorAll('.studio-service')];
   const manualServices=new Map();
   const serviceSizes=new Map();
-  let serviceFrame=0,lastServiceWidth=0;
+  let serviceFrame=0,lastServiceWidth=0,navigationAnchor=null;
   const autoServices=()=>serviceMedia.matches&&!reduced.matches;
   const clearServiceStyle=card=>{
     card.classList.remove('is-scroll-service');card.style.removeProperty('background-color');card.style.removeProperty('color');
@@ -72,7 +72,9 @@
     if(listRect.top>innerHeight||listRect.bottom<0)return;
     // Batch geometry reads before writes. Predict each next row from preceding changes.
     const geometry=serviceCards.map(card=>({card,rect:card.getBoundingClientRect(),summary:card.querySelector('summary').getBoundingClientRect()}));
-    const anchorIndex=geometry.findIndex(({rect})=>rect.bottom>0&&rect.top<innerHeight);
+    // A direct service link anchors its chosen heading while earlier rows settle.
+    const requestedAnchor=geometry.findIndex(({card})=>card===navigationAnchor);
+    const anchorIndex=requestedAnchor>=0?requestedAnchor:geometry.findIndex(({rect})=>rect.bottom>0&&rect.top<innerHeight);
     let shift=0,anchorShift=0;
     const updates=[];
     geometry.forEach(({card,rect,summary},i)=>{
@@ -98,9 +100,16 @@
     });
     // A stable visible card, with no wheel/touch interception or per-row forced layout.
     if(anchorIndex>=0&&Math.abs(anchorShift)>1){scrollBy({top:anchorShift,behavior:'instant'});requestServices();}
+    if(requestedAnchor>=0){if(updates.length)requestServices();else navigationAnchor=null;}
   }
 
   function requestServices(){if(!serviceFrame&&autoServices())serviceFrame=requestAnimationFrame(renderServices);}
+  flow.addEventListener('optimism:service-open',event=>{
+    const card=event.target.closest('.studio-service');if(!card)return;
+    const start=card.getBoundingClientRect().height;
+    manualServices.set(card,true);clearServiceStyle(card);expand(card,true,start);
+    navigationAnchor=autoServices()?card:null;requestServices();
+  });
   serviceCards.forEach(card=>card.addEventListener('focusin',event=>{
     if(event.target.closest('summary'))return;
     manualServices.set(card,true);clearServiceStyle(card);card.open=true;

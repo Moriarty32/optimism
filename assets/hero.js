@@ -3,6 +3,7 @@
   const services = [
   {
     "title": "SEO-продвижение",
+    "href": "https://optimism.ru/services/prodvijenie-saytov-seo/",
     "description": "Ваш бизнес — в центре поиска. Стратегия, технологии и контент, которые помогают клиентам выбрать вас.",
     "words": [
       "Поисковые запросы",
@@ -29,6 +30,7 @@
   },
   {
     "title": "Интернет-реклама",
+    "href": "https://optimism.ru/services/advertising/context/",
     "description": "Внимание нужной аудитории. Соединяем стратегию кампаний и посадочные страницы, чтобы работать со всем путём к обращению.",
     "words": [
       "Реклама",
@@ -55,6 +57,7 @@
   },
   {
     "title": "Аналитика и UX",
+    "href": "https://optimism.ru/services/analytics/",
     "description": "Точность, которая меняет решения. Исследуем путь клиента и находим потенциал роста в данных и интерфейсе.",
     "words": [
       "Аналитика",
@@ -81,6 +84,7 @@
   },
   {
     "title": "Разработка сайтов",
+    "href": "https://optimism.ru/services/sitemaking/",
     "description": "Сайт, достойный ваших амбиций. Соединяем образ бренда, технологии и удобство в каждом пользовательском сценарии.",
     "words": [
       "Разработка",
@@ -107,6 +111,7 @@
   },
   {
     "title": "Контент-маркетинг",
+    "href": "https://optimism.ru/services/content/kontent-marketing/",
     "description": "Экспертность, которую замечают. Раскрываем ценность продукта в материалах, которые отвечают на вопросы вашей аудитории.",
     "words": [
       "Контент",
@@ -133,6 +138,7 @@
   },
   {
     "title": "Социальные сети",
+    "href": "https://optimism.ru/services/smm/",
     "description": "У бренда есть голос. Помогаем ему звучать в социальных сетях — через стратегию, содержание и диалог с аудиторией.",
     "words": [
       "Соцсети",
@@ -159,6 +165,7 @@
   },
   {
     "title": "Продвижение бренда",
+    "href": "#service-brand",
     "description": "Бренд, который выбирают осознанно. Выстраиваем позиционирование и коммуникации вокруг вашей сильной идеи.",
     "words": [
       "Бренд",
@@ -185,6 +192,7 @@
   },
   {
     "title": "Разработка AI-агента",
+    "href": "#service-ai",
     "description": "Интеллект становится частью команды. Проектируем AI-агентов под ваши данные, процессы и рабочие инструменты.",
     "words": [
       "AI-агент",
@@ -211,6 +219,7 @@
   },
   {
     "title": "GEO-продвижение",
+    "href": "#service-geo",
     "description": "Новая среда поиска. Работаем с контентом и фактами, чтобы экспертиза вашего бренда была понятна генеративным системам.",
     "words": [
       "GEO",
@@ -240,12 +249,14 @@
   if (!hero) return;
   const buttons = [...hero.querySelectorAll('[data-slide]')];
   const copy = hero.querySelector('.hero-service-copy');
+  const serviceLink = hero.querySelector('#hero-service-link');
+  const actions = hero.querySelector('.home-actions');
   const canvas = hero.querySelector('canvas');
   const context = canvas.getContext('2d', {alpha: true});
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   const field = hero.querySelector('.hero-atmosphere');
   let active = 0, elapsed = 0, previous = 0, frame = 0, lastPaint = 0;
-  let visible = true, focused = false, running = false;
+  let visible = true, focused = false, actionFocused = false, actionHovered = false, running = false;
   let width = 0, height = 0, density = 1, burst = 0;
   let words = [], sprites = [], oldField = null, fieldStarted = 0, copyAnimations = [];
 
@@ -315,12 +326,15 @@
   function select(index, manual = false) {
     elapsed = 0;
     if (index === active) return;
-    if (context && !motion.matches && running && !focused) {
+    if (context && !motion.matches && running && !focused && !actionFocused && !actionHovered) {
       oldField = document.createElement('canvas');oldField.width = canvas.width;oldField.height = canvas.height;
       oldField.getContext('2d').drawImage(canvas, 0, 0);fieldStarted = performance.now();
     } else oldField = null;
     active = index;
     const service = services[active];
+    serviceLink.setAttribute('href', service.href);
+    serviceLink.setAttribute('aria-label', 'К услуге «' + service.title + '»');
+    serviceLink.dataset.cta = 'hero-service-' + active;
     buttons.forEach((button, i) => {
       button.classList.toggle('is-active', i === active);
       button.setAttribute('aria-pressed', String(i === active));
@@ -347,7 +361,7 @@
     }));
   }
   function sync() {
-    const shouldRun = !motion.matches && visible && !focused && !document.hidden;
+    const shouldRun = !motion.matches && visible && !focused && !actionFocused && !actionHovered && !document.hidden;
     hero.classList.toggle('is-paused', !shouldRun);
     if (shouldRun && !running) {running = true;previous = performance.now();frame = requestAnimationFrame(tick);}
     if (!shouldRun && running) {
@@ -382,6 +396,21 @@
   hero.querySelector('.hero-services').addEventListener('focusin', () => {focused=true;sync();});
   hero.querySelector('.hero-services').addEventListener('focusout', event => {
     if (!event.relatedTarget || !hero.querySelector('.hero-services').contains(event.relatedTarget)) {focused=false;sync();}
+  });
+  // Keep the selected destination stable while the visitor points at or focuses an action.
+  actions.addEventListener('pointerenter', () => {actionHovered=true;sync();});
+  actions.addEventListener('pointerleave', () => {actionHovered=false;sync();});
+  actions.addEventListener('focusin', () => {actionFocused=true;sync();});
+  actions.addEventListener('focusout', event => {actionFocused=!!event.relatedTarget&&actions.contains(event.relatedTarget);sync();});
+  serviceLink.addEventListener('click', event => {
+    const href=serviceLink.getAttribute('href');
+    if(!href.startsWith('#')||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+    const target=document.querySelector(href);if(!target)return;
+    event.preventDefault();
+    target.dispatchEvent(new CustomEvent('optimism:service-open',{bubbles:true}));
+    target.querySelector('summary').focus({preventScroll:true});
+    target.scrollIntoView({block:'start',behavior:'instant'});
+    history.pushState(null,'',href);
   });
   document.addEventListener('visibilitychange', sync);
   new IntersectionObserver(entries => {
