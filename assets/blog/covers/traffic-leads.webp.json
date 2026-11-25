@@ -1,0 +1,5 @@
+{
+  "prompt": "Use case: stylized-concept. Asset type: wide landscape editorial blog cover, approximately 3:2. Primary request: a tactile miniature funnel illustrating search visitors becoming actual business leads. On a rich midnight navy seamless backdrop, luminous curved cyan streams of tiny glass beads flow into a sculptural cyan and cobalt funnel; a few distinct golden contact tokens with simple embossed human bust silhouettes emerge below. Style: polished artistic 3D editorial still life, matte paper and acrylic textures, refined studio lighting, strong single focal composition, vibrant purposeful color. Edge-to-edge colorful background, complete composition readable at thumbnail size. Constraints: absolutely no readable text, NO Latin or Russian words, no letters or numbers, no logos, no watermark. No fake screenshot, no client results, no charts with data. Only abstract physical objects.",
+  "source": "/home/e_bogomazov/audit Optimism/output/imagegen/library/traffic-leads.png",
+  "production": "Built-in image_gen; resized and encoded to WebP for web delivery; illustration, not actual client results."
+}

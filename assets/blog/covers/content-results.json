@@ -1,0 +1,6 @@
+{
+  "slug": "content-results",
+  "prompt": "Use case: stylized-concept. Asset type: marketing journal article cover, wide landscape 3:2. Primary request: Measuring content business results, represented by tactile editorial paper sheets connected by one visible flowing cyan path to a golden enquiry token sculpted as an unmarked speech bubble. Scene: edge-to-edge emerald green and deep navy studio still life. Style: polished artistic 3D editorial illustration, sophisticated and playful; tactile matte paper and translucent acrylic, convincing soft shadows. Composition: one clear focal idea, diagonal perspective with a small organized group of editorial sheets and a luminous golden enquiry token, generous breathing room, full-bleed colorful backdrop. Editorial sheets contain only abstract blank colored rectangles, no text-like strokes. Palette: emerald, cyan, navy, warm gold accent. Constraints: no readable text in any language, no letters, no numbers, no logos, no watermarks, no fake UI, no customer proof. No typography anywhere. Premium contemporary visual, crisp textures and rich color, suitable for a business editorial website.",
+  "tool": "builtin image_gen.imagegen",
+  "source_original_path": "/home/e_bogomazov/.codex/generated_images/01a21237-4ad2-7c33-8c56-7c6bcac89025/exec-b9a7d7b7-9a9e-490f-98da-de8c9e45c4ce.png"
+}

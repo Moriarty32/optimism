@@ -19,66 +19,80 @@
   const data = document.querySelector('#blog-search-data');
   if (data) {
     const entries = JSON.parse(data.textContent);
+    const categories = JSON.parse(document.querySelector('#blog-categories').textContent);
     const form = document.querySelector('.search-form');
     const input = document.querySelector('#blog-search');
     const clear = document.querySelector('.clear-search');
     const topics = document.querySelector('.topic-filters');
+    const availability = document.querySelector('#availability');
     const count = document.querySelector('#results-count');
     const empty = document.querySelector('.search-empty');
     const heading = document.querySelector('#stories-heading');
+    const description = document.querySelector('#category-description');
     const cards = [...document.querySelectorAll('.stories .story')];
-    const allowed = new Set(entries.flatMap(a => a.topics));
+    const allowed = new Set(categories.map(c => c.name));
     const normalize = value => value.toLocaleLowerCase('ru').replaceAll('ё', 'е').replace(/\bseo\b/g, 'сео').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
-    const searchable = new Map(entries.map(a => [a.slug, normalize(a.title + ' ' + a.summary + ' ' + a.topics.join(' ') + ' ' + a.searchText)]));
-    const plural = n => n === 1 ? 'материал' : 'материала';
-    let topic = '';
-    let timer;
+    const searchable = new Map(entries.map(a => [a.slug, normalize([a.title,a.summary,a.category,a.topics.join(' '),a.searchText].join(' '))]));
+    const plural = n => n%10===1&&n%100!==11?'материал':n%10>=2&&n%10<=4&&(n%100<12||n%100>14)?'материала':'материалов';
+    let topic = '', status = 'all', timer;
     topics.hidden = false;
-
+    document.querySelector('.availability-filter').hidden = false;
     function readURL() {
       const params = new URLSearchParams(location.search);
-      input.value = (params.get('q') || '').slice(0, 160);
+      input.value = (params.get('q') || '').slice(0,160);
       topic = allowed.has(params.get('topic')) ? params.get('topic') : '';
+      status = ['published','planned'].includes(params.get('status')) ? params.get('status') : 'all';
+      availability.value = status;
     }
-    function render(writeURL = false, push = false) {
+    function render(writeURL=false,push=false) {
       const query = input.value.trim();
       const words = normalize(query).split(' ').filter(Boolean);
-      let shown = 0;
+      let shown=0, ready=0;
       cards.forEach(card => {
-        const entry = entries.find(a => a.slug === card.dataset.slug);
-        const match = (!topic || entry.topics.includes(topic)) && words.every(word => searchable.get(entry.slug).includes(word));
+        const entry = entries.find(a=>a.slug===card.dataset.slug);
+        const match = (!topic||entry.category===topic)&&(status==='all'||entry.status===status)&&words.every(w=>searchable.get(entry.slug).includes(w));
         card.hidden = !match;
-        if (match) shown++;
+        if(match){shown++;if(entry.status==='published')ready++;}
       });
-      topics.querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.topic === topic)));
+      topics.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.topic===topic)));
       clear.hidden = !input.value;
-      count.textContent = shown ? `${shown} ${plural(shown)}${query ? ' по вашему запросу' : ''}` : 'Материалы не найдены';
-      heading.textContent = query ? 'Результаты поиска' : topic ? `Статьи: ${topic}` : 'Разобраться и применить';
-      empty.hidden = shown !== 0;
-      document.querySelector('#empty-description').textContent = query ? `По запросу «${query}»${topic ? ` в теме «${topic}»` : ''} ничего не нашлось.` : 'В выбранной теме пока нет подходящих материалов.';
-      if (writeURL) {
+      count.textContent = shown ? `${shown} ${plural(shown)} · ${ready} ${ready===1?'доступен':'доступно'} для чтения` : 'Материалы не найдены';
+      heading.textContent = query ? 'Результаты поиска' : topic || (status==='published'?'Можно прочитать сейчас':status==='planned'?'Будущие материалы':'Все материалы');
+      description.textContent = topic ? categories.find(c=>c.name===topic).description : 'Готовые инструкции — в начале.';
+      empty.hidden = shown!==0;
+      document.querySelector('#empty-description').textContent = query ? `По запросу «${query}» с выбранными фильтрами ничего не нашлось.` : 'В этой рубрике пока нет материалов с выбранным статусом. Можно посмотреть анонсы или выбрать другую рубрику.';
+      if(writeURL){
         const url = new URL(location.href);
-        query ? url.searchParams.set('q', query) : url.searchParams.delete('q');
-        topic ? url.searchParams.set('topic', topic) : url.searchParams.delete('topic');
-        if (url.href !== location.href) history[push ? 'pushState' : 'replaceState']({}, '', url);
+        query?url.searchParams.set('q',query):url.searchParams.delete('q');
+        topic?url.searchParams.set('topic',topic):url.searchParams.delete('topic');
+        status!=='all'?url.searchParams.set('status',status):url.searchParams.delete('status');
+        if(url.href!==location.href)history[push?'pushState':'replaceState']({},'',url);
       }
-      try { sessionStorage.setItem('optimism-blog-return', location.pathname + location.search); } catch (_) { /* Storage is optional. */ }
-      document.querySelector('.stories').classList.toggle('single-result', shown === 1);
+      try{sessionStorage.setItem('optimism-blog-return',location.pathname+location.search);}catch(_){}
+      document.querySelector('.stories').classList.toggle('single-result',shown===1);
     }
-    input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => render(true), 160); });
-    form.addEventListener('submit', e => { e.preventDefault(); clearTimeout(timer); render(true, true); });
-    input.addEventListener('search', () => render(true));
-    clear.addEventListener('click', () => { clearTimeout(timer); input.value = ''; render(true); input.focus(); });
-    topics.addEventListener('click', e => {
-      const button = e.target.closest('button');
-      if (!button) return;
-      clearTimeout(timer); topic = button.dataset.topic; render(true, true);
-    });
-    document.querySelector('.reset-search').addEventListener('click', () => { clearTimeout(timer); input.value = ''; topic = ''; render(true, true); input.focus(); });
-    window.addEventListener('popstate', () => { clearTimeout(timer); readURL(); render(); });
-    window.addEventListener('pageshow', () => { readURL(); render(); });
-    document.querySelectorAll('.story a').forEach(a => a.addEventListener('click', () => { clearTimeout(timer); render(true); }));
-    readURL(); render();
+    input.addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(()=>render(true),160);});
+    form.addEventListener('submit',e=>{e.preventDefault();clearTimeout(timer);render(true,true);});
+    input.addEventListener('search',()=>render(true));
+    clear.addEventListener('click',()=>{clearTimeout(timer);input.value='';render(true);input.focus();});
+    topics.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;clearTimeout(timer);topic=b.dataset.topic;render(true,true);});
+    availability.addEventListener('change',()=>{clearTimeout(timer);status=availability.value;render(true,true);});
+    document.querySelector('.reset-search').addEventListener('click',()=>{clearTimeout(timer);input.value='';topic='';status='all';availability.value='all';render(true,true);input.focus();});
+    window.addEventListener('popstate',()=>{clearTimeout(timer);readURL();render();});
+    window.addEventListener('pageshow',()=>{readURL();render();});
+    document.querySelectorAll('.stories a').forEach(a=>a.addEventListener('click',()=>{clearTimeout(timer);render(true);}));
+    readURL();render();
+  } else {
+    // Both complete articles and announcements restore the actual library filters.
+    try {
+      const first = document.querySelector('.back-to-blog');
+      if(first){
+        const base = new URL(first.href);
+        const candidate = new URL(sessionStorage.getItem('optimism-blog-return')||base.href,location.origin);
+        if(candidate.origin===location.origin&&candidate.pathname===base.pathname)
+          document.querySelectorAll('.back-to-blog').forEach(a=>a.href=candidate.pathname+candidate.search);
+      }
+    } catch(_){}
   }
 
   const content = document.querySelector('#article-content');

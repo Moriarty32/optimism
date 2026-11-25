@@ -1,0 +1,13 @@
+{
+  "slug": "content-plan",
+  "prompt": "Use case: stylized-concept. Asset type: wide landscape editorial blog cover, approximately 3:2. Primary request: editorial content planning visual metaphor, a sculptural paper calendar board with a neat grid of blank square cells, several coral and cobalt planning cards sitting over selected cells, and one large cobalt pencil lying diagonally beside it. Calendar has two simple loop bindings, no date numbers or month text. A few small tactile white paper sheets are stacked behind the board. Scene: warm coral-peach seamless background reaching every edge. Style: polished artistic 3D editorial still life, matte paper and acrylic textures, intentional single focal composition, clean oblique perspective and sculpted studio shadows, editorial quality. Colors warm coral peach, intense cobalt, ivory with subtle golden pencil wood. Readable and visually striking at thumbnail size. Constraints: no readable text whatsoever, NO Latin or Russian words, no letters, no numbers, no logos, no watermark. All card surfaces blank or simple solid geometric bars. No fake screenshot or client results.",
+  "tool": "image_gen.imagegen",
+  "mode": "built-in",
+  "original_path": "/home/e_bogomazov/.codex/generated_images/01a21237-18bd-75d0-96a2-eca07d048fc4/exec-a52c44df-9b30-45ad-926d-f8b1621ded88.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "path": "/home/e_bogomazov/audit Optimism/site-blog/assets/blog/covers/content-plan.png",
+  "inspection": "Visually inspected generated output; no words, letters, numbers, logos or watermarks; composition and palette match brief."
+}

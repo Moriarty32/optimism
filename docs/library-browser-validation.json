@@ -1,0 +1,387 @@
+{
+  "checks": [
+    {
+      "name": "11 library entries, 2 published, 9 planned",
+      "pass": true
+    },
+    {
+      "name": "Russian synonym search",
+      "pass": true
+    },
+    {
+      "name": "Published article route",
+      "pass": true
+    },
+    {
+      "name": "Search survives reading",
+      "pass": true
+    },
+    {
+      "name": "Announcements are searchable",
+      "pass": true
+    },
+    {
+      "name": "Announcement is honest",
+      "pass": true
+    },
+    {
+      "name": "Announcement return preserves query",
+      "pass": true
+    },
+    {
+      "name": "Category filters two SMM entries",
+      "pass": true
+    },
+    {
+      "name": "Empty category/readiness intersection",
+      "pass": true
+    },
+    {
+      "name": "Reset restores all and focus",
+      "pass": true
+    },
+    {
+      "name": "Ready-only filter",
+      "pass": true
+    },
+    {
+      "name": "Browser Back restores readiness",
+      "pass": true
+    },
+    {
+      "name": "Direct shared category/status URL",
+      "pass": true
+    },
+    {
+      "name": "Safe empty query",
+      "pass": true
+    },
+    {
+      "name": "blog/ reflow 320",
+      "pass": true,
+      "detail": {
+        "w": 320,
+        "scroll": 320,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/ reflow 390",
+      "pass": true,
+      "detail": {
+        "w": 390,
+        "scroll": 390,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/ reflow 768",
+      "pass": true,
+      "detail": {
+        "w": 768,
+        "scroll": 768,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/ reflow 1024",
+      "pass": true,
+      "detail": {
+        "w": 1024,
+        "scroll": 1024,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/ reflow 1440",
+      "pass": true,
+      "detail": {
+        "w": 1440,
+        "scroll": 1440,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/ reflow 1920",
+      "pass": true,
+      "detail": {
+        "w": 1920,
+        "scroll": 1920,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/ reflow 2560",
+      "pass": true,
+      "detail": {
+        "w": 2560,
+        "scroll": 2560,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/seo-trafik-bez-zayavok/ reflow 320",
+      "pass": true,
+      "detail": {
+        "w": 320,
+        "scroll": 320,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/seo-trafik-bez-zayavok/ reflow 390",
+      "pass": true,
+      "detail": {
+        "w": 390,
+        "scroll": 390,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/seo-trafik-bez-zayavok/ reflow 768",
+      "pass": true,
+      "detail": {
+        "w": 768,
+        "scroll": 768,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/seo-trafik-bez-zayavok/ reflow 1024",
+      "pass": true,
+      "detail": {
+        "w": 1024,
+        "scroll": 1024,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/seo-trafik-bez-zayavok/ reflow 1440",
+      "pass": true,
+      "detail": {
+        "w": 1440,
+        "scroll": 1440,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/seo-trafik-bez-zayavok/ reflow 1920",
+      "pass": true,
+      "detail": {
+        "w": 1920,
+        "scroll": 1920,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/seo-trafik-bez-zayavok/ reflow 2560",
+      "pass": true,
+      "detail": {
+        "w": 2560,
+        "scroll": 2560,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/title-description-dlya-sayta/ reflow 320",
+      "pass": true,
+      "detail": {
+        "w": 320,
+        "scroll": 320,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/title-description-dlya-sayta/ reflow 390",
+      "pass": true,
+      "detail": {
+        "w": 390,
+        "scroll": 390,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/title-description-dlya-sayta/ reflow 768",
+      "pass": true,
+      "detail": {
+        "w": 768,
+        "scroll": 768,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/title-description-dlya-sayta/ reflow 1024",
+      "pass": true,
+      "detail": {
+        "w": 1024,
+        "scroll": 1024,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/title-description-dlya-sayta/ reflow 1440",
+      "pass": true,
+      "detail": {
+        "w": 1440,
+        "scroll": 1440,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/title-description-dlya-sayta/ reflow 1920",
+      "pass": true,
+      "detail": {
+        "w": 1920,
+        "scroll": 1920,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/title-description-dlya-sayta/ reflow 2560",
+      "pass": true,
+      "detail": {
+        "w": 2560,
+        "scroll": 2560,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/reklamnyy-byudzhet/ reflow 320",
+      "pass": true,
+      "detail": {
+        "w": 320,
+        "scroll": 320,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/reklamnyy-byudzhet/ reflow 390",
+      "pass": true,
+      "detail": {
+        "w": 390,
+        "scroll": 390,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/reklamnyy-byudzhet/ reflow 768",
+      "pass": true,
+      "detail": {
+        "w": 768,
+        "scroll": 768,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/reklamnyy-byudzhet/ reflow 1024",
+      "pass": true,
+      "detail": {
+        "w": 1024,
+        "scroll": 1024,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/reklamnyy-byudzhet/ reflow 1440",
+      "pass": true,
+      "detail": {
+        "w": 1440,
+        "scroll": 1440,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/reklamnyy-byudzhet/ reflow 1920",
+      "pass": true,
+      "detail": {
+        "w": 1920,
+        "scroll": 1920,
+        "bad": []
+      }
+    },
+    {
+      "name": "blog/reklamnyy-byudzhet/ reflow 2560",
+      "pass": true,
+      "detail": {
+        "w": 2560,
+        "scroll": 2560,
+        "bad": []
+      }
+    },
+    {
+      "name": "Right rail on wide viewport",
+      "pass": true,
+      "detail": {
+        "rail": {
+          "x": 1552,
+          "y": 566.0625,
+          "width": 320,
+          "height": 752.375
+        },
+        "body": {
+          "x": 524.796875,
+          "y": 566.0625,
+          "width": 790.390625,
+          "height": 8466.703125
+        }
+      }
+    },
+    {
+      "name": "Right rail contains two same-category entries",
+      "pass": true
+    },
+    {
+      "name": "Cross-category recommendations below article",
+      "pass": true
+    },
+    {
+      "name": "Mobile TOC target unobscured",
+      "pass": true,
+      "detail": {
+        "h": {
+          "x": 20,
+          "y": 167.515625,
+          "width": 350,
+          "height": 104.390625
+        },
+        "t": {
+          "x": 20,
+          "y": 72,
+          "width": 350,
+          "height": 74
+        }
+      }
+    },
+    {
+      "name": "Four relevant instruction images",
+      "pass": true
+    },
+    {
+      "name": "Russian instruction diagram opens",
+      "pass": true
+    },
+    {
+      "name": "Image Escape restores focus",
+      "pass": true
+    },
+    {
+      "name": "Announcement not misrepresented as Article",
+      "pass": true
+    },
+    {
+      "name": "No-JS full library",
+      "pass": true
+    },
+    {
+      "name": "No-JS announcement navigation",
+      "pass": true
+    },
+    {
+      "name": "No uncaught JavaScript errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "failures": [],
+  "errors": []
+}

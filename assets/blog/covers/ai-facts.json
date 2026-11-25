@@ -1,0 +1,6 @@
+{
+  "slug": "ai-facts",
+  "prompt": "Use case: stylized-concept. Asset type: editorial blog cover, wide landscape 3:2. Create a polished artistic 3D editorial still life expressing fact verification in AI generated answers: a beautiful oversized transparent cyan acrylic magnifying lens rests diagonally above a layered stack of thick peach and pale violet document-like paper cards, focusing on a single freestanding violet checkmark-shaped folded sculpture on the top card. Checkmark is a sculptural object, not typography. Cards show only abstract recessed line grooves and blank rectangular relief, absolutely no writing. Strong singular concept, tactile matte paper with cut edges, clear acrylic refraction, refined magazine art direction. Rich violet edge-to-edge studio backdrop, warm peach cards, luminous cyan lens. Entire lens and document stack within frame, dynamic oblique perspective, soft directional shadows, spacious balanced composition. No readable text, no Latin or Russian characters, no numbers, no logos, no watermarks, no browser chrome, no fake UI or client results. Not flat vector or icon.",
+  "tool_source": "image_gen.imagegen (built-in)",
+  "original_path": "/home/e_bogomazov/.codex/generated_images/01a21237-741f-72b3-9bba-fff131f10f94/exec-ec4f497f-98e9-4a36-a4f9-01c1094fe1f0.png"
+}

@@ -28,7 +28,9 @@ class Page(HTMLParser):
 
 parser=argparse.ArgumentParser();parser.add_argument('--directory',default='dist');parser.add_argument('--base',default='/optimism/');args=parser.parse_args()
 root=Path(args.directory).resolve();base=args.base
-pages=list((root/'blog').rglob('index.html'));assert len(pages)==3
+source_root=Path(__file__).resolve().parents[1]
+entries=json.loads((source_root/'content/blog/articles.json').read_text())+json.loads((source_root/'content/blog/planned.json').read_text())
+pages=list((root/'blog').rglob('index.html'));assert len(pages)==len(entries)+1
 cache={}
 def parsed(file):
     if file not in cache:
@@ -40,7 +42,7 @@ for file in pages:
     assert p.h1==1 and p.lang=='ru',file
     assert len(p.ids)==len(set(p.ids)),f'Duplicate id: {file}'
     assert p.robots==['noindex, nofollow'],f'Preview indexing policy: {file}'
-    assert len(p.schema)==1 and p.schema[0]['@type'] in ('Blog','BlogPosting')
+    assert len(p.schema)==1 and p.schema[0]['@type'] in ('CollectionPage','BlogPosting','WebPage')
     assert 'BLOG-READ-2026' in file.read_text(), 'Missing direction contract'
     for url in p.links+p.resources:
         u=urlsplit(url)
@@ -56,7 +58,14 @@ for file in pages:
         if u.fragment and dest.suffix=='.html':assert unquote(u.fragment) in parsed(dest).ids,f'Missing anchor {url}'
         checked+=1
 # The instruction contract is enforced on editorial source, not navigation text.
-source_root=Path(__file__).resolve().parents[1]
+for entry in entries:
+    rendered=parsed(root/'blog'/entry['slug']/'index.html')
+    expected='BlogPosting' if entry['status']=='published' else 'WebPage'
+    assert rendered.schema[0]['@type']==expected,entry['slug']
+    for suffix in ['', '-600']:
+        assert (root/'assets/blog/covers'/(entry['cover']+suffix+'.webp')).is_file(),entry['cover']
+    if entry['status']=='planned':
+        assert 'Материал готовится.' in ' '.join(rendered.text),entry['slug']
 for source in (source_root/'content/blog').glob('*.html'):
     article=Page();article.feed(source.read_text())
     chars=len(' '.join(' '.join(article.text).split()))
@@ -67,7 +76,7 @@ for source in (source_root/'content/blog').glob('*.html'):
     services={urlsplit(x).path for x in article.links if x.startswith('https://optimism.ru/services/')}
     assert len(services)>=2,f'Missing contextual commercial paths: {source}'
     assert any(x.endswith('.csv') for x in article.links),f'Missing worksheet: {source}'
-    print(f'Instruction: {source.name}: {chars} visible characters, {len(article.images)} screenshots, {len(services)} commercial destinations')
+    print(f'Instruction: {source.name}: {chars} visible characters, {len(article.images)} illustrations, {len(services)} commercial destinations')
 example=parsed(root/'blog/examples/service.html')
 assert example.h1==1 and example.robots==['noindex, nofollow']
 home=parsed(root/'index.html')

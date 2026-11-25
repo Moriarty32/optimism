@@ -1,0 +1,13 @@
+{
+  "slug": "meta-tags",
+  "prompt": "Use case: stylized-concept. Asset type: wide landscape editorial blog cover, approximately 3:2. Primary request: crisp web page title and description visual metaphor, formed by layered cobalt and off-white physical cards under a large sculptural magnifying glass with a coral-red handle. Cards show only thick abstract rounded bars of different lengths, one bold raised cobalt title bar and several slender pale-blue description bars: these are solid geometric bars, not writing. Style: polished artistic 3D editorial still life, tactile matte paper and acrylic, beautifully balanced single focal composition, oblique view, refined studio lighting and soft dimensional shadows. Edge-to-edge saturated cobalt backdrop with off-white cards and coral accent. Strong composition readable at thumbnail size. Constraints: absolutely NO readable text, NO Latin or Russian words, no letters, no numbers, no logos, no watermark. No fake screenshot, no actual client results.",
+  "tool": "image_gen.imagegen",
+  "mode": "built-in",
+  "original_path": "/home/e_bogomazov/.codex/generated_images/01a21237-18bd-75d0-96a2-eca07d048fc4/exec-718a47bc-1102-4dd2-b1b7-c3ac5ff84a81.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "path": "/home/e_bogomazov/audit Optimism/site-blog/assets/blog/covers/meta-tags.png",
+  "inspection": "Visually inspected generated output; no words, letters, numbers, logos or watermarks; composition and palette match brief."
+}

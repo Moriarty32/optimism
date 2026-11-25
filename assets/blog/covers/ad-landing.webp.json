@@ -1,0 +1,5 @@
+{
+  "prompt": "Use case: stylized-concept. Asset type: editorial blog cover, wide landscape 3:2. Create a polished artistic 3D editorial still life expressing an ad landing page that answers a user's need: oversized matte paper and acrylic architectural webpage-like panels form a sculptural doorway, aligned to reveal a brilliant yellow circular target through the opening. The panels are abstract architecture with a few inset color planes, not actual UI. Strong singular concept, tactile surfaces, refined magazine art direction, striking perspective, soft directional studio shadows. Vivid violet edge-to-edge background, cyan panels, tangerine accent and yellow target. Compose the entire installation comfortably inside frame. No readable text, no Latin or Russian characters, no numbers, no logos, no watermarks, no client results, no browser chrome. Colorful sophisticated sculptural image, not a flat icon.",
+  "source": "/home/e_bogomazov/audit Optimism/output/imagegen/library/ad-landing.png",
+  "production": "Built-in image_gen; resized and encoded to WebP for web delivery; illustration, not actual client results."
+}
