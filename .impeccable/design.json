@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-25T09:43:50.005690+00:00",
+  "title": "Design System: Optimism Blog",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Navy ink",
+        "tonalRamp": [
+          "oklch(0.1500 0.05281 236.46)",
+          "oklch(0.2643 0.05281 236.46)",
+          "oklch(0.3786 0.05281 236.46)",
+          "oklch(0.4929 0.05281 236.46)",
+          "oklch(0.6071 0.05281 236.46)",
+          "oklch(0.7214 0.05281 236.46)",
+          "oklch(0.8357 0.05281 236.46)",
+          "oklch(0.9500 0.05281 236.46)"
+        ]
+      },
+      "navy": {
+        "role": "primary",
+        "displayName": "Deep navy",
+        "tonalRamp": [
+          "oklch(0.1500 0.04868 247.75)",
+          "oklch(0.2643 0.04868 247.75)",
+          "oklch(0.3786 0.04868 247.75)",
+          "oklch(0.4929 0.04868 247.75)",
+          "oklch(0.6071 0.04868 247.75)",
+          "oklch(0.7214 0.04868 247.75)",
+          "oklch(0.8357 0.04868 247.75)",
+          "oklch(0.9500 0.04868 247.75)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Slate blue",
+        "tonalRamp": [
+          "oklch(0.1500 0.04060 234.60)",
+          "oklch(0.2643 0.04060 234.60)",
+          "oklch(0.3786 0.04060 234.60)",
+          "oklch(0.4929 0.04060 234.60)",
+          "oklch(0.6071 0.04060 234.60)",
+          "oklch(0.7214 0.04060 234.60)",
+          "oklch(0.8357 0.04060 234.60)",
+          "oklch(0.9500 0.04060 234.60)"
+        ]
+      },
+      "blue": {
+        "role": "primary",
+        "displayName": "Action blue",
+        "tonalRamp": [
+          "oklch(0.1500 0.10652 234.66)",
+          "oklch(0.2643 0.10652 234.66)",
+          "oklch(0.3786 0.10652 234.66)",
+          "oklch(0.4929 0.10652 234.66)",
+          "oklch(0.6071 0.10652 234.66)",
+          "oklch(0.7214 0.10652 234.66)",
+          "oklch(0.8357 0.10652 234.66)",
+          "oklch(0.9500 0.10652 234.66)"
+        ]
+      },
+      "cyan": {
+        "role": "primary",
+        "displayName": "Bright cyan",
+        "tonalRamp": [
+          "oklch(0.1500 0.13270 224.76)",
+          "oklch(0.2643 0.13270 224.76)",
+          "oklch(0.3786 0.13270 224.76)",
+          "oklch(0.4929 0.13270 224.76)",
+          "oklch(0.6071 0.13270 224.76)",
+          "oklch(0.7214 0.13270 224.76)",
+          "oklch(0.8357 0.13270 224.76)",
+          "oklch(0.9500 0.13270 224.76)"
+        ]
+      },
+      "pale": {
+        "role": "neutral",
+        "displayName": "Pale blue",
+        "tonalRamp": [
+          "oklch(0.1500 0.01169 231.65)",
+          "oklch(0.2643 0.01169 231.65)",
+          "oklch(0.3786 0.01169 231.65)",
+          "oklch(0.4929 0.01169 231.65)",
+          "oklch(0.6071 0.01169 231.65)",
+          "oklch(0.7214 0.01169 231.65)",
+          "oklch(0.8357 0.01169 231.65)",
+          "oklch(0.9500 0.01169 231.65)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Blue-gray rule",
+        "tonalRamp": [
+          "oklch(0.1500 0.01954 230.72)",
+          "oklch(0.2643 0.01954 230.72)",
+          "oklch(0.3786 0.01954 230.72)",
+          "oklch(0.4929 0.01954 230.72)",
+          "oklch(0.6071 0.01954 230.72)",
+          "oklch(0.7214 0.01954 230.72)",
+          "oklch(0.8357 0.01954 230.72)",
+          "oklch(0.9500 0.01954 230.72)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "White paper",
+        "tonalRamp": [
+          "oklch(0.1500 0.00000 0.00)",
+          "oklch(0.2643 0.00000 0.00)",
+          "oklch(0.3786 0.00000 0.00)",
+          "oklch(0.4929 0.00000 0.00)",
+          "oklch(0.6071 0.00000 0.00)",
+          "oklch(0.7214 0.00000 0.00)",
+          "oklch(0.8357 0.00000 0.00)",
+          "oklch(0.9500 0.00000 0.00)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Catalogue display",
+        "purpose": "Blog index introduction; responsive overrides remain in CSS."
+      },
+      "reading": {
+        "displayName": "Article reading",
+        "purpose": "Long-form body text; mobile uses 19px."
+      }
+    },
+    "shadows": [
+      {
+        "name": "search-focus",
+        "value": "0 0 0 1px var(--blue)",
+        "purpose": "Focus-within border reinforcement; no surface elevation."
+      }
+    ],
+    "motion": [
+      {
+        "name": "cover-reveal",
+        "value": "transform .65s cubic-bezier(.16,1,.3,1)",
+        "purpose": "Story illustration hover; reduced motion disables it."
+      },
+      {
+        "name": "story-arrow",
+        "value": "transform .25s",
+        "purpose": "Link arrow hover displacement."
+      },
+      {
+        "name": "topic-state",
+        "value": "background .2s,color .2s",
+        "purpose": "Topic selection and hover."
+      },
+      {
+        "name": "contents-chevron",
+        "value": "transform .2s",
+        "purpose": "Native details open-state indicator."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "small-phone-max",
+        "value": "360px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "650px"
+      },
+      {
+        "name": "tablet-max",
+        "value": "999px"
+      },
+      {
+        "name": "desktop-min",
+        "value": "1000px"
+      },
+      {
+        "name": "compact-desktop-max",
+        "value": "1150px"
+      },
+      {
+        "name": "wide-min",
+        "value": "1600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Search submit",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Navy submit action; source hover and keyboard focus.",
+      "html": "<button class=\"ds-search-submit\" type=\"button\">Найти</button>",
+      "css": ".ds-search-submit{font:400 18px/1.5 Joanna,Arial,sans-serif;cursor:pointer}.ds-search-submit{border:0;border-radius:8px;padding:12px 17px;background:var(--navy,#061d31);color:#fff;min-height:46px;font-size:16px}.ds-search-submit:hover{background:#0b5378}:focus-visible{outline:3px solid #007fae;outline-offset:5px}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.ds-story:has(a:hover) .ds-story-cover img{transform:none}}"
+    },
+    {
+      "name": "Reset action",
+      "kind": "button",
+      "refersTo": "button-text",
+      "description": "Plain text action used in the empty search state.",
+      "html": "<button class=\"ds-text-button\" type=\"button\">Показать все статьи <svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" stroke=\"currentColor\" stroke-width=\"1.5\"/></svg></button>",
+      "css": ".ds-text-button{font:400 18px/1.5 Joanna,Arial,sans-serif;cursor:pointer}.ds-text-button{padding:10px 0;border:0;background:transparent;color:var(--blue,#006d98);margin-top:20px;min-height:44px}.ds-text-button svg{width:20px;height:20px;margin-left:12px}:focus-visible{outline:3px solid #007fae;outline-offset:5px}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.ds-story:has(a:hover) .ds-story-cover img{transform:none}}"
+    },
+    {
+      "name": "Header contact",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Outlined link with a navy hover fill.",
+      "html": "<a class=\"ds-header-contact\" href=\"mailto:go@optimism.ru\">Связаться с нами <svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" stroke=\"currentColor\" stroke-width=\"1.5\"/></svg></a>",
+      "css": ".ds-header-contact{font:400 18px/1.5 Joanna,Arial,sans-serif;}.ds-header-contact{display:inline-flex;align-items:center;gap:24px;color:var(--ink,#092d40);font-size:16px;text-decoration:none;border:1px solid #92adbd;border-radius:50px;padding:12px 19px;white-space:nowrap}.ds-header-contact svg{width:18px;height:18px}.ds-header-contact:hover{background:var(--navy,#061d31);border-color:var(--navy,#061d31);color:#fff}:focus-visible{outline:3px solid #007fae;outline-offset:5px}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.ds-story:has(a:hover) .ds-story-cover img{transform:none}}"
+    },
+    {
+      "name": "Search field",
+      "kind": "input",
+      "refersTo": "search-field",
+      "description": "Visible label and enclosing focus treatment; preview does not filter articles.",
+      "html": "<div class=\"ds-search-form\"><label for=\"ds-blog-search\">Поиск по статьям</label><div class=\"ds-search-field\"><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><circle cx=\"10.5\" cy=\"10.5\" r=\"6.5\" stroke=\"currentColor\" stroke-width=\"1.7\"/><path d=\"m16 16 5 5\" stroke=\"currentColor\" stroke-width=\"1.7\"/></svg><input id=\"ds-blog-search\" type=\"search\" placeholder=\"Например, метатеги или заявки\"><button class=\"ds-search-submit\" type=\"button\">Найти</button></div></div>",
+      "css": ".ds-search-form{font:400 18px/1.5 Joanna,Arial,sans-serif;color:var(--ink,#092d40);width:100%;max-width:650px}.ds-search-field input,.ds-search-submit{font-family:inherit}.ds-search-form label{display:block;font-size:16px;color:var(--muted,#516c7c);margin-bottom:10px}.ds-search-field{display:flex;gap:13px;align-items:center;padding:7px 8px 7px 19px;border:1px solid #91aab9;border-radius:12px;background:#fff;min-height:62px}.ds-search-field:focus-within{border-color:var(--blue,#006d98);box-shadow:0 0 0 1px var(--blue,#006d98)}.ds-search-field>svg{width:22px;height:22px;flex:0 0 22px;color:var(--muted,#516c7c)}.ds-search-field input{width:0;flex:1;min-width:0;border:0;padding:8px 0;outline:none;background:transparent;color:var(--ink,#092d40);font-size:17px;line-height:1.4}.ds-search-field input::placeholder{color:#5c7482;opacity:1}.ds-search-field input::-webkit-search-cancel-button{-webkit-appearance:none}.ds-search-field input:focus-visible{outline:0}.ds-search-submit{border:0;border-radius:8px;padding:12px 17px;background:var(--navy,#061d31);color:#fff;min-height:46px;font-size:16px}.ds-search-submit:hover{background:#0b5378}:focus-visible{outline:3px solid #007fae;outline-offset:5px}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.ds-story:has(a:hover) .ds-story-cover img{transform:none}}"
+    },
+    {
+      "name": "Topic",
+      "kind": "chip",
+      "refersTo": "topic",
+      "description": "State is conveyed by aria-pressed and fill; count uses tabular numerals.",
+      "html": "<div class=\"ds-topic-filters\"><button type=\"button\" aria-pressed=\"false\">Аналитика <span>1</span></button></div>",
+      "css": ".ds-topic-filters{font:400 18px/1.5 Joanna,Arial,sans-serif;}.ds-topic-filters button{font-family:inherit;cursor:pointer}.ds-topic-filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:flex-end;padding-bottom:5px}.ds-topic-filters button{background:transparent;color:var(--ink,#092d40);border:1px solid var(--line,#cfdee6);padding:11px 17px;min-height:48px;border-radius:30px;font-size:16px;white-space:nowrap;transition:background .2s,color .2s}.ds-topic-filters button span{margin-left:7px;color:var(--muted,#516c7c);font-variant-numeric:tabular-nums}.ds-topic-filters button[aria-pressed=true]{background:var(--navy,#061d31);color:#fff;border-color:var(--navy,#061d31)}.ds-topic-filters button[aria-pressed=true] span{color:#b6d7e7}.ds-topic-filters button:hover:not([aria-pressed=true]){background:var(--pale,#edf6fb);border-color:#9fc4d8}:focus-visible{outline:3px solid #007fae;outline-offset:5px}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.ds-story:has(a:hover) .ds-story-cover img{transform:none}}"
+    },
+    {
+      "name": "Selected topic",
+      "kind": "chip",
+      "refersTo": "topic-selected",
+      "description": "State is conveyed by aria-pressed and fill; count uses tabular numerals.",
+      "html": "<div class=\"ds-topic-filters\"><button type=\"button\" aria-pressed=\"true\">Аналитика <span>1</span></button></div>",
+      "css": ".ds-topic-filters{font:400 18px/1.5 Joanna,Arial,sans-serif;}.ds-topic-filters button{font-family:inherit;cursor:pointer}.ds-topic-filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:flex-end;padding-bottom:5px}.ds-topic-filters button{background:transparent;color:var(--ink,#092d40);border:1px solid var(--line,#cfdee6);padding:11px 17px;min-height:48px;border-radius:30px;font-size:16px;white-space:nowrap;transition:background .2s,color .2s}.ds-topic-filters button span{margin-left:7px;color:var(--muted,#516c7c);font-variant-numeric:tabular-nums}.ds-topic-filters button[aria-pressed=true]{background:var(--navy,#061d31);color:#fff;border-color:var(--navy,#061d31)}.ds-topic-filters button[aria-pressed=true] span{color:#b6d7e7}.ds-topic-filters button:hover:not([aria-pressed=true]){background:var(--pale,#edf6fb);border-color:#9fc4d8}:focus-visible{outline:3px solid #007fae;outline-offset:5px}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.ds-story:has(a:hover) .ds-story-cover img{transform:none}}"
+    },
+    {
+      "name": "Header navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Text navigation with a current-page underline.",
+      "html": "<div class=\"ds-site-header\"><nav aria-label=\"Основная навигация\"><a href=\"/index.html\">Главная</a><a href=\"/index.html#directions\">Услуги</a><a href=\"/blog/\" aria-current=\"page\">Блог</a></nav></div>",
+      "css": ".ds-site-header{font:400 18px/1.5 Joanna,Arial,sans-serif;}.ds-site-header nav{display:flex;gap:30px;align-items:center;margin-left:auto}.ds-site-header nav a{color:var(--ink,#092d40);font-size:16px;text-decoration:none;min-height:44px;display:flex;align-items:center;position:relative}.ds-site-header nav a[aria-current]::after{content:'';position:absolute;height:2px;bottom:3px;left:0;right:0;background:var(--blue,#006d98)}.ds-site-header nav a:hover{color:var(--blue,#006d98)}:focus-visible{outline:3px solid #007fae;outline-offset:5px}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.ds-story:has(a:hover) .ds-story-cover img{transform:none}}"
+    },
+    {
+      "name": "Editorial entry",
+      "kind": "card",
+      "refersTo": "story",
+      "description": "Source entry structure with original SVG embedded for a standalone preview; the image uses inline SVG instead of an external img.",
+      "html": "<article class=\"ds-story\"><div class=\"ds-story-cover\"><svg class=\"ds-story-vector\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" width=\"960\" height=\"580\" viewBox=\"0 0 960 580\" fill=\"none\">\n<!-- Original instructional illustration of a fictional search result; not a screenshot or ranking claim. -->\n<rect width=\"960\" height=\"580\" fill=\"#d9eff8\"/>\n<path d=\"M0 92h960M0 487h960M110 0v580M850 0v580\" stroke=\"#bedde9\"/>\n<rect x=\"108\" y=\"128\" width=\"744\" height=\"322\" rx=\"20\" fill=\"#fff\"/>\n<circle cx=\"150\" cy=\"169\" r=\"11\" stroke=\"#006d98\" stroke-width=\"2.5\"/><path d=\"m158 177 8 8\" stroke=\"#006d98\" stroke-width=\"2.5\"/>\n<text x=\"187\" y=\"177\" fill=\"#516c7c\" font-family=\"Arial,sans-serif\" font-size=\"20\">Как вас видит клиент в поиске</text>\n<path d=\"M108 204h744\" stroke=\"#d4e3ea\"/>\n<text x=\"145\" y=\"249\" fill=\"#516c7c\" font-family=\"Arial,sans-serif\" font-size=\"17\">example.ru / услуги / установка</text>\n<text x=\"145\" y=\"294\" fill=\"#006d98\" font-family=\"Arial,sans-serif\" font-size=\"27\">Установка кондиционеров в Москве</text>\n<rect x=\"144\" y=\"309\" width=\"496\" height=\"2\" fill=\"#37c6f4\"/>\n<text x=\"145\" y=\"344\" fill=\"#38596b\" font-family=\"Arial,sans-serif\" font-size=\"21\">Подберём место, рассчитаем стоимость</text>\n<text x=\"145\" y=\"375\" fill=\"#38596b\" font-family=\"Arial,sans-serif\" font-size=\"21\">и согласуем удобное время установки.</text>\n<text x=\"145\" y=\"419\" fill=\"#516c7c\" font-family=\"Arial,sans-serif\" font-size=\"15\">Условный пример · поисковик может изменить текст</text>\n<text x=\"112\" y=\"530\" fill=\"#006d98\" font-family=\"Arial,sans-serif\" font-size=\"19\">Одна страница. Один понятный ответ.</text>\n</svg>\n</div><div class=\"ds-story-body\"><h2><a class=\"ds-story-link\" href=\"/blog/title-description-dlya-sayta/\">Title и description: как написать метатеги для бизнеса<svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" stroke=\"currentColor\" stroke-width=\"1.5\"/></svg></a></h2><div class=\"ds-article-meta\"><span>SEO · Контент</span><span>8 мин чтения</span></div><p>Собираем понятный заголовок и описание страницы.</p></div></article>",
+      "css": ".ds-story{font:400 18px/1.5 Joanna,Arial,sans-serif;color:var(--ink,#092d40);max-width:620px}.ds-story h2,.ds-story p{margin:0}.ds-story h2{font-weight:400;text-wrap:balance}.ds-story-vector{width:100%;height:100%;vertical-align:middle;transition:transform .65s cubic-bezier(.16,1,.3,1)}.ds-story:has(a:hover) .ds-story-vector{transform:scale(1.025)}.ds-story-cover{display:block;border-radius:22px;overflow:hidden;background:var(--pale,#edf6fb);aspect-ratio:1.72}.ds-story-cover img{width:100%;height:100%;object-fit:cover;transition:transform .65s cubic-bezier(.16,1,.3,1)}.ds-story-body{padding:23px 0 0}.ds-story h2{font-size:clamp(29px,2.4vw,38px);line-height:1.13;letter-spacing:-.025em}.ds-story-link{display:block;color:var(--ink,#092d40);text-decoration:none;padding-right:36px;position:relative}.ds-story-link svg{position:absolute;right:0;top:5px;width:23px;height:23px;transition:transform .25s}.ds-story-link:hover{color:var(--blue,#006d98)}.ds-story-link:hover svg{transform:translate(2px,-2px)}.ds-article-meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px;line-height:1.4;color:var(--muted,#516c7c);margin-top:18px}.ds-article-meta>span:first-child{color:var(--blue,#006d98)}.ds-story-body>p{color:var(--muted,#516c7c);font-size:18px;line-height:1.5;margin-top:15px;max-width:55ch}.ds-story{min-width:0}.ds-story-cover{display:block;border-radius:22px;overflow:hidden;background:var(--pale,#edf6fb);aspect-ratio:1.72}.ds-story-cover img{width:100%;height:100%;object-fit:cover;transition:transform .65s cubic-bezier(.16,1,.3,1)}.ds-story:has(a:hover) .ds-story-cover img{transform:scale(1.025)}.ds-story-body{padding:23px 0 0}.ds-story h2{font-size:clamp(29px,2.4vw,38px);line-height:1.13;letter-spacing:-.025em}.ds-story-link{display:block;color:var(--ink,#092d40);text-decoration:none;padding-right:36px;position:relative}.ds-story-link svg{position:absolute;right:0;top:5px;width:23px;height:23px;transition:transform .25s}.ds-story-link:hover{color:var(--blue,#006d98)}.ds-story-link:hover svg{transform:translate(2px,-2px)}.ds-story-body>p{color:var(--muted,#516c7c);font-size:18px;line-height:1.5;margin-top:15px;max-width:55ch}:focus-visible{outline:3px solid #007fae;outline-offset:5px}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.ds-story:has(a:hover) .ds-story-cover img{transform:none}}"
+    },
+    {
+      "name": "Contents",
+      "kind": "nav",
+      "refersTo": "contents",
+      "description": "Native details and current-section link styling; preview omits scroll tracking.",
+      "html": "<details class=\"ds-toc\" open><summary>В этой статье <svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"m7 10 5 5 5-5\" stroke=\"currentColor\" stroke-width=\"1.6\"/></svg></summary><ol><li><a href=\"#ds-section\" aria-current=\"location\">1. Убедитесь, что вы считаете именно заявки</a></li><li><a href=\"#ds-checklist\">2. Чек-лист</a></li></ol></details>",
+      "css": ".ds-toc{font:400 18px/1.5 Joanna,Arial,sans-serif;color:var(--ink,#092d40);max-width:300px}.ds-toc{border-top:1px solid var(--line,#cfdee6);padding-top:17px}.ds-toc summary{font-size:18px;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;cursor:pointer}.ds-toc summary::-webkit-details-marker{display:none}.ds-toc summary svg{width:20px;height:20px;transition:transform .2s}.ds-toc[open] summary svg{transform:rotate(180deg)}.ds-toc ol{list-style:none;padding:6px 0 0;margin:0}.ds-toc li+li{margin-top:5px}.ds-toc a{display:block;font-size:15px;line-height:1.4;color:var(--muted,#516c7c);padding:9px 11px;text-decoration:none;border-radius:7px;min-height:40px}.ds-toc a:hover{color:var(--blue,#006d98);background:var(--pale,#edf6fb)}.ds-toc a[aria-current]{color:var(--blue,#006d98);background:#e5f3fa}:focus-visible{outline:3px solid #007fae;outline-offset:5px}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.ds-story:has(a:hover) .ds-story-cover img{transform:none}}"
+    },
+    {
+      "name": "Key takeaway",
+      "kind": "custom",
+      "refersTo": "takeaway",
+      "description": "Pale summary panel shared by the article pages.",
+      "html": "<div class=\"ds-article-content\"><aside class=\"ds-key-takeaway\"><strong>Начните с проверки одной заявки от кнопки до CRM.</strong> Затем разделите поисковый трафик по страницам и намерениям посетителей.</aside></div>",
+      "css": ".ds-article-content{font:400 18px/1.5 Joanna,Arial,sans-serif;color:var(--ink,#092d40);max-width:760px}.ds-article-content strong{font-weight:700}.ds-article-content .ds-key-takeaway{background:var(--pale,#edf6fb);border-radius:18px;padding:30px 34px;font-size:21px;line-height:1.5}:focus-visible{outline:3px solid #007fae;outline-offset:5px}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.ds-story:has(a:hover) .ds-story-cover img{transform:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Practical guides in the Optimism identity",
+    "overview": "This is a scoped record of the implemented blog extension: `blog/index.html`, its two article pages, `assets/blog.css`, `assets/blog.js`, and the two SVG illustrations in `assets/blog/`, generated by `scripts/generate-blog.py`. It does not define or redesign the homepage. The description names the established direction; it introduces no new visual identity. Product context is in `docs/blog-product-context.md`; the specific editorial composition belongs in `docs/blog-surface-brief.txt` and the first-body-node `BLOG-READ-2026` comment.\n\nThe existing logo, Joanna type, navy and cyan anchor a light, readable editorial surface. Large regular-weight headings introduce practical material; muted summaries and small metadata support scanning. TexTerra informs editorial mechanics within this identity. Original diagrams explain the subjects without presenting invented measured results. This documentation records source behavior after the finish review; it does not claim fresh browser testing or user research.",
+    "keyCharacteristics": [
+      "White reading ground, navy structure, blue interactive text and restrained cyan accents.",
+      "Regular Joanna headings, generous article leading and a bounded reading column.",
+      "Open editorial entries with rounded illustrations, rather than enclosed card panels.",
+      "Search and reading aids progressively enhance complete static articles."
+    ],
+    "rules": [
+      {
+        "name": "The Reading Ground Rule",
+        "body": "Keep the long-form reading column on white; use pale panels for bounded supporting material.",
+        "section": "colors"
+      },
+      {
+        "name": "The Quiet Heading Rule",
+        "body": "Keep Joanna headings regular and use size, whitespace and placement for hierarchy before adding weight.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Separate editorial content with spacing and rules; reserve the existing box-shadow for search focus.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** preserve the existing Optimism logo, Joanna family and navy/cyan identity within the blog.",
+      "**Do** keep the text column bounded and let illustrations and contents reflow at the observed breakpoints.",
+      "**Do** preserve visible focus, labeled controls, active states, reduced-motion behavior and the static reading path.",
+      "**Do** distinguish real editorial metadata from fictional examples inside instructional diagrams."
+    ],
+    "donts": [
+      "**Don't** apply this scoped blog document as authority to redesign the homepage.",
+      "**Don't** turn the open story entries into raised panels or add decorative shadows to reading surfaces.",
+      "**Don't** treat the current two-entry arrangement, its topic counts or its specific copy as a permanent site-wide rule.",
+      "**Don't** promote SVG-specific Arial labels or illustration-only tints into a new global type or color system."
+    ]
+  }
+}
