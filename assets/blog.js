@@ -135,4 +135,40 @@
     });
     updateReading();
   }
+  // Enlarged evidence remains a normal image link without JavaScript.
+  const shots = document.querySelectorAll('.shot-link');
+  if (shots.length && typeof HTMLDialogElement !== 'undefined') {
+    const dialog = document.createElement('dialog');
+    dialog.className = 'image-dialog';
+    dialog.setAttribute('aria-label', 'Скриншот инструкции');
+    dialog.innerHTML = '<div class="image-dialog-bar"><a target="_blank" rel="noopener">Открыть оригинал в новой вкладке</a><button type="button" autofocus>Закрыть</button></div><div class="image-dialog-viewport" tabindex="0" role="region" aria-label="Скриншот в исходном размере, можно прокручивать"></div><p class="image-dialog-hint">Масштаб 100%. Прокрутите изображение, чтобы увидеть детали.</p><p class="image-dialog-caption"></p>';
+    document.body.append(dialog);
+    let opener;
+    let previousOverflow;
+    shots.forEach(link => link.addEventListener('click', event => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      opener = link;
+      const source = link.querySelector('img');
+      const picture = document.createElement('img');
+      picture.src = link.href; picture.alt = source.alt;
+      dialog.querySelector('.image-dialog-viewport').replaceChildren(picture);
+      dialog.querySelector('a').href = link.href;
+      const caption = link.closest('figure').querySelector('figcaption').cloneNode(true);
+      caption.querySelector('span')?.remove();
+      dialog.querySelector('.image-dialog-caption').textContent = caption.textContent;
+      previousOverflow = document.body.style.overflow;
+      document.body.style.overflow = 'hidden';
+      dialog.showModal();
+    }));
+    dialog.querySelector('button').addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+    dialog.addEventListener('close', () => { document.body.style.overflow = previousOverflow || ''; opener?.focus({preventScroll:true}); });
+  }
+  document.querySelectorAll('.article-content a[href^="https://optimism.ru/services/"]').forEach(link => {
+    link.addEventListener('click', () => document.dispatchEvent(new CustomEvent('optimism:interaction', {detail:{
+      type:'blog_service_click', article:location.pathname.split('/').filter(Boolean).pop(),
+      service:new URL(link.href).pathname, placement:link.closest('.service-next') ? 'end' : 'inline'
+    }})));
+  });
 })();

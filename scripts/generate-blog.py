@@ -3,6 +3,7 @@
 import hashlib
 import html
 import json
+import math
 import re
 from html.parser import HTMLParser
 from pathlib import Path
@@ -34,6 +35,14 @@ FIRST VIEWPORT: Compact brand navigation, large blog title beside a short purpos
 FORM: User-pinned TexTerra editorial methods within the established Optimism world; code-first, no new visual identity. Signature: search and topic state survives article navigation and browser Back.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance -->'''
 
+ARTICLE_CONTRACT = """<!-- BLOG-READ-2026 / ARTICLE-INSTRUCTIONS-2026:
+THESIS: A reader can repeat a useful SEO task, inspect real screenshots and choose relevant help.
+OWN-WORLD: Existing Optimism navy/cyan/Joanna identity on a white reading surface.
+STORY: Prerequisites; numbered actions and expected outcomes; source screenshots; worksheet; contextual service.
+FIRST VIEWPORT: Compact title and specific summary, reading tools, accessible contents and start of instructions; no decorative hero image.
+FORM: Sticky desktop and mobile contents, preserved deep links, original-size screenshot inspection with keyboard exit, ordinary commercial links as progressive enhancement.
+FINISH: unreviewed and undocumented is unfinished; retain verified image provenance, finish review and scoped DESIGN.md. -->"""
+
 def version(file):
     return hashlib.sha256((ROOT/file).read_bytes()).hexdigest()[:12]
 
@@ -42,7 +51,7 @@ def header():
 <header class="site-header"><div class="header-inner">
 <a class="brand" href="/index.html" aria-label="Оптимизм — на главную"><img src="/local/templates/optimism/img/logo_new.svg" width="206" height="36" alt="Оптимизм.ру"></a>
 <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>Меню<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="1.5"/></svg></button>
-<nav id="site-nav" aria-label="Основная навигация"><a href="/index.html">Главная</a><a href="/index.html#directions">Услуги</a><a href="/index.html#projects">Кейсы</a><a href="/blog/" aria-current="true">Блог</a></nav>
+<nav id="site-nav" aria-label="Основная навигация"><a href="/index.html">Главная</a><a href="/index.html#directions">Услуги</a><a href="/index.html#projects">Кейсы</a><a href="/blog/" aria-current="page">Блог</a></nav>
 <a class="header-contact" href="https://optimism.ru/howtofind/">Обсудить задачу{ARROW}</a></div></header>'''
 
 def footer():
@@ -54,7 +63,7 @@ def page(title, description, path, main, schema, article=False):
 <link rel="canonical" href="{PUBLIC}{path}"><meta property="og:type" content="{'article' if article else 'website'}"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(description)}"><meta property="og:url" content="{PUBLIC}{path}"><meta name="theme-color" content="#061d31">
 <link rel="icon" href="/local/templates/optimism/img/favicon.svg"><link rel="preload" href="/fonts/JoannaSansNova/JoannaSansNova.woff" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="/assets/blog.css?v={version('assets/blog.css')}"><script defer src="/assets/blog.js?v={version('assets/blog.js')}"></script>
-<script type="application/ld+json">{json.dumps(schema, ensure_ascii=False).replace('</', '<\\/')}</script></head><body class="{'article-page' if article else 'blog-page'}">{CONTRACT}{header()}{main}{footer()}</body></html>'''
+<script type="application/ld+json">{json.dumps(schema, ensure_ascii=False).replace('</', '<\\/')}</script></head><body class="{'article-page' if article else 'blog-page'}">{ARTICLE_CONTRACT if article else CONTRACT}{header()}{main}{footer()}</body></html>'''
 
 def metadata(a):
     return f'<div class="article-meta"><span>{E(" · ".join(a["topics"]))}</span><time datetime="{a["date"]}">25 ноября 2026</time><span>{a["readingMinutes"]} мин чтения</span></div>'
@@ -71,7 +80,7 @@ def main():
         assert all(x['id'] for x in outline.headings), 'Every H2 needs a stable anchor'
         assert len({x['id'] for x in outline.headings})==len(outline.headings)
         a['searchText']=' '.join(outline.text)
-        a['readingMinutes']=max(1,round(len(a['searchText'].split())/180))
+        a['readingMinutes']=max(1, math.ceil(len(a['searchText'].split())/180))
         a['searchText'] += (' заявки лиды конверсия обращения продажи аналитика' if a['cover']=='funnel' else ' метатеги метатегов тайтл тайтлы дескрипшн сниппет заголовки описание title description')
     BLOG.mkdir(exist_ok=True)
     topics=[t for t in dict.fromkeys(t for a in articles for t in a['topics']) if not all(t in a['topics'] for a in articles)]
@@ -87,7 +96,7 @@ def main():
     for a in articles:
         toc=''.join(f'<li><a href="#{E(h["id"])}">{E(h["text"])}</a></li>' for h in a['outline'])
         other=next(x for x in articles if x['slug']!=a['slug'])
-        article=f'''<progress class="reading-progress" max="100" value="0" aria-label="Прогресс чтения" hidden></progress><main id="main" class="shell"><nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="/index.html">Главная</a><span aria-hidden="true">/</span><a class="back-to-blog" href="/blog/">Блог</a><span aria-hidden="true">/</span><span>{E(a['topics'][0])}</span></nav><article><header class="article-heading"><div><h1>{E(a['title'])}</h1><p class="article-summary">{E(a['summary'])}</p>{metadata(a)}<div class="article-tools" hidden><button type="button" data-copy-link>Скопировать ссылку{ARROW}</button><button type="button" data-print>Распечатать</button><span class="copy-status" role="status" aria-live="polite"></span></div></div><figure class="article-illustration"><img src="/assets/blog/{a['cover']}.svg" width="960" height="580" alt="{'Путь от поискового запроса через страницу сайта к заявке' if a['cover']=='funnel' else 'Условный пример заголовка и описания страницы в поиске'}"></figure></header><div class="reading-layout"><aside class="article-sidebar"><details class="toc" open><summary>В этой статье <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m7 10 5 5 5-5" stroke="currentColor" stroke-width="1.6"/></svg></summary><nav aria-label="Содержание статьи"><ol>{toc}</ol></nav></details><a class="back-to-blog sidebar-back" href="/blog/">Все статьи {ARROW}</a></aside><div class="article-content" id="article-content">{a['body']}<div class="article-end"><p>Разобрались с задачей — переходите к следующему шагу.</p><a href="https://optimism.ru/services/prodvijenie-saytov-seo/">Обсудить SEO своего сайта {ARROW}</a></div></div></div></article><section class="related" aria-labelledby="related-title"><div class="section-heading"><h2 id="related-title">Продолжить разбираться</h2><a class="back-to-blog" href="/blog/">Все статьи {ARROW}</a></div>{card(other,True)}</section></main>'''
+        article=f'''<progress class="reading-progress" max="100" value="0" aria-label="Прогресс чтения" hidden></progress><main id="main" class="shell"><nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="/index.html">Главная</a><span aria-hidden="true">/</span><a class="back-to-blog" href="/blog/">Блог</a><span aria-hidden="true">/</span><span>{E(a['topics'][0])}</span></nav><article><header class="article-heading"><div><h1>{E(a['title'])}</h1><p class="article-summary">{E(a['summary'])}</p>{metadata(a)}<div class="article-tools" hidden><button type="button" data-copy-link>Скопировать ссылку{ARROW}</button><button type="button" data-print>Распечатать</button><span class="copy-status" role="status" aria-live="polite"></span></div></div></header><div class="reading-layout"><aside class="article-sidebar"><details class="toc" open><summary>В этой статье <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m7 10 5 5 5-5" stroke="currentColor" stroke-width="1.6"/></svg></summary><nav aria-label="Содержание статьи"><ol>{toc}</ol></nav></details><a class="back-to-blog sidebar-back" href="/blog/">Все статьи {ARROW}</a></aside><div class="article-content" id="article-content">{a['body']}</div></div></article><section class="related" aria-labelledby="related-title"><div class="section-heading"><h2 id="related-title">Продолжить разбираться</h2><a class="back-to-blog" href="/blog/">Все статьи {ARROW}</a></div>{card(other,True)}</section></main>'''
         schema={'@context':'https://schema.org','@type':'BlogPosting','headline':a['title'],'description':a['description'],'datePublished':a['date'],'dateModified':a['updated'],'inLanguage':'ru','mainEntityOfPage':PUBLIC+'/blog/'+a['slug']+'/','publisher':{'@type':'Organization','name':'Оптимизм','url':'https://optimism.ru/'},'citation':[s['url'] for s in a['sources']]}
         dest=BLOG/a['slug'];dest.mkdir(exist_ok=True)
         (dest/'index.html').write_text(page(a['title']+' — Блог Оптимизма',a['description'],'/blog/'+a['slug']+'/',article,schema,True))

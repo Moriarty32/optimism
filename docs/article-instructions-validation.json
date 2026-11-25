@@ -1,0 +1,269 @@
+{
+  "checks": [
+    {
+      "name": "seo-trafik-bez-zayavok instruction length",
+      "pass": true
+    },
+    {
+      "name": "seo-trafik-bez-zayavok two source screenshots",
+      "pass": true
+    },
+    {
+      "name": "seo-trafik-bez-zayavok contextual services",
+      "pass": true
+    },
+    {
+      "name": "seo-trafik-bez-zayavok reflow 1440",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "bad": 0
+      }
+    },
+    {
+      "name": "seo-trafik-bez-zayavok reflow 1024",
+      "pass": true,
+      "detail": {
+        "width": 1024,
+        "scroll": 1024,
+        "bad": 0
+      }
+    },
+    {
+      "name": "seo-trafik-bez-zayavok reflow 768",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "bad": 0
+      }
+    },
+    {
+      "name": "seo-trafik-bez-zayavok reflow 390",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "bad": 0
+      }
+    },
+    {
+      "name": "seo-trafik-bez-zayavok reflow 360",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scroll": 360,
+        "bad": 0
+      }
+    },
+    {
+      "name": "seo-trafik-bez-zayavok reflow 320",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "bad": 0
+      }
+    },
+    {
+      "name": "seo-trafik-bez-zayavok mobile heading clear of sticky contents",
+      "pass": true,
+      "detail": {
+        "heading": {
+          "x": 22,
+          "y": 168.34375,
+          "width": 346,
+          "height": 104.390625
+        },
+        "sidebar": {
+          "x": 22,
+          "y": 72,
+          "width": 346,
+          "height": 74
+        }
+      }
+    },
+    {
+      "name": "seo-trafik-bez-zayavok contents retained while reading",
+      "pass": true
+    },
+    {
+      "name": "seo-trafik-bez-zayavok anchor receives keyboard focus",
+      "pass": true
+    },
+    {
+      "name": "seo-trafik-bez-zayavok screenshot opens",
+      "pass": true
+    },
+    {
+      "name": "seo-trafik-bez-zayavok screenshot loads",
+      "pass": true
+    },
+    {
+      "name": "seo-trafik-bez-zayavok screenshot displayed at original scale",
+      "pass": true
+    },
+    {
+      "name": "seo-trafik-bez-zayavok Escape closes and returns focus",
+      "pass": true
+    },
+    {
+      "name": "seo-trafik-bez-zayavok commercial transition event",
+      "pass": true,
+      "detail": [
+        {
+          "type": "blog_service_click",
+          "article": "seo-trafik-bez-zayavok",
+          "service": "/services/analytics/nastroyka-sistem-analitiki/",
+          "placement": "end"
+        }
+      ]
+    },
+    {
+      "name": "seo-trafik-bez-zayavok worksheet downloads",
+      "pass": true,
+      "detail": "seo-checklist.csv"
+    },
+    {
+      "name": "title-description-dlya-sayta instruction length",
+      "pass": true
+    },
+    {
+      "name": "title-description-dlya-sayta two source screenshots",
+      "pass": true
+    },
+    {
+      "name": "title-description-dlya-sayta contextual services",
+      "pass": true
+    },
+    {
+      "name": "title-description-dlya-sayta reflow 1440",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "bad": 0
+      }
+    },
+    {
+      "name": "title-description-dlya-sayta reflow 1024",
+      "pass": true,
+      "detail": {
+        "width": 1024,
+        "scroll": 1024,
+        "bad": 0
+      }
+    },
+    {
+      "name": "title-description-dlya-sayta reflow 768",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "bad": 0
+      }
+    },
+    {
+      "name": "title-description-dlya-sayta reflow 390",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "bad": 0
+      }
+    },
+    {
+      "name": "title-description-dlya-sayta reflow 360",
+      "pass": true,
+      "detail": {
+        "width": 360,
+        "scroll": 360,
+        "bad": 0
+      }
+    },
+    {
+      "name": "title-description-dlya-sayta reflow 320",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "bad": 0
+      }
+    },
+    {
+      "name": "title-description-dlya-sayta mobile heading clear of sticky contents",
+      "pass": true,
+      "detail": {
+        "heading": {
+          "x": 22,
+          "y": 168.46875,
+          "width": 346,
+          "height": 104.390625
+        },
+        "sidebar": {
+          "x": 22,
+          "y": 72,
+          "width": 346,
+          "height": 74
+        }
+      }
+    },
+    {
+      "name": "title-description-dlya-sayta contents retained while reading",
+      "pass": true
+    },
+    {
+      "name": "title-description-dlya-sayta anchor receives keyboard focus",
+      "pass": true
+    },
+    {
+      "name": "title-description-dlya-sayta screenshot opens",
+      "pass": true
+    },
+    {
+      "name": "title-description-dlya-sayta screenshot loads",
+      "pass": true
+    },
+    {
+      "name": "title-description-dlya-sayta screenshot displayed at original scale",
+      "pass": true
+    },
+    {
+      "name": "title-description-dlya-sayta Escape closes and returns focus",
+      "pass": true
+    },
+    {
+      "name": "title-description-dlya-sayta commercial transition event",
+      "pass": true,
+      "detail": [
+        {
+          "type": "blog_service_click",
+          "article": "title-description-dlya-sayta",
+          "service": "/services/seo-optimization/optimizaciya-sajta/",
+          "placement": "end"
+        }
+      ]
+    },
+    {
+      "name": "title-description-dlya-sayta worksheet downloads",
+      "pass": true,
+      "detail": "meta-template.csv"
+    },
+    {
+      "name": "seo-trafik-bez-zayavok no-JS reading and source images",
+      "pass": true
+    },
+    {
+      "name": "title-description-dlya-sayta no-JS reading and source images",
+      "pass": true
+    },
+    {
+      "name": "No browser JavaScript errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "failures": [],
+  "errors": []
+}
