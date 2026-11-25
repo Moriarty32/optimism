@@ -70,31 +70,36 @@
     if(!autoServices()||document.hidden)return;
     const listRect=serviceList.getBoundingClientRect();
     if(listRect.top>innerHeight||listRect.bottom<0)return;
-    const anchor=serviceCards.find(card=>{const r=card.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight;});
-    const anchorTop=anchor?.getBoundingClientRect().top;
-    // Read each next header after its predecessor settles, avoiding competing height calculations.
-    serviceCards.forEach((card,i)=>{
+    // Batch geometry reads before writes. Predict each next row from preceding changes.
+    const geometry=serviceCards.map(card=>({card,rect:card.getBoundingClientRect(),summary:card.querySelector('summary').getBoundingClientRect()}));
+    const anchorIndex=geometry.findIndex(({rect})=>rect.bottom>0&&rect.top<innerHeight);
+    let shift=0,anchorShift=0;
+    const updates=[];
+    geometry.forEach(({card,rect,summary},i)=>{
+      if(i===anchorIndex)anchorShift=shift;
       if(manualServices.has(card))return;
       const size=serviceSizes.get(card);if(!size)return;
-      const top=card.getBoundingClientRect().top;
+      const top=rect.top+shift;
       let progress=i===0?1:Math.max(0,Math.min(1,(innerHeight*.86-top)/Math.min(240,innerHeight*.3)));
       if(progress<.015)progress=0;if(progress>.985)progress=1;
       if(Math.abs(Number(card.dataset.serviceProgress??-1)-progress)<.003)return;
+      const rgb=[255,255,255].map((v,k)=>Math.round(v+([6,29,49][k]-v)*progress));
+      const linear=rgb.map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4;});
+      const luminance=linear[0]*.2126+linear[1]*.7152+linear[2]*.0722;
+      updates.push({card,progress,size,rgb,foreground:progress===0?'#092d40':luminance>.179?'#000':'#fff'});
+      shift+=summary.height+size.height*progress-rect.height;
+    });
+    updates.forEach(({card,progress,size,rgb,foreground})=>{
       card.classList.add('is-scroll-service');card.dataset.serviceProgress=progress.toFixed(4);card.open=progress>0;
-      const from=[255,255,255],to=[6,29,49];
-      card.style.backgroundColor=`rgb(${from.map((v,k)=>Math.round(v+(to[k]-v)*progress)).join(',')})`;
-      card.style.color=progress>.58?'#fff':'#092d40';
+      card.style.backgroundColor=`rgb(${rgb.join(',')})`;card.style.color=foreground;
       card.style.setProperty('--service-progress',progress);
       card.style.setProperty('--service-content-progress',Math.max(0,Math.min(1,(progress-.65)/.3)));
       const body=card.querySelector('.studio-service-body');body.style.height=(size.height*progress)+'px';body.style.paddingBottom=(size.padding*progress)+'px';body.inert=progress<.985;
     });
-    // Preserve the visible card when a fast scroll reveals earlier content above it.
-    // Wheel/touch input remains native; this replaces the browser's excluded subtree anchoring.
-    if(anchor){
-      const delta=anchor.getBoundingClientRect().top-anchorTop;
-      if(Math.abs(delta)>1){scrollBy({top:delta,behavior:'instant'});requestServices();}
-    }
+    // A stable visible card, with no wheel/touch interception or per-row forced layout.
+    if(anchorIndex>=0&&Math.abs(anchorShift)>1){scrollBy({top:anchorShift,behavior:'instant'});requestServices();}
   }
+
   function requestServices(){if(!serviceFrame&&autoServices())serviceFrame=requestAnimationFrame(renderServices);}
   serviceCards.forEach(card=>card.addEventListener('focusin',event=>{
     if(event.target.closest('summary'))return;

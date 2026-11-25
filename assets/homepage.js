@@ -44,7 +44,7 @@
       return;
     }
     const status = document.getElementById('project-status');
-    status.textContent = 'Поля заполнены корректно. Это демонстрационная версия: заявка не отправлена, данные не сохранены. Для обращения в агентство используйте телефон, указанный на странице.';
+    status.textContent = 'Форма проверена. Это демоверсия: данные не отправлены и не сохранены. Свяжитесь с агентством по телефону на странице.';
     status.focus();
     emit('form_demo_complete', { form: 'project' });
   }, true);

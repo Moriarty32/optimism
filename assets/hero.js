@@ -3,7 +3,7 @@
   const services = [
   {
     "title": "SEO-продвижение",
-    "description": "Помогаем клиентам найти ваш сайт в нужный момент. Работаем с технической основой, структурой и содержанием.",
+    "description": "Ваш бизнес — в центре поиска. Стратегия, технологии и контент, которые помогают клиентам выбрать вас.",
     "words": [
       "Поисковые запросы",
       "Индексация",
@@ -29,7 +29,7 @@
   },
   {
     "title": "Интернет-реклама",
-    "description": "Соединяем рекламную стратегию, объявления и посадочные страницы. Анализируем путь от первого клика до обращения.",
+    "description": "Внимание нужной аудитории. Соединяем стратегию кампаний и посадочные страницы, чтобы работать со всем путём к обращению.",
     "words": [
       "Реклама",
       "Аудитория",
@@ -55,7 +55,7 @@
   },
   {
     "title": "Аналитика и UX",
-    "description": "Выясняем, как люди пользуются сайтом и где теряются обращения. Находим точки роста в аналитике и интерфейсе.",
+    "description": "Точность, которая меняет решения. Исследуем путь клиента и находим потенциал роста в данных и интерфейсе.",
     "words": [
       "Аналитика",
       "UX",
@@ -81,7 +81,7 @@
   },
   {
     "title": "Разработка сайтов",
-    "description": "Проектируем структуру и интерфейс, разрабатываем и развиваем сайты. Соединяем задачи бизнеса и удобство клиента.",
+    "description": "Сайт, достойный ваших амбиций. Соединяем образ бренда, технологии и удобство в каждом пользовательском сценарии.",
     "words": [
       "Разработка",
       "Интерфейс",
@@ -107,7 +107,7 @@
   },
   {
     "title": "Контент-маркетинг",
-    "description": "Помогаем рассказать о продукте так, чтобы его поняли. От стратегии и экспертных материалов до контента для продвижения.",
+    "description": "Экспертность, которую замечают. Раскрываем ценность продукта в материалах, которые отвечают на вопросы вашей аудитории.",
     "words": [
       "Контент",
       "Редакция",
@@ -133,7 +133,7 @@
   },
   {
     "title": "Социальные сети",
-    "description": "Соединяем стратегию, контент и продвижение. Помогаем бренду находить свою аудиторию и выстраивать с ней связь.",
+    "description": "У бренда есть голос. Помогаем ему звучать в социальных сетях — через стратегию, содержание и диалог с аудиторией.",
     "words": [
       "Соцсети",
       "Сообщество",
@@ -159,7 +159,7 @@
   },
   {
     "title": "Продвижение бренда",
-    "description": "Выстраиваем позиционирование и коммуникации. Объединяем каналы продвижения вокруг узнаваемого образа бренда.",
+    "description": "Бренд, который выбирают осознанно. Выстраиваем позиционирование и коммуникации вокруг вашей сильной идеи.",
     "words": [
       "Бренд",
       "Позиционирование",
@@ -185,7 +185,7 @@
   },
   {
     "title": "Разработка AI-агента",
-    "description": "Разрабатываем AI-агентов под рабочие задачи: с нужными данными, интеграциями и понятными границами самостоятельности.",
+    "description": "Интеллект становится частью команды. Проектируем AI-агентов под ваши данные, процессы и рабочие инструменты.",
     "words": [
       "AI-агент",
       "База знаний",
@@ -211,7 +211,7 @@
   },
   {
     "title": "GEO-продвижение",
-    "description": "Работаем с контентом, фактами и упоминаниями компании, чтобы она была понятнее системам поиска с генеративными ответами.",
+    "description": "Новая среда поиска. Работаем с контентом и фактами, чтобы экспертиза вашего бренда была понятна генеративным системам.",
     "words": [
       "GEO",
       "Генеративный поиск",
@@ -247,7 +247,7 @@
   let active = 0, elapsed = 0, previous = 0, frame = 0, lastPaint = 0;
   let visible = true, focused = false, running = false;
   let width = 0, height = 0, density = 1, burst = 0;
-  let words = [], sprites = [], resetTimer;
+  let words = [], sprites = [], oldField = null, fieldStarted = 0, copyAnimations = [];
 
   // Deterministic spacing keeps the same topic recognisable on revisit.
   function random(seed) {const v = Math.sin(seed * 127.1 + 311.7) * 43758.5453;return v - Math.floor(v);}
@@ -279,6 +279,7 @@
     render(0);
   }
   function resize() {
+    oldField = null;
     const bounds = field.getBoundingClientRect();
     width = bounds.width;height = bounds.height;
     density = Math.min(devicePixelRatio || 1, 1.5, Math.sqrt(3000000 / (width * height)));
@@ -289,9 +290,14 @@
     if (!context || !width) return;
     context.setTransform(density, 0, 0, density, 0, 0);
     context.clearRect(0, 0, width, height);
+    const mix = oldField ? Math.min(1, (performance.now() - fieldStarted) / 850) : 1;
+    if (oldField && mix < 1) {
+      context.globalAlpha = 1 - mix;
+      context.drawImage(oldField, 0, 0, oldField.width, oldField.height, 0, 0, width, height);
+    } else oldField = null;
     burst = Math.max(0, burst - delta / 1000);
     for (const word of words) {
-      word.z -= delta * .000065 * (1 + burst * 2.4);
+      word.z -= delta * .000045 * (1 + burst * 1.2);
       if (word.z < .24) word.z += 1.63;
       const depth = .85 / word.z;
       const x = width / 2 + word.x * width * .48 * depth;
@@ -301,7 +307,7 @@
       if (x < -w || x > width + w || y < -h || y > height + h) continue;
       const enter = Math.min(1, (1.87 - word.z) / .3);
       const leave = Math.min(1, (word.z - .24) / .18);
-      context.globalAlpha = Math.max(0, enter * leave * (.19 + .2 * depth));
+      context.globalAlpha = Math.max(0, enter * leave * (.19 + .2 * depth)) * mix;
       context.drawImage(sprite, x - w / 2, y - h / 2, w, h);
     }
     context.globalAlpha = 1;
@@ -309,6 +315,10 @@
   function select(index, manual = false) {
     elapsed = 0;
     if (index === active) return;
+    if (context && !motion.matches && running && !focused) {
+      oldField = document.createElement('canvas');oldField.width = canvas.width;oldField.height = canvas.height;
+      oldField.getContext('2d').drawImage(canvas, 0, 0);fieldStarted = performance.now();
+    } else oldField = null;
     active = index;
     const service = services[active];
     buttons.forEach((button, i) => {
@@ -323,12 +333,14 @@
     hero.style.setProperty('--flow-y', service.light[1] + '%');
     // The background changes its subject; the brand and actions never move.
     buildField();burst = motion.matches ? 0 : 1;
-    clearTimeout(resetTimer);
-    hero.classList.remove('is-changing');
+    copyAnimations.forEach(animation=>animation.cancel());copyAnimations=[];
     if (!motion.matches) {
-      void copy.offsetWidth;
-      hero.classList.add('is-changing');
-      resetTimer = setTimeout(() => hero.classList.remove('is-changing'), 800);
+      [hero.querySelector('#hero-service-title'), hero.querySelector('#hero-service-description')].forEach((node,i)=>{
+        copyAnimations.push(node.animate([
+          {clipPath:'inset(0 0 25% 0)',transform:'translateY(10px)',opacity:.3},
+          {clipPath:'inset(0)',transform:'translateY(0)',opacity:1}
+        ],{duration:650,delay:i*70,fill:'backwards',easing:'cubic-bezier(.16,1,.3,1)'}));
+      });
     }
     if (manual) hero.dispatchEvent(new CustomEvent('optimism:interaction', {
       bubbles:true, detail:{event:'hero_service_select',page:'homepage-preview',block:'N-01',target:String(index)}
@@ -338,7 +350,11 @@
     const shouldRun = !motion.matches && visible && !focused && !document.hidden;
     hero.classList.toggle('is-paused', !shouldRun);
     if (shouldRun && !running) {running = true;previous = performance.now();frame = requestAnimationFrame(tick);}
-    if (!shouldRun && running) {running = false;cancelAnimationFrame(frame);}
+    if (!shouldRun && running) {
+      running = false;cancelAnimationFrame(frame);
+      // Settle the selected topic before pausing a blend midway (focus / hidden / offscreen).
+      oldField = null;render(0);
+    }
   }
   function tick(now) {
     if (!running) return;
@@ -372,7 +388,7 @@
     visible=entries[0].isIntersecting;
     document.body.classList.toggle('hero-in-view',visible);sync();
   },{threshold:.15}).observe(hero);
-  motion.addEventListener('change', () => {sync();render(0);});
+  motion.addEventListener('change', () => {oldField=null;copyAnimations.forEach(a=>a.cancel());copyAnimations=[];sync();render(0);});
   if (context) {
     hero.classList.add('hero-has-canvas');
     new ResizeObserver(resize).observe(field);

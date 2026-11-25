@@ -34,11 +34,11 @@ main=(ROOT/'partials/homepage.html').read_text()
 raw=re.sub(r'<main\b[^>]*>.*?</main>',lambda _: main,raw,count=1,flags=re.S|re.I)
 # This published preview must not compete with the original domain in search.
 raw=re.sub(r'<meta\b[^>]*name=["\']robots["\'][^>]*>','',raw,flags=re.I)
-raw=raw.replace('</head>', '<meta name="robots" content="noindex, nofollow"><link rel="stylesheet" href="/assets/homepage.css"><link rel="stylesheet" href="/assets/hero.css"><link rel="stylesheet" href="/assets/studio.css"><link rel="stylesheet" href="/assets/resources-contact.css"></head>')
+raw=raw.replace('</head>', '<meta name="robots" content="noindex, nofollow"><link rel="stylesheet" href="/assets/homepage.css"><link rel="stylesheet" href="/assets/hero.css"><link rel="stylesheet" href="/assets/studio.css"><link rel="stylesheet" href="/assets/resources-contact.css"><link rel="stylesheet" href="/assets/editorial.css"></head>')
 raw=raw.replace('</body>', '<script defer src="/assets/homepage.js"></script><script defer src="/assets/hero.js"></script><script defer src="/assets/solutions.js"></script><script defer src="/assets/studio.js"></script></body>')
 # A new page must never reuse an older cached UI stylesheet or script.
 # Content-derived URLs change automatically whenever one of these files changes.
-for asset in ('assets/homepage.css','assets/hero.css','assets/studio.css','assets/resources-contact.css','assets/studio.js','assets/homepage.js','assets/hero.js','assets/solutions.js'):
+for asset in ('assets/homepage.css','assets/hero.css','assets/studio.css','assets/resources-contact.css','assets/editorial.css','assets/studio.js','assets/homepage.js','assets/hero.js','assets/solutions.js'):
     revision=hashlib.sha256((ROOT/asset).read_bytes()).hexdigest()[:12]
     raw=raw.replace('/'+asset+'"','/'+asset+'?v='+revision+'"')
 (ROOT/'index.html').write_text(raw)
