@@ -1,0 +1,12 @@
+Scope: new blog catalogue and two long-form article pages within the existing Optimism website.
+Visitor mode: Read.
+Confirmed audience: business owners and marketers seeking practical instructions about SEO and leads.
+Confirmed workflow: code-first; working page and browser verification, not a preliminary image mockup.
+Task: find a relevant guide through visible search or a real topic, understand the short answer, jump to an actionable section, read examples and use a checklist.
+Content: two original Russian guides, official Google/Yandex sources, honest publication dates and calculated reading time. No invented authors, popularity, clients, results or empty categories.
+Direction: retain existing Optimism navy/cyan, Joanna family and logo. Light reading ground, generous headings, purpose-built vector illustrations. Two editorial entries; no duplicated featured feed. Compact navigation links back to the homepage and services.
+Memorable interaction: the user's query and topic survive opening an article and returning to the catalogue. Desktop contents track the current section; mobile contents collapse without blocking reading.
+Constraints: existing static Python build; GitHub Pages /optimism/ base path; preserve demo noindex/nofollow; no new external account, subscription form or backend. Articles remain available without JS; search and reading tools progressively enhance them.
+UX evidence: audit/blog-2026-11-25/ux-research.txt, desk research, no human usability-test claims.
+Acceptance: functional search, category/reset/empty/history/deep link, desktop/mobile/320px reflow, accessible keyboard navigation, readable article anchors, no broken internal paths, no uncaught console errors.
+Unresolved: real-world search success, reader satisfaction and conversions require actual user research/analytics after launch.

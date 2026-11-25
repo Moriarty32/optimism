@@ -18,6 +18,7 @@ def link(m):
     def href(h):
         value=h[2]
         if value=='/':value='./index.html'
+        elif value in ('/blog/', 'https://optimism.ru/blog/'):value='./blog/'
         elif value.startswith('/') and not value.startswith('//'):value='https://optimism.ru'+value
         return h[1]+value+h[3]
     return re.sub(r'(\bhref=[\"\'])([^\"\']*)([\"\'])',href,tag)

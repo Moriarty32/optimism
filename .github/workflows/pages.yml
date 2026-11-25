@@ -1,4 +1,4 @@
-name: Publish homepage
+name: Publish Optimism website
 on:
   push:
     branches: [main]
@@ -20,6 +20,7 @@ jobs:
           python-version: '3.x'
       - run: python3 scripts/prepare.py
       - run: python3 scripts/build-pages.py --base /optimism/ --output dist
+      - run: python3 scripts/check-blog.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

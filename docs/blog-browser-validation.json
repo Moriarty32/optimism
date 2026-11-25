@@ -1,0 +1,407 @@
+{
+  "checks": [
+    {
+      "name": "Initial two complete entries",
+      "pass": true
+    },
+    {
+      "name": "Search matches metatags",
+      "pass": true
+    },
+    {
+      "name": "Case-insensitive editorial synonym",
+      "pass": true
+    },
+    {
+      "name": "Search reflected in URL",
+      "pass": true
+    },
+    {
+      "name": "Read article from search",
+      "pass": true
+    },
+    {
+      "name": "Back link retains query",
+      "pass": true
+    },
+    {
+      "name": "Browser Back restores search",
+      "pass": true
+    },
+    {
+      "name": "Topic isolates actual article",
+      "pass": true
+    },
+    {
+      "name": "History restores topic",
+      "pass": true
+    },
+    {
+      "name": "Useful safe empty state",
+      "pass": true
+    },
+    {
+      "name": "Reset restores both entries and focus",
+      "pass": true
+    },
+    {
+      "name": "Shareable direct filter URL",
+      "pass": true
+    },
+    {
+      "name": "Reflow blog/ 1440",
+      "pass": true,
+      "details": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "h1": 1,
+        "unloaded": 0
+      }
+    },
+    {
+      "name": "Reflow blog/ 1024",
+      "pass": true,
+      "details": {
+        "width": 1024,
+        "scrollWidth": 1024,
+        "h1": 1,
+        "unloaded": 0
+      }
+    },
+    {
+      "name": "Reflow blog/ 768",
+      "pass": true,
+      "details": {
+        "width": 768,
+        "scrollWidth": 768,
+        "h1": 1,
+        "unloaded": 0
+      }
+    },
+    {
+      "name": "Reflow blog/ 390",
+      "pass": true,
+      "details": {
+        "width": 390,
+        "scrollWidth": 390,
+        "h1": 1,
+        "unloaded": 0
+      }
+    },
+    {
+      "name": "Reflow blog/ 360",
+      "pass": true,
+      "details": {
+        "width": 360,
+        "scrollWidth": 360,
+        "h1": 1,
+        "unloaded": 0
+      }
+    },
+    {
+      "name": "Reflow blog/ 320",
+      "pass": true,
+      "details": {
+        "width": 320,
+        "scrollWidth": 320,
+        "h1": 1,
+        "unloaded": 0
+      }
+    },
+    {
+      "name": "Reflow blog/seo-trafik-bez-zayavok/ 1440",
+      "pass": true,
+      "details": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "h1": 1,
+        "unloaded": 0
+      }
+    },
+    {
+      "name": "Reflow blog/seo-trafik-bez-zayavok/ 1024",
+      "pass": true,
+      "details": {
+        "width": 1024,
+        "scrollWidth": 1024,
+        "h1": 1,
+        "unloaded": 0
+      }
+    },
+    {
+      "name": "Reflow blog/seo-trafik-bez-zayavok/ 768",
+      "pass": true,
+      "details": {
+        "width": 768,
+        "scrollWidth": 768,
+        "h1": 1,
+        "unloaded": 0
+      }
+    },
+    {
+      "name": "Reflow blog/seo-trafik-bez-zayavok/ 390",
+      "pass": true,
+      "details": {
+        "width": 390,
+        "scrollWidth": 390,
+        "h1": 1,
+        "unloaded": 0
+      }
+    },
+    {
+      "name": "Reflow blog/seo-trafik-bez-zayavok/ 360",
+      "pass": true,
+      "details": {
+        "width": 360,
+        "scrollWidth": 360,
+        "h1": 1,
+        "unloaded": 0
+      }
+    },
+    {
+      "name": "Reflow blog/seo-trafik-bez-zayavok/ 320",
+      "pass": true,
+      "details": {
+        "width": 320,
+        "scrollWidth": 320,
+        "h1": 1,
+        "unloaded": 0
+      }
+    },
+    {
+      "name": "Reflow blog/title-description-dlya-sayta/ 1440",
+      "pass": true,
+      "details": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "h1": 1,
+        "unloaded": 0
+      }
+    },
+    {
+      "name": "Reflow blog/title-description-dlya-sayta/ 1024",
+      "pass": true,
+      "details": {
+        "width": 1024,
+        "scrollWidth": 1024,
+        "h1": 1,
+        "unloaded": 0
+      }
+    },
+    {
+      "name": "Reflow blog/title-description-dlya-sayta/ 768",
+      "pass": true,
+      "details": {
+        "width": 768,
+        "scrollWidth": 768,
+        "h1": 1,
+        "unloaded": 0
+      }
+    },
+    {
+      "name": "Reflow blog/title-description-dlya-sayta/ 390",
+      "pass": true,
+      "details": {
+        "width": 390,
+        "scrollWidth": 390,
+        "h1": 1,
+        "unloaded": 0
+      }
+    },
+    {
+      "name": "Reflow blog/title-description-dlya-sayta/ 360",
+      "pass": true,
+      "details": {
+        "width": 360,
+        "scrollWidth": 360,
+        "h1": 1,
+        "unloaded": 0
+      }
+    },
+    {
+      "name": "Reflow blog/title-description-dlya-sayta/ 320",
+      "pass": true,
+      "details": {
+        "width": 320,
+        "scrollWidth": 320,
+        "h1": 1,
+        "unloaded": 0
+      }
+    },
+    {
+      "name": "Mobile menu opens",
+      "pass": true
+    },
+    {
+      "name": "Escape closes menu and restores focus",
+      "pass": true
+    },
+    {
+      "name": "Keyboard TOC jumps to readable heading",
+      "pass": true
+    },
+    {
+      "name": "Mobile TOC collapses after choosing a section",
+      "pass": true
+    },
+    {
+      "name": "Copy link exposes success or actionable fallback",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion respected",
+      "pass": true
+    },
+    {
+      "name": "No-JS catalogue stays readable",
+      "pass": true
+    },
+    {
+      "name": "No-JS article and anchor navigation exist",
+      "pass": true
+    },
+    {
+      "name": "No uncaught JavaScript errors",
+      "pass": true,
+      "details": []
+    }
+  ],
+  "failures": [],
+  "layout": [
+    {
+      "path": "blog/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "unloaded": 0
+    },
+    {
+      "path": "blog/",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "h1": 1,
+      "unloaded": 0
+    },
+    {
+      "path": "blog/",
+      "width": 768,
+      "scrollWidth": 768,
+      "h1": 1,
+      "unloaded": 0
+    },
+    {
+      "path": "blog/",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "unloaded": 0
+    },
+    {
+      "path": "blog/",
+      "width": 360,
+      "scrollWidth": 360,
+      "h1": 1,
+      "unloaded": 0
+    },
+    {
+      "path": "blog/",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": 1,
+      "unloaded": 0
+    },
+    {
+      "path": "blog/seo-trafik-bez-zayavok/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "unloaded": 0
+    },
+    {
+      "path": "blog/seo-trafik-bez-zayavok/",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "h1": 1,
+      "unloaded": 0
+    },
+    {
+      "path": "blog/seo-trafik-bez-zayavok/",
+      "width": 768,
+      "scrollWidth": 768,
+      "h1": 1,
+      "unloaded": 0
+    },
+    {
+      "path": "blog/seo-trafik-bez-zayavok/",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "unloaded": 0
+    },
+    {
+      "path": "blog/seo-trafik-bez-zayavok/",
+      "width": 360,
+      "scrollWidth": 360,
+      "h1": 1,
+      "unloaded": 0
+    },
+    {
+      "path": "blog/seo-trafik-bez-zayavok/",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": 1,
+      "unloaded": 0
+    },
+    {
+      "path": "blog/title-description-dlya-sayta/",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "unloaded": 0
+    },
+    {
+      "path": "blog/title-description-dlya-sayta/",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "h1": 1,
+      "unloaded": 0
+    },
+    {
+      "path": "blog/title-description-dlya-sayta/",
+      "width": 768,
+      "scrollWidth": 768,
+      "h1": 1,
+      "unloaded": 0
+    },
+    {
+      "path": "blog/title-description-dlya-sayta/",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "unloaded": 0
+    },
+    {
+      "path": "blog/title-description-dlya-sayta/",
+      "width": 360,
+      "scrollWidth": 360,
+      "h1": 1,
+      "unloaded": 0
+    },
+    {
+      "path": "blog/title-description-dlya-sayta/",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": 1,
+      "unloaded": 0
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "desktop.png",
+    "mobile.png",
+    "article-desktop.png",
+    "article-mobile.png",
+    "article-mobile-reading.png",
+    "search-empty-mobile.png"
+  ]
+}

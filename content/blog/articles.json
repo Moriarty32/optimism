@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "seo-trafik-bez-zayavok",
+    "title": "Трафик есть, заявок нет: что проверить на сайте",
+    "description": "Пошаговая диагностика для бизнеса: проверьте цели и доставку заявок, разберите поисковый трафик, посадочные страницы, формы и обработку обращений.",
+    "summary": "Проверьте форму, цели в Метрике и страницы входа. Пошаговая инструкция со скриншотами и таблицей для фиксации ошибок.",
+    "topics": [
+      "SEO",
+      "Аналитика"
+    ],
+    "format": "Практическое руководство",
+    "date": "2026-11-25",
+    "updated": "2026-11-25",
+    "readingMinutes": 8,
+    "bodyFile": "seo-trafik-bez-zayavok.html",
+    "cover": "funnel",
+    "sources": [
+      {
+        "title": "Яндекс Метрика: цели, целевые визиты и конверсия",
+        "url": "https://yandex.ru/support/metrica/ru/general/goals"
+      },
+      {
+        "title": "Яндекс Метрика: отправка формы и валидация",
+        "url": "https://yandex.ru/support/metrica/ru/simple-goal/form-beta"
+      },
+      {
+        "title": "Яндекс Метрика: проверка достижения цели",
+        "url": "https://yandex.ru/support/metrica/ru/general/check-goal"
+      },
+      {
+        "title": "Яндекс Метрика: отчёт «Источники, сводка»",
+        "url": "https://yandex.ru/support/metrica/ru/sources/sources-summary"
+      }
+    ]
+  },
+  {
+    "slug": "title-description-dlya-sayta",
+    "title": "Title и description: как написать метатеги для бизнеса",
+    "description": "Как написать title и description для услуги, товара и статьи: понятные примеры, различия с H1, проверка после публикации и чек-лист без SEO-мифов.",
+    "summary": "Напишите метатеги для своей страницы и проверьте их в коде. Учебный пример, скриншоты и шаблон для работы.",
+    "topics": [
+      "SEO",
+      "Контент"
+    ],
+    "format": "Практическое руководство",
+    "date": "2026-11-25",
+    "updated": "2026-11-25",
+    "readingMinutes": 8,
+    "bodyFile": "title-description-dlya-sayta.html",
+    "cover": "snippet",
+    "sources": [
+      {
+        "title": "Google Search Central: как формируются заголовки результатов",
+        "url": "https://developers.google.com/search/docs/appearance/title-link"
+      },
+      {
+        "title": "Google Search Central: description и поисковые сниппеты",
+        "url": "https://developers.google.com/search/docs/appearance/snippet"
+      }
+    ]
+  }
+]
