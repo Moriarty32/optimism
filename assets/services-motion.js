@@ -1,4 +1,4 @@
-/* Reversible service reveals. Native scroll; stable white headings and a navy content reveal.
+/* Reversible service reveals. Native scroll; stable navy headings and an integrated content reveal.
    Geometry is read before writes; only visible progress is damped. Focused controls remain usable. */
 (() => {
   const list=document.querySelector('.home-services');if(!list)return;

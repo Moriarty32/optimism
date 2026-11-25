@@ -65,18 +65,23 @@
 #homepage .studio-flow .solution-primary {background:#061d31;border-color:#061d31;color:#fff;min-height:54px;font-size:16px;padding:14px 22px;gap:16px}
 #homepage .studio-flow .solution-primary:hover {background:#0b5378;border-color:#0b5378}
 #homepage .studio-flow .solution-contact {font-size:16px;font-weight:400;min-height:48px}
-/* Wide service rows, with content-rich expansion and a real photographic scene. */
-#homepage .studio-flow #directions {background:#edf6fb;border-radius:40px;padding-top:clamp(72px,6vw,112px)}
-#homepage .studio-flow .home-services {display:flex;flex-direction:column;gap:10px}
-#homepage .studio-service {scroll-margin-top:110px;border:0;border-radius:24px;background:#fff;overflow:hidden;transition:background .4s,color .4s}
-#homepage .studio-service>summary {display:flex;align-items:center;justify-content:space-between;gap:28px;padding:32px 42px;min-height:108px;color:#092d40}
+/* A unified navy service catalogue: headings and revealed content share one surface. */
+#homepage .studio-flow #directions {--service-canvas:#041e2d;--service-panel:#0a3045;--service-ink:#f2f9fd;--service-muted:#b6d7e7;background:var(--service-canvas);color:var(--service-ink);border-radius:40px;padding-top:clamp(72px,6vw,112px);margin-bottom:clamp(20px,2vw,36px);color-scheme:dark}
+#homepage .studio-flow #directions :is(h2,h3){color:var(--service-ink)}
+#homepage .studio-flow #directions .home-section-head>p{color:var(--service-muted)}
+#homepage .studio-flow .home-services {display:flex;flex-direction:column;gap:12px}
+#homepage .studio-service {position:relative;scroll-margin-top:110px;border:0;border-radius:24px;background:var(--service-panel);color:var(--service-ink);overflow:hidden}
+#homepage .studio-service::before{content:'';position:absolute;inset:0;z-index:2;border:1px solid #31596f;border-radius:inherit;pointer-events:none;transition:border-color .25s}
+#homepage .studio-service:is(:hover,:focus-within)::before{border-color:#7cc3dd}
+#homepage .studio-service>summary {display:flex;align-items:center;justify-content:space-between;gap:28px;padding:32px 42px;min-height:108px;color:var(--service-ink)}
 #homepage .studio-service>summary h3 {font-size:clamp(28px,2.5vw,46px);margin:0;max-width:80%}
-#homepage .studio-disclosure-icon {display:flex;align-items:center;justify-content:center;flex:0 0 48px;width:48px;height:48px;border:1px solid #a9c2d0;border-radius:50%;transition:transform .45s,background .3s}
+#homepage .studio-disclosure-icon {display:flex;align-items:center;justify-content:center;flex:0 0 48px;width:48px;height:48px;border:1px solid #6fa7be;border-radius:50%;background:#113e55;color:#a3e7ff;transition:background .25s,color .25s,border-color .25s}
 #homepage .studio-disclosure-icon svg {width:22px;height:22px}
-#homepage .studio-service[open] {background:#fff;color:#092d40}
-#homepage .studio-service[open]>summary {color:#092d40}
-#homepage .studio-service[open] .studio-disclosure-icon {transform:none;background:#37c6f4;border-color:#37c6f4;color:#052d43}
-#homepage .studio-service-body {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:60px;padding:30px 42px 42px;align-items:center;background:#061d31;color:#fff}
+#homepage .studio-service[open] {background:var(--service-panel);color:var(--service-ink)}
+#homepage .studio-service[open]>summary {color:var(--service-ink)}
+#homepage .studio-service[open] .studio-disclosure-icon {transform:none}
+#homepage .studio-service>summary:is(:hover,:focus-visible) .studio-disclosure-icon{background:#37c6f4;border-color:#37c6f4;color:#052d43}
+#homepage .studio-service-body {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:60px;padding:30px 42px 42px;align-items:center;background:transparent;color:var(--service-ink)}
 #homepage .studio-service-copy>p {max-width:700px;font-size:24px;line-height:1.4;margin-bottom:20px}
 #homepage .studio-service-copy>p.home-detail {font-size:18px;color:#b6d7e7;max-width:610px;margin-bottom:34px}
 #homepage .studio-service .studio-pill {color:#fff;border-color:#7da2b5;font-size:17px;min-height:56px}
@@ -305,12 +310,12 @@
 #homepage .service-icon-vertical{transform-box:fill-box;transform-origin:center;transition:transform .35s cubic-bezier(.16,1,.3,1)}
 #homepage .studio-service[open] .service-icon-vertical{transform:scaleY(0)}
 #homepage .studio-service.is-scroll-service{transition:none}
-#homepage .studio-service.is-scroll-service>summary{color:#092d40;transition:none}
+#homepage .studio-service.is-scroll-service>summary{color:var(--service-ink);transition:none}
 #homepage .studio-service.is-scroll-service .studio-service-body{overflow:hidden;min-height:0;box-sizing:border-box}
 #homepage .studio-service.is-scroll-service .studio-service-visual{opacity:var(--service-content-progress,0);clip-path:inset(0 0 calc((1 - var(--service-progress,0))*8%) 0 round 18px)}
 #homepage .studio-service.is-scroll-service .studio-service-copy{opacity:var(--service-content-progress,0);transform:translateY(calc((1 - var(--service-progress,0))*14px))}
 #homepage .studio-service.is-scroll-service .studio-service-visual img{transform:scale(calc(1.055 - var(--service-progress,0)*.055));transition:none;animation:none}
-#homepage .studio-service.is-scroll-service .studio-disclosure-icon{transform:none;background:rgba(55,198,244,var(--service-progress,0));border-color:#a9c2d0;color:#052d43;transition:none}
+#homepage .studio-service.is-scroll-service .studio-disclosure-icon{transform:none}
 #homepage .studio-service.is-scroll-service .service-icon-vertical{transform:scaleY(calc(1 - var(--service-progress,0)));transition:none}
 @media(min-width:701px) and (max-width:1000px){
  #homepage .studio-flow #budget .home-prices{grid-template-columns:1fr}
