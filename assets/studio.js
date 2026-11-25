@@ -29,102 +29,16 @@
     };
     animation.oncancel=()=>{details.style.overflow=originalOverflow;};
   }
-  flow.querySelectorAll('.studio-service,.home-faq details,.home-roles details').forEach(details=>{
+  flow.querySelectorAll('.home-faq details,.home-roles details').forEach(details=>{
     details.querySelector('summary').addEventListener('click',event=>{
       event.preventDefault();
       const open=!(animations.get(details)?.open ?? details.open);
       const start=details.getBoundingClientRect().height;
-      if(details.matches('.studio-service')){manualServices.set(details,open);clearServiceStyle(details);}
       expand(details,open,start);
     });
   });
 
-  // Match the reference's desktop scroll progression; touch and reduced motion keep native clicks.
-  const serviceMedia=matchMedia('(min-width: 768px)');
-  const serviceList=flow.querySelector('.home-services');
-  const serviceCards=[...flow.querySelectorAll('.studio-service')];
-  const manualServices=new Map();
-  const serviceSizes=new Map();
-  let serviceFrame=0,lastServiceWidth=0,navigationAnchor=null;
-  const autoServices=()=>serviceMedia.matches&&!reduced.matches;
-  const clearServiceStyle=card=>{
-    card.classList.remove('is-scroll-service');card.style.removeProperty('background-color');card.style.removeProperty('color');
-    card.style.removeProperty('--service-progress');card.style.removeProperty('--service-content-progress');delete card.dataset.serviceProgress;
-    const body=card.querySelector('.studio-service-body');body.style.removeProperty('height');body.style.removeProperty('padding-bottom');body.inert=false;
-  };
-  function measureServices(){
-    if(!autoServices())return;
-    serviceCards.forEach(card=>{
-      const body=card.querySelector('.studio-service-body');
-      const state={open:card.open,classes:card.className,style:card.getAttribute('style'),bodyStyle:body.getAttribute('style')};
-      card.classList.remove('is-scroll-service');card.open=true;body.style.height='auto';body.style.removeProperty('padding-bottom');
-      serviceSizes.set(card,{height:body.getBoundingClientRect().height,padding:parseFloat(getComputedStyle(body).paddingBottom)});
-      card.open=state.open;card.className=state.classes;
-      if(state.style===null)card.removeAttribute('style');else card.setAttribute('style',state.style);
-      if(state.bodyStyle===null)body.removeAttribute('style');else body.setAttribute('style',state.bodyStyle);
-    });
-    requestServices();
-  }
-  function renderServices(){
-    serviceFrame=0;
-    if(!autoServices()||document.hidden)return;
-    const listRect=serviceList.getBoundingClientRect();
-    if(listRect.top>innerHeight||listRect.bottom<0)return;
-    // Batch geometry reads before writes. Predict each next row from preceding changes.
-    const geometry=serviceCards.map(card=>({card,rect:card.getBoundingClientRect(),summary:card.querySelector('summary').getBoundingClientRect()}));
-    // A direct service link anchors its chosen heading while earlier rows settle.
-    const requestedAnchor=geometry.findIndex(({card})=>card===navigationAnchor);
-    const anchorIndex=requestedAnchor>=0?requestedAnchor:geometry.findIndex(({rect})=>rect.bottom>0&&rect.top<innerHeight);
-    let shift=0,anchorShift=0;
-    const updates=[];
-    geometry.forEach(({card,rect,summary},i)=>{
-      if(i===anchorIndex)anchorShift=shift;
-      if(manualServices.has(card))return;
-      const size=serviceSizes.get(card);if(!size)return;
-      const top=rect.top+shift;
-      let progress=i===0?1:Math.max(0,Math.min(1,(innerHeight*.86-top)/Math.min(240,innerHeight*.3)));
-      if(progress<.015)progress=0;if(progress>.985)progress=1;
-      if(Math.abs(Number(card.dataset.serviceProgress??-1)-progress)<.003)return;
-      const rgb=[255,255,255].map((v,k)=>Math.round(v+([6,29,49][k]-v)*progress));
-      const linear=rgb.map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4;});
-      const luminance=linear[0]*.2126+linear[1]*.7152+linear[2]*.0722;
-      updates.push({card,progress,size,rgb,foreground:progress===0?'#092d40':luminance>.179?'#000':'#fff'});
-      shift+=summary.height+size.height*progress-rect.height;
-    });
-    updates.forEach(({card,progress,size,rgb,foreground})=>{
-      card.classList.add('is-scroll-service');card.dataset.serviceProgress=progress.toFixed(4);card.open=progress>0;
-      card.style.backgroundColor=`rgb(${rgb.join(',')})`;card.style.color=foreground;
-      card.style.setProperty('--service-progress',progress);
-      card.style.setProperty('--service-content-progress',Math.max(0,Math.min(1,(progress-.65)/.3)));
-      const body=card.querySelector('.studio-service-body');body.style.height=(size.height*progress)+'px';body.style.paddingBottom=(size.padding*progress)+'px';body.inert=progress<.985;
-    });
-    // A stable visible card, with no wheel/touch interception or per-row forced layout.
-    if(anchorIndex>=0&&Math.abs(anchorShift)>1){scrollBy({top:anchorShift,behavior:'instant'});requestServices();}
-    if(requestedAnchor>=0){if(updates.length)requestServices();else navigationAnchor=null;}
-  }
-
-  function requestServices(){if(!serviceFrame&&autoServices())serviceFrame=requestAnimationFrame(renderServices);}
-  flow.addEventListener('optimism:service-open',event=>{
-    const card=event.target.closest('.studio-service');if(!card)return;
-    const start=card.getBoundingClientRect().height;
-    manualServices.set(card,true);clearServiceStyle(card);expand(card,true,start);
-    navigationAnchor=autoServices()?card:null;requestServices();
-  });
-  serviceCards.forEach(card=>card.addEventListener('focusin',event=>{
-    if(event.target.closest('summary'))return;
-    manualServices.set(card,true);clearServiceStyle(card);card.open=true;
-  }));
-  new ResizeObserver(entries=>{
-    const width=entries[0].contentRect.width;
-    if(Math.abs(width-lastServiceWidth)>1){lastServiceWidth=width;measureServices();}
-  }).observe(serviceList);
-  const resetServiceMode=()=>{
-    serviceCards.forEach(clearServiceStyle);
-    if(autoServices())measureServices();
-  };
-  serviceMedia.addEventListener('change',resetServiceMode);reduced.addEventListener('change',resetServiceMode);
-  addEventListener('scroll',requestServices,{passive:true});addEventListener('resize',requestServices,{passive:true});
-  document.fonts.ready.then(measureServices);
+  // Service disclosure motion lives in services-motion.js.
 
   // Keep the click target fixed; only the small arrow follows the pointer inside it.
   flow.querySelectorAll('[data-magnetic],.studio-circle-link').forEach(link=>{

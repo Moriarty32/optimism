@@ -1,0 +1,134 @@
+{
+  "purpose": "Сгенерированные фотоиллюстрации направлений услуг. Они не изображают реальные кейсы, сотрудников, клиентов или результаты Оптимизм.ру.",
+  "production": "OpenAI imagegen; создано с использованием визуальных референсов и точных промптов из sidecar-файлов.",
+  "reference_note": "Авторы и ссылки ниже относятся только к исходным фотографиям-референсам, а не к сгенерированным изображениям.",
+  "reference_license": "https://unsplash.com/license",
+  "photos": [
+    {
+      "id": "seo",
+      "role": "generated service illustration",
+      "file": "assets/service-photos/seo-v2.webp",
+      "responsive_file": "assets/service-photos/seo-v2-800.webp",
+      "reference": {
+        "id": "seo",
+        "author": "SumUp",
+        "source": "https://unsplash.com/photos/a-person-sitting-in-front-of-a-laptop-computer-KqiykWgHBtQ",
+        "file": "assets/hero-photos/seo.webp",
+        "license": "https://unsplash.com/license"
+      },
+      "prompt_metadata": "assets/service-photos/seo-v2.webp.json"
+    },
+    {
+      "id": "ads-online",
+      "role": "generated service illustration",
+      "file": "assets/service-photos/ads-online-v2.webp",
+      "responsive_file": "assets/service-photos/ads-online-v2-800.webp",
+      "reference": {
+        "id": "ads",
+        "author": "Zulfugar Karimov",
+        "source": "https://unsplash.com/photos/linkedin-ads-campaign-manager-interface-on-laptop-screen-ssGiPWpJpdE",
+        "file": "assets/hero-photos/ads-online.webp",
+        "license": "https://unsplash.com/license"
+      },
+      "prompt_metadata": "assets/service-photos/ads-online-v2.webp.json"
+    },
+    {
+      "id": "analytics",
+      "role": "generated service illustration",
+      "file": "assets/service-photos/analytics-v2.webp",
+      "responsive_file": "assets/service-photos/analytics-v2-800.webp",
+      "reference": {
+        "id": "analytics",
+        "author": "Carlos Muza",
+        "source": "https://unsplash.com/photos/laptop-computer-on-glass-top-table-hpjSkU2UYSU",
+        "file": "assets/hero-photos/analytics.webp",
+        "license": "https://unsplash.com/license"
+      },
+      "prompt_metadata": "assets/service-photos/analytics-v2.webp.json"
+    },
+    {
+      "id": "development",
+      "role": "generated service illustration",
+      "file": "assets/service-photos/development-v2.webp",
+      "responsive_file": "assets/service-photos/development-v2-800.webp",
+      "reference": {
+        "id": "development",
+        "author": "Karl Pawlowicz",
+        "source": "https://unsplash.com/photos/a-computer-monitor-sitting-on-top-of-a-wooden-desk-QUHuwyNgSA0",
+        "file": "assets/hero-photos/development.webp",
+        "license": "https://unsplash.com/license"
+      },
+      "prompt_metadata": "assets/service-photos/development-v2.webp.json"
+    },
+    {
+      "id": "content",
+      "role": "generated service illustration",
+      "file": "assets/service-photos/content-v2.webp",
+      "responsive_file": "assets/service-photos/content-v2-800.webp",
+      "reference": {
+        "id": "content",
+        "author": "Michael Moloney",
+        "source": "https://unsplash.com/photos/a-man-taking-a-picture-of-a-woman-with-a-camera-eqH7xVlQIhQ",
+        "file": "assets/hero-photos/content.webp",
+        "license": "https://unsplash.com/license"
+      },
+      "prompt_metadata": "assets/service-photos/content-v2.webp.json"
+    },
+    {
+      "id": "social",
+      "role": "generated service illustration",
+      "file": "assets/service-photos/social-v2.webp",
+      "responsive_file": "assets/service-photos/social-v2-800.webp",
+      "reference": {
+        "id": "social",
+        "author": "aranprime",
+        "source": "https://unsplash.com/photos/person-holding-black-android-smartphone-DL-lUF5i_sY",
+        "file": "assets/hero-photos/social.webp",
+        "license": "https://unsplash.com/license"
+      },
+      "prompt_metadata": "assets/service-photos/social-v2.webp.json"
+    },
+    {
+      "id": "brand",
+      "role": "generated service illustration",
+      "file": "assets/service-photos/brand-v2.webp",
+      "responsive_file": "assets/service-photos/brand-v2-800.webp",
+      "reference": {
+        "id": "brand",
+        "author": "Xiao daCunha",
+        "source": "https://unsplash.com/photos/a-store-with-shelves-and-toys-YXdjYyRa9tI",
+        "file": "assets/hero-photos/brand.webp",
+        "license": "https://unsplash.com/license"
+      },
+      "prompt_metadata": "assets/service-photos/brand-v2.webp.json"
+    },
+    {
+      "id": "ai",
+      "role": "generated service illustration",
+      "file": "assets/service-photos/ai-v2.webp",
+      "responsive_file": "assets/service-photos/ai-v2-800.webp",
+      "reference": {
+        "id": "ai",
+        "author": "Zulfugar Karimov",
+        "source": "https://unsplash.com/photos/the-image-shows-the-chatgpt-app-on-a-phone-wl67wKt8hNI",
+        "file": "assets/hero-photos/ai.webp",
+        "license": "https://unsplash.com/license"
+      },
+      "prompt_metadata": "assets/service-photos/ai-v2.webp.json"
+    },
+    {
+      "id": "geo",
+      "role": "generated service illustration",
+      "file": "assets/service-photos/geo-v2.webp",
+      "responsive_file": "assets/service-photos/geo-v2-800.webp",
+      "reference": {
+        "id": "geo",
+        "author": "Aerps.com",
+        "source": "https://unsplash.com/photos/a-laptop-displays-what-can-i-help-with-5e4Zlblkvks",
+        "file": "assets/hero-photos/geo.webp",
+        "license": "https://unsplash.com/license"
+      },
+      "prompt_metadata": "assets/service-photos/geo-v2.webp.json"
+    }
+  ]
+}
