@@ -1,20 +1,80 @@
 [
   {
-    "file": "elit-balcon.webp",
+    "file": "elit-balcon-cover-v2.webp",
     "source": "https://optimism.ru/blog/wp-content/uploads/2023/08/elit-balcon-1.png",
     "case": "https://optimism.ru/blog/kejs-balkony-i-lodzhii-na-46-uvelichili-kolichestvo-zakazov-dlya-kompanii-elit-balcon-prodvizhenie-sajta/",
-    "provenance": "Optimism case artwork, converted to WebP without changing composition. Original: https://optimism.ru/blog/wp-content/uploads/2023/08/elit-balcon-1.png"
+    "provenance": "Generated case illustration based on the original case artwork; not a documentary photograph.",
+    "generator": "OpenAI imagegen",
+    "prompt": "Use case: photorealistic-natural.\nAsset type: a finished high-resolution photographic cover for the Elit Balcon case study on an agency website.\nReference image 1: use ONLY the architectural photograph on its LEFT HALF as a subject, mood and material reference. The right text panel, white circular badge, logos and typography are NOT part of the new image. Create a new full-bleed photographic scene, not a website mockup or presentation slide.\nScene: a refined contemporary glazed balcony / sunroom overlooking a tranquil lake and autumn trees, slender dark graphite window frames, large clear panes, a glass roof, warm natural timber flooring and a low wooden table at the lower edge. Architectural glazing must be the unmistakable main subject. Similar quiet lakeside atmosphere to the reference, with a fresh coherent composition.\nStyle and quality: premium architectural editorial photography, extremely realistic glass reflections, physically plausible straight mullions, precise frame joints, tactile timber grain, soft natural daylight, restrained cyan-blue water and warm autumn notes. Natural optical detail, deep but believable focus, no CGI sheen, no excessive HDR or sharpening.\nComposition: near-square PORTRAIT, native output 2048 x 2160 pixels if available, designed for delivery at1600 x1690. Fill the entire image with the scene. Keep important glazing and landscape inside the central85%, allowing a small rounded-corner crop and4.5% zoom. Camera at human eye level, clear strong vertical architecture and generous depth. No person, no extra decorative props.\nConstraints: NO text, NO captions, NO circular badge, NO logo, NO chart, NO white side panel, NO watermark, NO split layout. This is a conceptual illustration of the case subject, not documentation of a specific completed installation.\n",
+    "width": 1200,
+    "height": 1268,
+    "quality": 90,
+    "sha256": "ed103a517f10f232b8e2552011f383005b3dc7af721770a269bbb6591fa11b0c",
+    "masterSha256": "0bd46d368ee659f663ed08c8f0bd1c8993750d8ee1403a08051eee52dbcc9c96"
   },
   {
-    "file": "yves-rocher.webp",
+    "file": "elit-balcon-cover-v2-800.webp",
+    "source": "https://optimism.ru/blog/wp-content/uploads/2023/08/elit-balcon-1.png",
+    "case": "https://optimism.ru/blog/kejs-balkony-i-lodzhii-na-46-uvelichili-kolichestvo-zakazov-dlya-kompanii-elit-balcon-prodvizhenie-sajta/",
+    "provenance": "Generated case illustration based on the original case artwork; not a documentary photograph.",
+    "generator": "OpenAI imagegen",
+    "prompt": "Use case: photorealistic-natural.\nAsset type: a finished high-resolution photographic cover for the Elit Balcon case study on an agency website.\nReference image 1: use ONLY the architectural photograph on its LEFT HALF as a subject, mood and material reference. The right text panel, white circular badge, logos and typography are NOT part of the new image. Create a new full-bleed photographic scene, not a website mockup or presentation slide.\nScene: a refined contemporary glazed balcony / sunroom overlooking a tranquil lake and autumn trees, slender dark graphite window frames, large clear panes, a glass roof, warm natural timber flooring and a low wooden table at the lower edge. Architectural glazing must be the unmistakable main subject. Similar quiet lakeside atmosphere to the reference, with a fresh coherent composition.\nStyle and quality: premium architectural editorial photography, extremely realistic glass reflections, physically plausible straight mullions, precise frame joints, tactile timber grain, soft natural daylight, restrained cyan-blue water and warm autumn notes. Natural optical detail, deep but believable focus, no CGI sheen, no excessive HDR or sharpening.\nComposition: near-square PORTRAIT, native output 2048 x 2160 pixels if available, designed for delivery at1600 x1690. Fill the entire image with the scene. Keep important glazing and landscape inside the central85%, allowing a small rounded-corner crop and4.5% zoom. Camera at human eye level, clear strong vertical architecture and generous depth. No person, no extra decorative props.\nConstraints: NO text, NO captions, NO circular badge, NO logo, NO chart, NO white side panel, NO watermark, NO split layout. This is a conceptual illustration of the case subject, not documentation of a specific completed installation.\n",
+    "width": 800,
+    "height": 845,
+    "quality": 90,
+    "sha256": "6e5c4716477970ba15a07ad3144c281e58c4a27ce23fc206767d1a42adc8ea23",
+    "masterSha256": "0bd46d368ee659f663ed08c8f0bd1c8993750d8ee1403a08051eee52dbcc9c96"
+  },
+  {
+    "file": "yves-rocher-cover-v2.webp",
     "source": "https://optimism.ru/blog/wp-content/uploads/2023/11/yves-rocher.png",
     "case": "https://optimism.ru/blog/kejs-kosmetika-na-193-uvelichili-trafik-na-sajt-yves-rocher-prodvizhenie-sajta-dlya-francuzskogo-brenda/",
-    "provenance": "Optimism case artwork, converted to WebP without changing composition. Original: https://optimism.ru/blog/wp-content/uploads/2023/11/yves-rocher.png"
+    "provenance": "Generated case illustration based on the original case artwork; not a documentary photograph.",
+    "generator": "OpenAI imagegen",
+    "prompt": "Use case: product-mockup.\nAsset type: a finished high-resolution photographic cover illustrating the Yves Rocher case study on an agency website.\nReference image 1: use ONLY the botanical cosmetics still life in the LEFT HALF for its lavender palette, materials and subject. Ignore and remove its white circular brand badge, all logos, typography and the entire right text panel. Create a new full-bleed editorial product scene, not a slide or website mockup.\nScene: a refined botanical skincare still life with a clear glass bottle containing pale violet liquid and a natural cork, fresh lavender sprigs, an ivory unbranded soap bar on a warm oak tray, a softly folded lilac cotton towel, a small natural bristle brush and a partial ceramic bowl of rose-lilac bath salts near an edge. Arrange these coherently with the bottle as the focal object. The bottle and soap have absolutely no labels or brand marks.\nStyle and quality: exceptionally realistic luxury beauty editorial photography, delicate daylight from the side, elegant true-to-life glass refraction, subtle highlights, tiny botanical details, visible woven towel texture, convincing soap and wooden grain. Gentle color separation, lavender and cream with natural greens, detailed foreground with subtle optical depth. Rich tactile materials rather than glossy CGI. No oversaturation, no harsh vignette, no synthetic plastic look.\nComposition: near-square PORTRAIT, native output 2048 x2160 pixels if available, intended delivery1600 x1690. Fill the entire image; visual weight balanced across the portrait crop. Keep important bottle silhouette and botanical arrangement inside the central85% for rounded-corner framing and4.5% zoom. No giant blank area and no superimposed graphics.\nConstraints: NO text, NO logos, NO circular badge, NO white side panel, NO charts, NO watermark, NO split layout. Generic conceptual botanical cosmetics illustration; do not manufacture branded packaging or present it as a photograph of an actual Yves Rocher product.\n",
+    "width": 1200,
+    "height": 1268,
+    "quality": 90,
+    "sha256": "30bd1b3ca97911bcea630828249e09c0baab95626154851b771763f46ad55bdf",
+    "masterSha256": "688b6eeff812dd802718648843890c213b1336948bfe78fc1040e9b3470ae12e"
   },
   {
-    "file": "ndbrand.webp",
+    "file": "yves-rocher-cover-v2-800.webp",
+    "source": "https://optimism.ru/blog/wp-content/uploads/2023/11/yves-rocher.png",
+    "case": "https://optimism.ru/blog/kejs-kosmetika-na-193-uvelichili-trafik-na-sajt-yves-rocher-prodvizhenie-sajta-dlya-francuzskogo-brenda/",
+    "provenance": "Generated case illustration based on the original case artwork; not a documentary photograph.",
+    "generator": "OpenAI imagegen",
+    "prompt": "Use case: product-mockup.\nAsset type: a finished high-resolution photographic cover illustrating the Yves Rocher case study on an agency website.\nReference image 1: use ONLY the botanical cosmetics still life in the LEFT HALF for its lavender palette, materials and subject. Ignore and remove its white circular brand badge, all logos, typography and the entire right text panel. Create a new full-bleed editorial product scene, not a slide or website mockup.\nScene: a refined botanical skincare still life with a clear glass bottle containing pale violet liquid and a natural cork, fresh lavender sprigs, an ivory unbranded soap bar on a warm oak tray, a softly folded lilac cotton towel, a small natural bristle brush and a partial ceramic bowl of rose-lilac bath salts near an edge. Arrange these coherently with the bottle as the focal object. The bottle and soap have absolutely no labels or brand marks.\nStyle and quality: exceptionally realistic luxury beauty editorial photography, delicate daylight from the side, elegant true-to-life glass refraction, subtle highlights, tiny botanical details, visible woven towel texture, convincing soap and wooden grain. Gentle color separation, lavender and cream with natural greens, detailed foreground with subtle optical depth. Rich tactile materials rather than glossy CGI. No oversaturation, no harsh vignette, no synthetic plastic look.\nComposition: near-square PORTRAIT, native output 2048 x2160 pixels if available, intended delivery1600 x1690. Fill the entire image; visual weight balanced across the portrait crop. Keep important bottle silhouette and botanical arrangement inside the central85% for rounded-corner framing and4.5% zoom. No giant blank area and no superimposed graphics.\nConstraints: NO text, NO logos, NO circular badge, NO white side panel, NO charts, NO watermark, NO split layout. Generic conceptual botanical cosmetics illustration; do not manufacture branded packaging or present it as a photograph of an actual Yves Rocher product.\n",
+    "width": 800,
+    "height": 845,
+    "quality": 90,
+    "sha256": "a1d5749158d5f0d69e5b3f844a6d599e50419a6a5a263451759b373081889a88",
+    "masterSha256": "688b6eeff812dd802718648843890c213b1336948bfe78fc1040e9b3470ae12e"
+  },
+  {
+    "file": "ndbrand-cover-v2.webp",
     "source": "https://optimism.ru/blog/wp-content/uploads/2023/09/brand-mujskoj-odeji-hend.png",
     "case": "https://optimism.ru/blog/kejs-odezhda-analitika-sajta-v-2-2-raza-umenshili-pokazatel-otkazov-ndbrand/",
-    "provenance": "Optimism case artwork, converted to WebP without changing composition. Original: https://optimism.ru/blog/wp-content/uploads/2023/09/brand-mujskoj-odeji-hend.png"
+    "provenance": "Generated case illustration based on the original case artwork; not a documentary photograph.",
+    "generator": "OpenAI imagegen",
+    "prompt": "Use case: photorealistic-natural.\nAsset type: a finished high-resolution menswear editorial cover illustrating the NDbrand case study on an agency website.\nReference image 1: use ONLY the LEFT-HALF fashion photograph for clothing, warm limestone architecture and calm editorial mood. Do not copy the man's identity or the overlaid white circular badge. Ignore all typography, logos and the entire right panel. Create a fresh full-bleed fashion photograph, not a presentation slide or website mockup.\nScene: a fictional adult male fashion model in his early30s with natural dark hair and discreet short stubble, wearing a finely tailored taupe and charcoal windowpane-check blazer over a beige crew-neck top, and elegant dark charcoal trousers. Seated naturally on a low limestone ledge against warm pale stone architectural planes, looking slightly to the side with calm confidence. Three-quarter seated portrait, face, jacket lapels and fabric clearly readable; arms and hands rest naturally without obstructing the tailoring. Similar refined urban menswear mood to the reference, new person and coherent new pose.\nStyle and quality: premium magazine fashion photography, natural skin pores and hair, realistic eyes and hands, precise plaid continuity across seams, beautiful wool texture, soft directional daylight, convincing stone grain and restrained neutral color. Human, tactile, optically believable, no waxy skin, no over-retouching, no CGI appearance, no exaggerated fashion pose.\nComposition: near-square PORTRAIT, native output2048 x2160 pixels if available, intended delivery1600 x1690. Fill the whole frame with the photograph. Face and most of the tailored jacket comfortably within central85%; leave breathing room above the hair and clear separation from stone. Allow rounded corners and4.5% image zoom without cutting the head. No superimposed graphics.\nConstraints: NO text, NO brand marks, NO circular badge, NO sidebar, NO charts, NO watermark, NO split layout. This is an illustrative menswear scene, not a claim about a real NDbrand collection, employee or campaign.\n",
+    "width": 1200,
+    "height": 1268,
+    "quality": 90,
+    "sha256": "af571d2b57254a0c0bc008bf4fb08a406d78739444ef62219868d3bcf09e421d",
+    "masterSha256": "b23aa0706ffe97daf328b14fe93d75e1d213796bd6933fbc1dc0a48d6c7f984a"
+  },
+  {
+    "file": "ndbrand-cover-v2-800.webp",
+    "source": "https://optimism.ru/blog/wp-content/uploads/2023/09/brand-mujskoj-odeji-hend.png",
+    "case": "https://optimism.ru/blog/kejs-odezhda-analitika-sajta-v-2-2-raza-umenshili-pokazatel-otkazov-ndbrand/",
+    "provenance": "Generated case illustration based on the original case artwork; not a documentary photograph.",
+    "generator": "OpenAI imagegen",
+    "prompt": "Use case: photorealistic-natural.\nAsset type: a finished high-resolution menswear editorial cover illustrating the NDbrand case study on an agency website.\nReference image 1: use ONLY the LEFT-HALF fashion photograph for clothing, warm limestone architecture and calm editorial mood. Do not copy the man's identity or the overlaid white circular badge. Ignore all typography, logos and the entire right panel. Create a fresh full-bleed fashion photograph, not a presentation slide or website mockup.\nScene: a fictional adult male fashion model in his early30s with natural dark hair and discreet short stubble, wearing a finely tailored taupe and charcoal windowpane-check blazer over a beige crew-neck top, and elegant dark charcoal trousers. Seated naturally on a low limestone ledge against warm pale stone architectural planes, looking slightly to the side with calm confidence. Three-quarter seated portrait, face, jacket lapels and fabric clearly readable; arms and hands rest naturally without obstructing the tailoring. Similar refined urban menswear mood to the reference, new person and coherent new pose.\nStyle and quality: premium magazine fashion photography, natural skin pores and hair, realistic eyes and hands, precise plaid continuity across seams, beautiful wool texture, soft directional daylight, convincing stone grain and restrained neutral color. Human, tactile, optically believable, no waxy skin, no over-retouching, no CGI appearance, no exaggerated fashion pose.\nComposition: near-square PORTRAIT, native output2048 x2160 pixels if available, intended delivery1600 x1690. Fill the whole frame with the photograph. Face and most of the tailored jacket comfortably within central85%; leave breathing room above the hair and clear separation from stone. Allow rounded corners and4.5% image zoom without cutting the head. No superimposed graphics.\nConstraints: NO text, NO brand marks, NO circular badge, NO sidebar, NO charts, NO watermark, NO split layout. This is an illustrative menswear scene, not a claim about a real NDbrand collection, employee or campaign.\n",
+    "width": 800,
+    "height": 845,
+    "quality": 90,
+    "sha256": "c5265f2b6e06075ba662e0b4b59314afe7133cf82cd6a3888dac298937560a6c",
+    "masterSha256": "b23aa0706ffe97daf328b14fe93d75e1d213796bd6933fbc1dc0a48d6c7f984a"
   }
 ]
