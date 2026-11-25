@@ -1,0 +1,27 @@
+/* Original case marks remain separate from the high-resolution photographic cover. */
+#homepage .studio-case-brand{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:clamp(100px,32%,208px);aspect-ratio:1;border-radius:50%;overflow:hidden;background:#fff;box-shadow:0 8px 28px #061d3124;pointer-events:none;z-index:1}
+#homepage .studio-case-brand>svg{display:block;width:100%;height:100%}
+/* Equal side columns keep the label centered even when an arrow is present. */
+#homepage .studio-flow .home-button,
+#homepage .studio-pill,
+#homepage .studio-flow #solutions .solution-primary,
+#homepage .studio-flow #project button[type=submit],
+#homepage .hero-typographic .home-button{
+ --button-icon-size:24px;--button-column-gap:12px;
+ display:inline-grid;grid-template-columns:var(--button-icon-size) minmax(0,1fr) var(--button-icon-size);align-items:center;justify-content:center;column-gap:var(--button-column-gap);max-width:100%;text-align:center;box-sizing:border-box;
+}
+#homepage :is(.home-button,.studio-pill)::before{content:'';grid-column:1;grid-row:1;width:var(--button-icon-size);height:1px}
+#homepage :is(.home-button,.studio-pill)>.button-label{grid-column:2;grid-row:1;display:block;min-width:0;line-height:1.3;text-align:center;text-wrap:balance;transform:translateY(-.18em)}
+#homepage :is(.home-button,.studio-pill)>:is(svg,.studio-arrow,.studio-link-arrow){grid-column:3;grid-row:1;display:flex;align-items:center;justify-content:center;width:var(--button-icon-size);height:var(--button-icon-size);margin:0;line-height:1}
+#homepage :is(.home-button,.studio-pill)>:is(.studio-arrow,.studio-link-arrow)>svg{display:block;width:100%;height:100%}
+#homepage .hero-typographic .home-button{--button-icon-size:20px;--button-column-gap:10px}
+@media(max-width:767px){
+ #homepage .hero-typographic .home-button{--button-icon-size:16px;--button-column-gap:4px;min-width:0}
+ #homepage .studio-flow .home-button,#homepage .studio-pill,#homepage .studio-flow #solutions .solution-primary{--button-icon-size:22px;--button-column-gap:8px}
+}
+@media(max-width:767px){
+ #homepage .studio-flow #project button[type=submit]{--button-icon-size:22px;--button-column-gap:8px}
+}
+@media(max-width:370px){
+ #homepage .studio-pill{padding-inline:14px}
+}

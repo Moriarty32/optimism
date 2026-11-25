@@ -91,16 +91,11 @@
     {
       "id": "brand",
       "role": "generated service illustration",
-      "file": "assets/service-photos/brand-v2.webp",
-      "responsive_file": "assets/service-photos/brand-v2-800.webp",
-      "reference": {
-        "id": "brand",
-        "author": "Xiao daCunha",
-        "source": "https://unsplash.com/photos/a-store-with-shelves-and-toys-YXdjYyRa9tI",
-        "file": "assets/hero-photos/brand.webp",
-        "license": "https://unsplash.com/license"
-      },
-      "prompt_metadata": "assets/service-photos/brand-v2.webp.json"
+      "file": "assets/service-photos/brand-v3.webp",
+      "responsive_file": "assets/service-photos/brand-v3-800.webp",
+      "generator": "OpenAI built-in imagegen",
+      "prompt_metadata": "assets/service-photos/brand-v3.webp.json",
+      "note": "Fictional coffee-brand campaign used to illustrate consistent brand promotion across channels; not an actual Optimism case or client."
     },
     {
       "id": "ai",

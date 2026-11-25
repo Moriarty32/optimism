@@ -1,0 +1,20 @@
+[
+  {
+    "file": "elit-balcon-source.webp",
+    "source": "audit/case-covers-2026-11-25/references/elit-balcon.webp",
+    "sha256": "01dc5cc8b51088fe4294953d0f37399639fec44dd5d68faad1ce0603a211ef7f",
+    "role": "Unmodified original case cover, used only for its original central circular brand badge through an inline SVG viewport. Generated photographic covers are not modified."
+  },
+  {
+    "file": "yves-rocher-source.webp",
+    "source": "audit/case-covers-2026-11-25/references/yves-rocher.webp",
+    "sha256": "51c910e635cb2323a862ec5a9eccb22106c71b439329ec38da9ac290ff5b3863",
+    "role": "Unmodified original case cover, used only for its original central circular brand badge through an inline SVG viewport. Generated photographic covers are not modified."
+  },
+  {
+    "file": "ndbrand-source.webp",
+    "source": "audit/case-covers-2026-11-25/references/ndbrand.webp",
+    "sha256": "c5b2685bb8aa82a83554a3daf1f9a0d8762907303b6fe032cc17c6259dfca90e",
+    "role": "Unmodified original case cover, used only for its original central circular brand badge through an inline SVG viewport. Generated photographic covers are not modified."
+  }
+]
