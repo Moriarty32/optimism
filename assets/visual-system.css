@@ -261,65 +261,68 @@
  #homepage+.footer .sec-intro_wrapp{grid-template-columns:1fr;gap:10px}
  #homepage+.footer .sec-intro_wrapp button{width:100%}
 }
-/* Document cabinet: the shared navy canvas, one open folio, two secondary destinations. */
-#homepage .studio-flow #documents.resource-index{background:var(--surface-navy);border-radius:var(--chapter-radius);color:#fff;padding-block:clamp(48px,4.5vw,80px)}
-#homepage .studio-flow #documents .home-container{display:block}
-#homepage .studio-flow #documents .resource-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.82fr);gap:32px 72px;align-items:end;margin:0 0 40px}
-#homepage .studio-flow #documents h2{font-size:clamp(40px,3.7vw,60px);line-height:1.08;letter-spacing:-.025em;margin:0;color:#fff;max-width:19ch}
-#homepage .studio-flow #documents .resource-heading>p{font-size:18px;line-height:1.55;color:#bedbe9;max-width:49ch;margin:0}
-#homepage .studio-flow #documents .resource-list{border:0;display:block}
-#homepage .studio-flow #documents .resource-group>h3{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;margin:-1px;padding:0;border:0}
-#homepage .studio-flow #documents .resource-primary{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);background:var(--surface-blue);color:#092d40;border-radius:24px;overflow:clip}
-#homepage .studio-flow #documents .resource-link{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 36px;align-content:center;align-items:center;gap:8px 20px;margin:0;border:0;min-width:0;color:#092d40;text-decoration:none;transition:background-color .35s ease-out}
-#homepage .studio-flow #documents .resource-primary>.resource-link{padding:28px 36px;min-height:156px;background:transparent}
-#homepage .studio-flow #documents .resource-primary>.resource-link:first-of-type{grid-row:1/3;grid-column:1;grid-template-columns:minmax(0,1fr) 48px;padding:36px 40px;align-content:end;border-right:1px solid #b3cfdd}
-#homepage .studio-flow #documents .resource-primary>.resource-link:nth-of-type(2){grid-row:1;grid-column:2;border-bottom:1px solid #b3cfdd}
-#homepage .studio-flow #documents .resource-primary>.resource-link:nth-of-type(3){grid-row:2;grid-column:2}
-#homepage .studio-flow #documents .resource-format{grid-column:1;grid-row:auto;position:static;display:block;font-size:13px;line-height:1.3;letter-spacing:.04em;color:#496a7d;justify-self:start}
-#homepage .studio-flow #documents .resource-title{grid-column:1;grid-row:auto;font-size:30px;line-height:1.15;letter-spacing:-.015em;color:#092d40;transform:none!important;transition:color .25s}
-#homepage .studio-flow #documents .resource-description{grid-column:1;grid-row:auto;font-size:16px;line-height:1.45;color:#496a7d;max-width:42ch}
-#homepage .studio-flow #documents .resource-arrow{grid-column:2;grid-row:1/4;align-self:center;width:36px;height:36px;border:0;border-radius:0;color:#006d98;background:transparent;transition:transform .4s cubic-bezier(.16,1,.3,1),color .25s}
-#homepage .studio-flow #documents .resource-primary>.resource-link:first-of-type .resource-format{position:absolute;grid-area:auto;left:40px;top:36px}
-#homepage .studio-flow #documents .resource-primary>.resource-link:first-of-type .resource-title{font-size:44px}
-#homepage .studio-flow #documents .resource-primary>.resource-link:first-of-type .resource-arrow{align-self:end;grid-row:1/3;width:48px;height:48px;background:#061d31;color:#fff;border-radius:50%}
-#homepage .studio-flow #documents .resource-primary>.resource-link:first-of-type .resource-description{max-width:30ch}
-#homepage .studio-flow #documents .resource-primary>.resource-link:hover{background:#fff}
-#homepage .studio-flow #documents .resource-link:hover .resource-arrow{transform:translate(3px,-3px);background:transparent;color:#006d98}
-#homepage .studio-flow #documents .resource-primary>.resource-link:first-of-type:hover .resource-arrow{background:#061d31;color:#fff}
-#homepage .studio-flow #documents .resource-secondary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px;margin-top:28px}
-#homepage .studio-flow #documents .resource-secondary>.resource-link{min-height:112px;padding:24px 0;border-bottom:1px solid #496476;column-gap:20px}
-#homepage .studio-flow #documents .resource-secondary .resource-title{font-size:25px;color:#fff}
-#homepage .studio-flow #documents .resource-secondary :is(.resource-format,.resource-description){color:#bedbe9}
-#homepage .studio-flow #documents .resource-secondary .resource-arrow{color:#8ddff9}
-#homepage .studio-flow #documents .resource-secondary .resource-link:hover .resource-title{color:#8ddff9}
-#homepage .studio-flow #documents .resource-link:focus-visible{outline:3px solid #006d98;outline-offset:-6px;border-radius:8px}
-#homepage .studio-flow #documents .resource-secondary .resource-link:focus-visible{outline-color:#8ddff9;outline-offset:6px}
-#homepage .studio-flow #documents .resource-link:focus-visible .resource-title{color:#006d98}
-#homepage .studio-flow #documents .resource-secondary .resource-link:focus-visible .resource-title{color:#8ddff9}
+/* Document collection, adapted from the supplied five-card reference. */
+#homepage .studio-flow #documents.resource-index{background:var(--surface-paper);color:#092d40;border:1px solid #d5e5ed;border-radius:var(--chapter-radius);width:calc(100% - 2*var(--panel-inset));margin-inline:auto;padding-block:clamp(40px,4vw,72px)}
+#homepage .studio-flow #documents .home-container{display:block;width:calc(100% - 2*clamp(24px,3vw,56px));max-width:1540px}
+#homepage .studio-flow #documents .resource-heading{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:32px 60px;align-items:center;margin:0 0 40px}
+#homepage .studio-flow #documents h2{font-size:clamp(38px,3.6vw,58px);font-weight:700;line-height:1.06;letter-spacing:-.025em;color:#092d40;margin:0;max-width:20ch}
+#homepage .studio-flow #documents .resource-heading>p{font-size:18px;line-height:1.5;color:#496a7d;margin:0;max-width:49ch}
+#homepage .studio-flow #documents .resource-grid{display:grid;grid-template-columns:minmax(0,1.12fr) repeat(2,minmax(0,1fr));gap:18px;min-height:540px}
+#homepage .studio-flow #documents .resource-column{display:grid;grid-template-rows:1fr 1fr;gap:18px;min-width:0}
+#homepage .studio-flow #documents .resource-column-last{grid-template-rows:1.1fr .9fr}
+#homepage .studio-flow #documents .resource-link{--card-ink:#092d40;position:relative;isolation:isolate;display:flex;flex-direction:column;align-items:stretch;gap:8px;min-width:0;min-height:252px;padding:28px;border:0;border-radius:24px;background:#d8f3fc;color:var(--card-ink);overflow:hidden;text-decoration:none;transition:transform .55s cubic-bezier(.16,1,.3,1);box-shadow:none}
+#homepage .studio-flow #documents .resource-link>*{position:relative;z-index:2}
+#homepage .studio-flow #documents .resource-format{font-size:13px;line-height:1.35;font-weight:700;color:inherit;letter-spacing:.02em;grid-area:auto}
+#homepage .studio-flow #documents .resource-title{font-size:clamp(27px,2.2vw,36px);line-height:1.08;font-weight:700;letter-spacing:-.018em;color:inherit!important;max-width:14ch;transform:none!important}
+#homepage .studio-flow #documents .resource-description{font-size:16px;line-height:1.4;color:inherit;max-width:29ch}
+#homepage .studio-flow #documents .resource-action{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:auto;padding-top:26px;min-height:52px;font-size:16px;line-height:1.25;font-weight:700;color:inherit}
+#homepage .studio-flow #documents .resource-arrow{display:flex;align-items:center;justify-content:center;width:30px;height:30px;flex:0 0 30px;border:0;border-radius:0;background:transparent!important;color:inherit!important;transform:none;transition:transform .5s cubic-bezier(.16,1,.3,1)}
+#homepage .studio-flow #documents .resource-arrow svg{width:28px;height:28px}
+#homepage .studio-flow #documents .resource-contract{--card-ink:#fff;min-height:540px;background:#006d98;padding:32px}
+#homepage .studio-flow #documents .resource-contract .resource-title{font-size:clamp(38px,3.4vw,54px)}
+#homepage .studio-flow #documents .resource-contract .resource-description{max-width:29ch}
+#homepage .studio-flow #documents .resource-contract .resource-action{padding-top:280px}
+#homepage .studio-flow #documents .resource-contract .resource-book{position:absolute;z-index:1;width:115%;height:56%;left:-7.5%;bottom:11%;object-fit:contain;pointer-events:none;transition:transform .8s cubic-bezier(.16,1,.3,1)}
+#homepage .studio-flow #documents .resource-standards{--card-ink:#fff;background:#061d31}
+#homepage .studio-flow #documents .resource-presentation{background:#edf4f8}
+#homepage .studio-flow #documents .resource-offers{background:#c6eafa}
+#homepage .studio-flow #documents .resource-link:not(.resource-contract)::before{content:'';position:absolute;z-index:0;pointer-events:none;right:-15%;top:-28%;width:64%;height:130%;background:url('/assets/documents/edge.svg') right center/contain no-repeat;opacity:.8;transition:transform .8s cubic-bezier(.16,1,.3,1)}
+#homepage .studio-flow #documents .resource-link.resource-presentation::before{background-image:url('/assets/documents/paper.svg');width:52%;height:70%;right:-5%;top:-7%}
+#homepage .studio-flow #documents .resource-link.resource-standards::before{background-image:url('/assets/documents/fold.svg');width:64%;height:65%;right:-8%;top:42%;opacity:.8}
+#homepage .studio-flow #documents .resource-link.resource-offers::before{width:56%;right:-17%;top:-6%;opacity:.7}
+#homepage .studio-flow #documents .resource-tariffs .resource-description{max-width:25ch}
+#homepage .studio-flow #documents .resource-presentation .resource-description{max-width:23ch}
+#homepage .studio-flow #documents .resource-link:hover{transform:translateY(-4px);text-decoration:none;color:var(--card-ink)}
+#homepage .studio-flow #documents .resource-link:hover .resource-arrow{transform:translate(3px,-3px)}
+#homepage .studio-flow #documents .resource-contract:hover .resource-book{transform:translateY(-5px) rotate(-2deg)}
+#homepage .studio-flow #documents .resource-link:focus-visible{color:var(--card-ink);outline:3px solid #007fae;outline-offset:5px}
+#homepage .studio-flow #documents .resource-contract:focus-visible,#homepage .studio-flow #documents .resource-standards:focus-visible{outline:3px solid #37c6f4;outline-offset:-7px}
 #homepage .studio-flow #documents ::selection{background:#37c6f4;color:#061d31}
-@media(max-width:1000px){
- #homepage .studio-flow #documents .resource-heading{grid-template-columns:1fr;gap:20px;margin-bottom:32px}
- #homepage .studio-flow #documents .resource-heading>p{max-width:60ch}
- #homepage .studio-flow #documents .resource-primary>.resource-link{padding:26px}
- #homepage .studio-flow #documents .resource-primary>.resource-link:first-of-type{padding:30px}
- #homepage .studio-flow #documents .resource-primary>.resource-link:first-of-type .resource-format{top:30px;left:30px}
- #homepage .studio-flow #documents .resource-secondary{gap:32px}
+@media(max-width:1100px) and (min-width:701px){
+ #homepage .studio-flow #documents .resource-heading{grid-template-columns:1fr;gap:20px;margin-bottom:30px}
+ #homepage .studio-flow #documents .resource-heading>p{max-width:65ch}
+ #homepage .studio-flow #documents .resource-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:16px}
+ #homepage .studio-flow #documents .resource-column-last{grid-column:1/-1;grid-template-columns:1fr 1fr;grid-template-rows:1fr;gap:16px}
+ #homepage .studio-flow #documents .resource-link{padding:24px;min-height:250px}
+ #homepage .studio-flow #documents .resource-contract{min-height:516px}
+ #homepage .studio-flow #documents .resource-contract .resource-action{padding-top:250px}
+ #homepage .studio-flow #documents .resource-title{font-size:30px}
+ #homepage .studio-flow #documents .resource-contract .resource-title{font-size:42px}
 }
 @media(max-width:700px){
- #homepage .studio-flow #documents.resource-index{padding-block:44px}
- #homepage .studio-flow #documents h2{font-size:38px}
- #homepage .studio-flow #documents .resource-heading>p{font-size:17px;line-height:1.5}
- #homepage .studio-flow #documents .resource-primary{grid-template-columns:1fr;border-radius:20px}
- #homepage .studio-flow #documents .resource-primary>.resource-link{grid-column:1!important;grid-row:auto!important;padding:24px;min-height:148px}
- #homepage .studio-flow #documents .resource-primary>.resource-link:first-of-type{min-height:232px;padding:28px 24px;border-right:0;border-bottom:1px solid #b3cfdd}
- #homepage .studio-flow #documents .resource-primary>.resource-link:first-of-type .resource-format{left:24px;top:28px}
- #homepage .studio-flow #documents .resource-primary>.resource-link:first-of-type .resource-title{font-size:36px}
- #homepage .studio-flow #documents .resource-title{font-size:27px}
- #homepage .studio-flow #documents .resource-description{font-size:16px}
- #homepage .studio-flow #documents .resource-secondary{grid-template-columns:1fr;gap:0;margin-top:12px}
- #homepage .studio-flow #documents .resource-secondary .resource-title{font-size:25px}
- #homepage .studio-flow #documents .resource-secondary>.resource-link{min-height:132px;padding:24px 0}
+ #homepage .studio-flow #documents.resource-index{padding-block:36px}
+ #homepage .studio-flow #documents .home-container{width:calc(100% - 40px)}
+ #homepage .studio-flow #documents .resource-heading{grid-template-columns:1fr;gap:20px;margin-bottom:28px}
+ #homepage .studio-flow #documents h2{font-size:36px}
+ #homepage .studio-flow #documents .resource-heading>p{font-size:17px}
+ #homepage .studio-flow #documents .resource-grid,#homepage .studio-flow #documents .resource-column{grid-template-columns:1fr;grid-template-rows:auto;gap:16px}
+ #homepage .studio-flow #documents .resource-link{min-height:258px;padding:24px;border-radius:20px}
+ #homepage .studio-flow #documents .resource-title{font-size:30px}
+ #homepage .studio-flow #documents .resource-contract{min-height:490px}
+ #homepage .studio-flow #documents .resource-contract .resource-title{font-size:42px}
+ #homepage .studio-flow #documents .resource-contract .resource-action{padding-top:250px}
+ #homepage .studio-flow #documents .resource-contract .resource-book{height:53%;bottom:12%}
 }
 @media(prefers-reduced-motion:reduce){
- #homepage .studio-flow #documents :is(.resource-link,.resource-arrow,.resource-title){transition:none!important;transform:none!important}
+ #homepage .studio-flow #documents :is(.resource-link,.resource-arrow,.resource-book,.resource-title),#homepage .studio-flow #documents .resource-link::before{transition:none!important;transform:none!important}
 }
